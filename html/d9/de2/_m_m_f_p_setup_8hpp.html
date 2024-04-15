@@ -1,0 +1,778 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MagicMatrix 魔法矩阵: MMFPSetup.hpp 文件参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../clipboard.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../LOGO 64x64.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">MagicMatrix 魔法矩阵
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('d9/de2/_m_m_f_p_setup_8hpp.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#define-members">宏定义</a> &#124;
+<a href="#func-members">函数</a> &#124;
+<a href="#var-members">变量</a>  </div>
+  <div class="headertitle"><div class="title">MMFPSetup.hpp 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>功能池初始化  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="../../d6/d2b/_m_m_define_8hpp_source.html">MMDefine.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d7/d08/_m_m_func_pool_8hpp_source.html">MMFunc/MMFuncPool.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../df/d1c/_m_m_f___count_down_8hpp_source.html">MMFunc/MMF_CountDown.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d8/d4d/_m_m_f___dice_8hpp_source.html">MMFunc/MMF_Dice.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../dc/d0b/_m_m_f___disp_bmp_loop_8hpp_source.html">MMFunc/MMF_DispBmpLoop.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d6/d9b/_m_m_f___disp_d_h_t__1_8hpp_source.html">MMFunc/MMF_DispDHT_1.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d1/df9/_m_m_f___disp_date__1_8hpp_source.html">MMFunc/MMF_DispDate_1.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d7/d15/_m_m_f___disp_time__1_8hpp_source.html">MMFunc/MMF_DispTime_1.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d7/d6f/_m_m_f___fill_rainbow_8hpp_source.html">MMFunc/MMF_FillRainbow.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../dd/de9/_m_m_f___matrix_test_8hpp_source.html">MMFunc/MMF_MatrixTest.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d7/d57/_m_m_f___score_board_8hpp_source.html">MMFunc/MMF_ScoreBoard.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../dd/dc7/_m_m_f___disp_bmp_static_8hpp_source.html">MMFunc/MMF_DispBmpStatic.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d5/da4/_m_m_f___disp_date_time_8hpp_source.html">MMFunc/MMF_DispDateTime.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d4/dfa/_m_m_f___disp_time_d_h_t_8hpp_source.html">MMFunc/MMF_DispTimeDHT.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../de/d55/_m_m_f___stop_watch_8hpp_source.html">MMFunc/MMF_StopWatch.hpp</a>&quot;</code><br />
+</div>
+<p><a href="../../d9/de2/_m_m_f_p_setup_8hpp_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:ab4aa80517d7f2b5a804c5057f43ae0e2" id="r_ab4aa80517d7f2b5a804c5057f43ae0e2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab4aa80517d7f2b5a804c5057f43ae0e2">MMF_TYPE_0</a>&#160;&#160;&#160;(0x00)</td></tr>
+<tr class="memdesc:ab4aa80517d7f2b5a804c5057f43ae0e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">定义功能类型,为后期扩展作准备,目前默认只有0  <br /></td></tr>
+<tr class="separator:ab4aa80517d7f2b5a804c5057f43ae0e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06417a8e1976ba4a5fa4691e682d77ab" id="r_a06417a8e1976ba4a5fa4691e682d77ab"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a06417a8e1976ba4a5fa4691e682d77ab">MMF_ID_MATRIXTEST</a>&#160;&#160;&#160;(0x0000)</td></tr>
+<tr class="memdesc:a06417a8e1976ba4a5fa4691e682d77ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">矩阵测试功能块ID  <br /></td></tr>
+<tr class="separator:a06417a8e1976ba4a5fa4691e682d77ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b735d12f0fbc0bf9cefcc3aaf66c2bf" id="r_a7b735d12f0fbc0bf9cefcc3aaf66c2bf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7b735d12f0fbc0bf9cefcc3aaf66c2bf">MMF_ID_DISPTIME_1</a>&#160;&#160;&#160;(0x0001)</td></tr>
+<tr class="memdesc:a7b735d12f0fbc0bf9cefcc3aaf66c2bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">显示时间功能块ID  <br /></td></tr>
+<tr class="separator:a7b735d12f0fbc0bf9cefcc3aaf66c2bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8386af8e50c32589164dbf5f3dc8b1b4" id="r_a8386af8e50c32589164dbf5f3dc8b1b4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8386af8e50c32589164dbf5f3dc8b1b4">MMF_ID_DISPDATE_1</a>&#160;&#160;&#160;(0x0002)</td></tr>
+<tr class="memdesc:a8386af8e50c32589164dbf5f3dc8b1b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">显示日期功能块ID  <br /></td></tr>
+<tr class="separator:a8386af8e50c32589164dbf5f3dc8b1b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9b8283d3e8a354511859f5dda5da192" id="r_aa9b8283d3e8a354511859f5dda5da192"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa9b8283d3e8a354511859f5dda5da192">MMF_ID_DISPDHT_1</a>&#160;&#160;&#160;(0x0003)</td></tr>
+<tr class="memdesc:aa9b8283d3e8a354511859f5dda5da192"><td class="mdescLeft">&#160;</td><td class="mdescRight">显示温湿度功能块ID  <br /></td></tr>
+<tr class="separator:aa9b8283d3e8a354511859f5dda5da192"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5787632bc3db94c6c5def4529222b0a" id="r_ae5787632bc3db94c6c5def4529222b0a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae5787632bc3db94c6c5def4529222b0a">MMF_ID_DISPBMPLOOP</a>&#160;&#160;&#160;(0x0004)</td></tr>
+<tr class="memdesc:ae5787632bc3db94c6c5def4529222b0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">循环显示图片功能块ID  <br /></td></tr>
+<tr class="separator:ae5787632bc3db94c6c5def4529222b0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57e7db033a5792648543954f695c2c0a" id="r_a57e7db033a5792648543954f695c2c0a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a57e7db033a5792648543954f695c2c0a">MMF_ID_FILLRAINBOW</a>&#160;&#160;&#160;(0x0005)</td></tr>
+<tr class="memdesc:a57e7db033a5792648543954f695c2c0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">彩虹填充功能块ID  <br /></td></tr>
+<tr class="separator:a57e7db033a5792648543954f695c2c0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a223362d434f9fbe9fdf948669c8cf452" id="r_a223362d434f9fbe9fdf948669c8cf452"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a223362d434f9fbe9fdf948669c8cf452">MMF_ID_SCOREBOARD</a>&#160;&#160;&#160;(0x0006)</td></tr>
+<tr class="memdesc:a223362d434f9fbe9fdf948669c8cf452"><td class="mdescLeft">&#160;</td><td class="mdescRight">记分牌功能块ID  <br /></td></tr>
+<tr class="separator:a223362d434f9fbe9fdf948669c8cf452"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24f90aae5372d12b97475d0c68e060c3" id="r_a24f90aae5372d12b97475d0c68e060c3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a24f90aae5372d12b97475d0c68e060c3">MMF_ID_DICE</a>&#160;&#160;&#160;(0x0007)</td></tr>
+<tr class="memdesc:a24f90aae5372d12b97475d0c68e060c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">投骰子功能块ID  <br /></td></tr>
+<tr class="separator:a24f90aae5372d12b97475d0c68e060c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a191e51b2db9a6b085b6017c1e04a6e9e" id="r_a191e51b2db9a6b085b6017c1e04a6e9e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a191e51b2db9a6b085b6017c1e04a6e9e">MMF_ID_COUNTDOWN</a>&#160;&#160;&#160;(0x0008)</td></tr>
+<tr class="memdesc:a191e51b2db9a6b085b6017c1e04a6e9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">倒计时功能块ID  <br /></td></tr>
+<tr class="separator:a191e51b2db9a6b085b6017c1e04a6e9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ac57b2c1ad9ffd0e53a7c7dee7620e0" id="r_a1ac57b2c1ad9ffd0e53a7c7dee7620e0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1ac57b2c1ad9ffd0e53a7c7dee7620e0">MMF_ID_DISPBMPSTATIC</a>&#160;&#160;&#160;(0x0009)</td></tr>
+<tr class="memdesc:a1ac57b2c1ad9ffd0e53a7c7dee7620e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">显示BMP静止图片ID  <br /></td></tr>
+<tr class="separator:a1ac57b2c1ad9ffd0e53a7c7dee7620e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6e5ca6fce2101bff8573b536d958e58" id="r_aa6e5ca6fce2101bff8573b536d958e58"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa6e5ca6fce2101bff8573b536d958e58">MMF_ID_DISPDATETIME</a>&#160;&#160;&#160;(0x000A)</td></tr>
+<tr class="memdesc:aa6e5ca6fce2101bff8573b536d958e58"><td class="mdescLeft">&#160;</td><td class="mdescRight">显示日期时间ID  <br /></td></tr>
+<tr class="separator:aa6e5ca6fce2101bff8573b536d958e58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67f51de0935cbafe682d7dd2bfabced0" id="r_a67f51de0935cbafe682d7dd2bfabced0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a67f51de0935cbafe682d7dd2bfabced0">MMF_ID_DISPTIMEDHT</a>&#160;&#160;&#160;(0x000B)</td></tr>
+<tr class="memdesc:a67f51de0935cbafe682d7dd2bfabced0"><td class="mdescLeft">&#160;</td><td class="mdescRight">显示时间空气温湿度ID  <br /></td></tr>
+<tr class="separator:a67f51de0935cbafe682d7dd2bfabced0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed50f98e52a95ed69ed76d34d08534fd" id="r_aed50f98e52a95ed69ed76d34d08534fd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aed50f98e52a95ed69ed76d34d08534fd">MMF_ID_STOPWATCH</a>&#160;&#160;&#160;(0x000C)</td></tr>
+<tr class="memdesc:aed50f98e52a95ed69ed76d34d08534fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">定义计时器模块ID  <br /></td></tr>
+<tr class="separator:aed50f98e52a95ed69ed76d34d08534fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a0347e4a83067f757d0f774afc26c6a4f" id="r_a0347e4a83067f757d0f774afc26c6a4f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0347e4a83067f757d0f774afc26c6a4f">MMFPSetup</a> ()</td></tr>
+<tr class="memdesc:a0347e4a83067f757d0f774afc26c6a4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">将功能模块加入功能池  <br /></td></tr>
+<tr class="separator:a0347e4a83067f757d0f774afc26c6a4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+变量</h2></td></tr>
+<tr class="memitem:afc2e90d65497d9a619a7a01de8887afb" id="r_afc2e90d65497d9a619a7a01de8887afb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../da/d7b/class_m_m_f___matrix_test.html">MMF_MatrixTest</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afc2e90d65497d9a619a7a01de8887afb">mmf_matrixtest</a> (<a class="el" href="#a06417a8e1976ba4a5fa4691e682d77ab">MMF_ID_MATRIXTEST</a>)</td></tr>
+<tr class="memdesc:afc2e90d65497d9a619a7a01de8887afb"><td class="mdescLeft">&#160;</td><td class="mdescRight">矩阵功能块实例  <br /></td></tr>
+<tr class="separator:afc2e90d65497d9a619a7a01de8887afb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4d2395ec8c95ca8f072fbf90f3ef2de" id="r_ac4d2395ec8c95ca8f072fbf90f3ef2de"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d34/class_m_m_f___disp_time__1.html">MMF_DispTime_1</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac4d2395ec8c95ca8f072fbf90f3ef2de">mmf_disptime_1</a> (<a class="el" href="#a7b735d12f0fbc0bf9cefcc3aaf66c2bf">MMF_ID_DISPTIME_1</a>)</td></tr>
+<tr class="memdesc:ac4d2395ec8c95ca8f072fbf90f3ef2de"><td class="mdescLeft">&#160;</td><td class="mdescRight">显示时间功能块实例  <br /></td></tr>
+<tr class="separator:ac4d2395ec8c95ca8f072fbf90f3ef2de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d5de4ca79250d079898a1f08b31c9db" id="r_a5d5de4ca79250d079898a1f08b31c9db"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/ddf/class_m_m_f___disp_date__1.html">MMF_DispDate_1</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5d5de4ca79250d079898a1f08b31c9db">mmf_dispdate_1</a> (<a class="el" href="#a8386af8e50c32589164dbf5f3dc8b1b4">MMF_ID_DISPDATE_1</a>)</td></tr>
+<tr class="memdesc:a5d5de4ca79250d079898a1f08b31c9db"><td class="mdescLeft">&#160;</td><td class="mdescRight">显示日期功能块实例  <br /></td></tr>
+<tr class="separator:a5d5de4ca79250d079898a1f08b31c9db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3b3e723cd1b313fda292caec2f3593f" id="r_af3b3e723cd1b313fda292caec2f3593f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d6/d58/class_m_m_f___disp_d_h_t__1.html">MMF_DispDHT_1</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af3b3e723cd1b313fda292caec2f3593f">mmf_dispdht_1</a> (<a class="el" href="#aa9b8283d3e8a354511859f5dda5da192">MMF_ID_DISPDHT_1</a>)</td></tr>
+<tr class="memdesc:af3b3e723cd1b313fda292caec2f3593f"><td class="mdescLeft">&#160;</td><td class="mdescRight">显示温湿度功能块实例  <br /></td></tr>
+<tr class="separator:af3b3e723cd1b313fda292caec2f3593f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fdde3e23adf5e2dee45db590f929536" id="r_a9fdde3e23adf5e2dee45db590f929536"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d4b/class_m_m_f___disp_bmp_loop.html">MMF_DispBmpLoop</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9fdde3e23adf5e2dee45db590f929536">mmf_dispbmploop</a> (<a class="el" href="#ae5787632bc3db94c6c5def4529222b0a">MMF_ID_DISPBMPLOOP</a>)</td></tr>
+<tr class="memdesc:a9fdde3e23adf5e2dee45db590f929536"><td class="mdescLeft">&#160;</td><td class="mdescRight">循环显示图片功能实例  <br /></td></tr>
+<tr class="separator:a9fdde3e23adf5e2dee45db590f929536"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ef6f4ce311bdefd782760e60973c360" id="r_a9ef6f4ce311bdefd782760e60973c360"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/d30/class_m_m_f___fill_rainbow.html">MMF_FillRainbow</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9ef6f4ce311bdefd782760e60973c360">mmf_fillrainbow</a> (<a class="el" href="#a57e7db033a5792648543954f695c2c0a">MMF_ID_FILLRAINBOW</a>)</td></tr>
+<tr class="memdesc:a9ef6f4ce311bdefd782760e60973c360"><td class="mdescLeft">&#160;</td><td class="mdescRight">彩虹填充功能块实例  <br /></td></tr>
+<tr class="separator:a9ef6f4ce311bdefd782760e60973c360"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c92373c7e0207f39a3136a87e475559" id="r_a8c92373c7e0207f39a3136a87e475559"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d2f/class_m_m_f___score_board.html">MMF_ScoreBoard</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8c92373c7e0207f39a3136a87e475559">mmf_scoreboard</a> (<a class="el" href="#a223362d434f9fbe9fdf948669c8cf452">MMF_ID_SCOREBOARD</a>)</td></tr>
+<tr class="memdesc:a8c92373c7e0207f39a3136a87e475559"><td class="mdescLeft">&#160;</td><td class="mdescRight">记分牌功能块实例  <br /></td></tr>
+<tr class="separator:a8c92373c7e0207f39a3136a87e475559"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc6ea8b9366316c228c2d92ca0f77ef1" id="r_adc6ea8b9366316c228c2d92ca0f77ef1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d4f/class_m_m_f___dice.html">MMF_Dice</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adc6ea8b9366316c228c2d92ca0f77ef1">mmf_dice</a> (<a class="el" href="#a24f90aae5372d12b97475d0c68e060c3">MMF_ID_DICE</a>)</td></tr>
+<tr class="memdesc:adc6ea8b9366316c228c2d92ca0f77ef1"><td class="mdescLeft">&#160;</td><td class="mdescRight">投骰子功能块实例  <br /></td></tr>
+<tr class="separator:adc6ea8b9366316c228c2d92ca0f77ef1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43f4a64aeb4c119d18506f3e2c4a9a8a" id="r_a43f4a64aeb4c119d18506f3e2c4a9a8a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/dbc/class_m_m_f___count_down.html">MMF_CountDown</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a43f4a64aeb4c119d18506f3e2c4a9a8a">mmf_countdown</a> (<a class="el" href="#a191e51b2db9a6b085b6017c1e04a6e9e">MMF_ID_COUNTDOWN</a>)</td></tr>
+<tr class="memdesc:a43f4a64aeb4c119d18506f3e2c4a9a8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">倒计时功能块实例  <br /></td></tr>
+<tr class="separator:a43f4a64aeb4c119d18506f3e2c4a9a8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29a016a96f12cce90b6b7b9db297817e" id="r_a29a016a96f12cce90b6b7b9db297817e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/d41/class_m_m_f___disp_bmp_static.html">MMF_DispBmpStatic</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a29a016a96f12cce90b6b7b9db297817e">mmf_dispbmpstatic</a> (<a class="el" href="#a1ac57b2c1ad9ffd0e53a7c7dee7620e0">MMF_ID_DISPBMPSTATIC</a>)</td></tr>
+<tr class="memdesc:a29a016a96f12cce90b6b7b9db297817e"><td class="mdescLeft">&#160;</td><td class="mdescRight">显示BMP静止功能  <br /></td></tr>
+<tr class="separator:a29a016a96f12cce90b6b7b9db297817e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8f3ce5c1d16020d3f875ba87f978609" id="r_af8f3ce5c1d16020d3f875ba87f978609"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/dcf/class_m_m_f___disp_date_time.html">MMF_DispDateTime</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af8f3ce5c1d16020d3f875ba87f978609">mmf_dispdatetime</a> (<a class="el" href="#aa6e5ca6fce2101bff8573b536d958e58">MMF_ID_DISPDATETIME</a>)</td></tr>
+<tr class="memdesc:af8f3ce5c1d16020d3f875ba87f978609"><td class="mdescLeft">&#160;</td><td class="mdescRight">显示日期时间功能实例  <br /></td></tr>
+<tr class="separator:af8f3ce5c1d16020d3f875ba87f978609"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae86a07e1a118528ea62b8a1551b1af03" id="r_ae86a07e1a118528ea62b8a1551b1af03"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d4/def/class_m_m_f___disp_time_d_h_t.html">MMF_DispTimeDHT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae86a07e1a118528ea62b8a1551b1af03">mmf_disptimedht</a> (<a class="el" href="#a67f51de0935cbafe682d7dd2bfabced0">MMF_ID_DISPTIMEDHT</a>)</td></tr>
+<tr class="memdesc:ae86a07e1a118528ea62b8a1551b1af03"><td class="mdescLeft">&#160;</td><td class="mdescRight">显示时间DHT功能实例  <br /></td></tr>
+<tr class="separator:ae86a07e1a118528ea62b8a1551b1af03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbcce4b29f0f915b3cab5a1be15d2ee4" id="r_acbcce4b29f0f915b3cab5a1be15d2ee4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d5c/class_m_m_f___stop_watch.html">MMF_StopWatch</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acbcce4b29f0f915b3cab5a1be15d2ee4">mmf_stopwatch</a> (<a class="el" href="#aed50f98e52a95ed69ed76d34d08534fd">MMF_ID_STOPWATCH</a>)</td></tr>
+<tr class="separator:acbcce4b29f0f915b3cab5a1be15d2ee4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>功能池初始化 </p>
+<dl class="section date"><dt>日期</dt><dd>2024/02/15 01:31:56 </dd></dl>
+<dl class="section author"><dt>作者</dt><dd></dd></dl>
+<dl class="section version"><dt>版本</dt><dd>1.0</dd></dl>
+<p>将所有功能块集中创建初始化，并放入功能池中 </p>
+</div><h2 class="groupheader">宏定义说明</h2>
+<a id="a191e51b2db9a6b085b6017c1e04a6e9e" name="a191e51b2db9a6b085b6017c1e04a6e9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a191e51b2db9a6b085b6017c1e04a6e9e">&#9670;&#160;</a></span>MMF_ID_COUNTDOWN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MMF_ID_COUNTDOWN&#160;&#160;&#160;(0x0008)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>倒计时功能块ID </p>
+
+<p class="reference">被这些函数引用 <a class="el" href="../../dd/d0e/class_m_m_menu.html#a7c4d456692b8e7ab26bcc93c431bd12a">MMMenu::LoadItems()</a>.</p>
+
+</div>
+</div>
+<a id="a24f90aae5372d12b97475d0c68e060c3" name="a24f90aae5372d12b97475d0c68e060c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24f90aae5372d12b97475d0c68e060c3">&#9670;&#160;</a></span>MMF_ID_DICE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MMF_ID_DICE&#160;&#160;&#160;(0x0007)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>投骰子功能块ID </p>
+
+<p class="reference">被这些函数引用 <a class="el" href="../../dd/d0e/class_m_m_menu.html#a7c4d456692b8e7ab26bcc93c431bd12a">MMMenu::LoadItems()</a>.</p>
+
+</div>
+</div>
+<a id="ae5787632bc3db94c6c5def4529222b0a" name="ae5787632bc3db94c6c5def4529222b0a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5787632bc3db94c6c5def4529222b0a">&#9670;&#160;</a></span>MMF_ID_DISPBMPLOOP</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MMF_ID_DISPBMPLOOP&#160;&#160;&#160;(0x0004)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>循环显示图片功能块ID </p>
+
+<p class="reference">被这些函数引用 <a class="el" href="../../dd/d0e/class_m_m_menu.html#a7c4d456692b8e7ab26bcc93c431bd12a">MMMenu::LoadItems()</a>.</p>
+
+</div>
+</div>
+<a id="a1ac57b2c1ad9ffd0e53a7c7dee7620e0" name="a1ac57b2c1ad9ffd0e53a7c7dee7620e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ac57b2c1ad9ffd0e53a7c7dee7620e0">&#9670;&#160;</a></span>MMF_ID_DISPBMPSTATIC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MMF_ID_DISPBMPSTATIC&#160;&#160;&#160;(0x0009)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>显示BMP静止图片ID </p>
+
+<p class="reference">被这些函数引用 <a class="el" href="../../dd/d0e/class_m_m_menu.html#a7c4d456692b8e7ab26bcc93c431bd12a">MMMenu::LoadItems()</a>.</p>
+
+</div>
+</div>
+<a id="a8386af8e50c32589164dbf5f3dc8b1b4" name="a8386af8e50c32589164dbf5f3dc8b1b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8386af8e50c32589164dbf5f3dc8b1b4">&#9670;&#160;</a></span>MMF_ID_DISPDATE_1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MMF_ID_DISPDATE_1&#160;&#160;&#160;(0x0002)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>显示日期功能块ID </p>
+
+<p class="reference">被这些函数引用 <a class="el" href="../../dd/d0e/class_m_m_menu.html#a7c4d456692b8e7ab26bcc93c431bd12a">MMMenu::LoadItems()</a>.</p>
+
+</div>
+</div>
+<a id="aa6e5ca6fce2101bff8573b536d958e58" name="aa6e5ca6fce2101bff8573b536d958e58"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6e5ca6fce2101bff8573b536d958e58">&#9670;&#160;</a></span>MMF_ID_DISPDATETIME</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MMF_ID_DISPDATETIME&#160;&#160;&#160;(0x000A)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>显示日期时间ID </p>
+
+<p class="reference">被这些函数引用 <a class="el" href="../../dd/d0e/class_m_m_menu.html#a7c4d456692b8e7ab26bcc93c431bd12a">MMMenu::LoadItems()</a>.</p>
+
+</div>
+</div>
+<a id="aa9b8283d3e8a354511859f5dda5da192" name="aa9b8283d3e8a354511859f5dda5da192"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9b8283d3e8a354511859f5dda5da192">&#9670;&#160;</a></span>MMF_ID_DISPDHT_1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MMF_ID_DISPDHT_1&#160;&#160;&#160;(0x0003)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>显示温湿度功能块ID </p>
+
+<p class="reference">被这些函数引用 <a class="el" href="../../dd/d0e/class_m_m_menu.html#a7c4d456692b8e7ab26bcc93c431bd12a">MMMenu::LoadItems()</a>.</p>
+
+</div>
+</div>
+<a id="a7b735d12f0fbc0bf9cefcc3aaf66c2bf" name="a7b735d12f0fbc0bf9cefcc3aaf66c2bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b735d12f0fbc0bf9cefcc3aaf66c2bf">&#9670;&#160;</a></span>MMF_ID_DISPTIME_1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MMF_ID_DISPTIME_1&#160;&#160;&#160;(0x0001)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>显示时间功能块ID </p>
+
+<p class="reference">被这些函数引用 <a class="el" href="../../dd/d0e/class_m_m_menu.html#a7c4d456692b8e7ab26bcc93c431bd12a">MMMenu::LoadItems()</a>.</p>
+
+</div>
+</div>
+<a id="a67f51de0935cbafe682d7dd2bfabced0" name="a67f51de0935cbafe682d7dd2bfabced0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67f51de0935cbafe682d7dd2bfabced0">&#9670;&#160;</a></span>MMF_ID_DISPTIMEDHT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MMF_ID_DISPTIMEDHT&#160;&#160;&#160;(0x000B)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>显示时间空气温湿度ID </p>
+
+<p class="reference">被这些函数引用 <a class="el" href="../../dd/d0e/class_m_m_menu.html#a7c4d456692b8e7ab26bcc93c431bd12a">MMMenu::LoadItems()</a>.</p>
+
+</div>
+</div>
+<a id="a57e7db033a5792648543954f695c2c0a" name="a57e7db033a5792648543954f695c2c0a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57e7db033a5792648543954f695c2c0a">&#9670;&#160;</a></span>MMF_ID_FILLRAINBOW</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MMF_ID_FILLRAINBOW&#160;&#160;&#160;(0x0005)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>彩虹填充功能块ID </p>
+
+<p class="reference">被这些函数引用 <a class="el" href="../../dd/d0e/class_m_m_menu.html#a7c4d456692b8e7ab26bcc93c431bd12a">MMMenu::LoadItems()</a>.</p>
+
+</div>
+</div>
+<a id="a06417a8e1976ba4a5fa4691e682d77ab" name="a06417a8e1976ba4a5fa4691e682d77ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06417a8e1976ba4a5fa4691e682d77ab">&#9670;&#160;</a></span>MMF_ID_MATRIXTEST</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MMF_ID_MATRIXTEST&#160;&#160;&#160;(0x0000)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>矩阵测试功能块ID </p>
+
+<p class="reference">被这些函数引用 <a class="el" href="../../dd/d0e/class_m_m_menu.html#a7c4d456692b8e7ab26bcc93c431bd12a">MMMenu::LoadItems()</a>.</p>
+
+</div>
+</div>
+<a id="a223362d434f9fbe9fdf948669c8cf452" name="a223362d434f9fbe9fdf948669c8cf452"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a223362d434f9fbe9fdf948669c8cf452">&#9670;&#160;</a></span>MMF_ID_SCOREBOARD</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MMF_ID_SCOREBOARD&#160;&#160;&#160;(0x0006)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>记分牌功能块ID </p>
+
+<p class="reference">被这些函数引用 <a class="el" href="../../dd/d0e/class_m_m_menu.html#a7c4d456692b8e7ab26bcc93c431bd12a">MMMenu::LoadItems()</a>.</p>
+
+</div>
+</div>
+<a id="aed50f98e52a95ed69ed76d34d08534fd" name="aed50f98e52a95ed69ed76d34d08534fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed50f98e52a95ed69ed76d34d08534fd">&#9670;&#160;</a></span>MMF_ID_STOPWATCH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MMF_ID_STOPWATCH&#160;&#160;&#160;(0x000C)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>定义计时器模块ID </p>
+
+<p class="reference">被这些函数引用 <a class="el" href="../../dd/d0e/class_m_m_menu.html#a7c4d456692b8e7ab26bcc93c431bd12a">MMMenu::LoadItems()</a>.</p>
+
+</div>
+</div>
+<a id="ab4aa80517d7f2b5a804c5057f43ae0e2" name="ab4aa80517d7f2b5a804c5057f43ae0e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4aa80517d7f2b5a804c5057f43ae0e2">&#9670;&#160;</a></span>MMF_TYPE_0</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MMF_TYPE_0&#160;&#160;&#160;(0x00)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>定义功能类型,为后期扩展作准备,目前默认只有0 </p>
+
+</div>
+</div>
+<h2 class="groupheader">函数说明</h2>
+<a id="a0347e4a83067f757d0f774afc26c6a4f" name="a0347e4a83067f757d0f774afc26c6a4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0347e4a83067f757d0f774afc26c6a4f">&#9670;&#160;</a></span>MMFPSetup()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MMFPSetup </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>将功能模块加入功能池 </p>
+
+<p class="reference">引用了 <a class="el" href="../../d9/d1a/class_m_m_func_pool.html#afcde4d8440a5cc28e4d58fee6e87c6fa">MMFuncPool::Append()</a>, <a class="el" href="../../d9/d1a/class_m_m_func_pool.html#acec6eef8dd141116d856f59a730478e1">MMFuncPool::Clear()</a>, <a class="el" href="#a43f4a64aeb4c119d18506f3e2c4a9a8a">mmf_countdown</a>, <a class="el" href="#adc6ea8b9366316c228c2d92ca0f77ef1">mmf_dice</a>, <a class="el" href="#a9fdde3e23adf5e2dee45db590f929536">mmf_dispbmploop</a>, <a class="el" href="#a29a016a96f12cce90b6b7b9db297817e">mmf_dispbmpstatic</a>, <a class="el" href="#a5d5de4ca79250d079898a1f08b31c9db">mmf_dispdate_1</a>, <a class="el" href="#af8f3ce5c1d16020d3f875ba87f978609">mmf_dispdatetime</a>, <a class="el" href="#af3b3e723cd1b313fda292caec2f3593f">mmf_dispdht_1</a>, <a class="el" href="#ac4d2395ec8c95ca8f072fbf90f3ef2de">mmf_disptime_1</a>, <a class="el" href="#ae86a07e1a118528ea62b8a1551b1af03">mmf_disptimedht</a>, <a class="el" href="#a9ef6f4ce311bdefd782760e60973c360">mmf_fillrainbow</a>, <a class="el" href="#afc2e90d65497d9a619a7a01de8887afb">mmf_matrixtest</a>, <a class="el" href="#a8c92373c7e0207f39a3136a87e475559">mmf_scoreboard</a>, <a class="el" href="#acbcce4b29f0f915b3cab5a1be15d2ee4">mmf_stopwatch</a> , 以及 <a class="el" href="../../d7/d08/_m_m_func_pool_8hpp.html#aeeb0d5d8fca7184df013a0c96283ea9f">mmfuncpool</a>.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="../../d8/da8/class_m_m_main.html#af37ef7599a15746eadbb3be0e7a07ecd">MMMain::Init()</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">变量说明</h2>
+<a id="a43f4a64aeb4c119d18506f3e2c4a9a8a" name="a43f4a64aeb4c119d18506f3e2c4a9a8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43f4a64aeb4c119d18506f3e2c4a9a8a">&#9670;&#160;</a></span>mmf_countdown</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dc/dbc/class_m_m_f___count_down.html">MMF_CountDown</a> mmf_countdown(<a class="el" href="#a191e51b2db9a6b085b6017c1e04a6e9e">MMF_ID_COUNTDOWN</a>) </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#a191e51b2db9a6b085b6017c1e04a6e9e">MMF_ID_COUNTDOWN</a></td>          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>倒计时功能块实例 </p>
+
+<p class="reference">被这些函数引用 <a class="el" href="#a0347e4a83067f757d0f774afc26c6a4f">MMFPSetup()</a>.</p>
+
+</div>
+</div>
+<a id="adc6ea8b9366316c228c2d92ca0f77ef1" name="adc6ea8b9366316c228c2d92ca0f77ef1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc6ea8b9366316c228c2d92ca0f77ef1">&#9670;&#160;</a></span>mmf_dice</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/d4f/class_m_m_f___dice.html">MMF_Dice</a> mmf_dice(<a class="el" href="#a24f90aae5372d12b97475d0c68e060c3">MMF_ID_DICE</a>) </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#a24f90aae5372d12b97475d0c68e060c3">MMF_ID_DICE</a></td>          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>投骰子功能块实例 </p>
+
+<p class="reference">被这些函数引用 <a class="el" href="#a0347e4a83067f757d0f774afc26c6a4f">MMFPSetup()</a>.</p>
+
+</div>
+</div>
+<a id="a9fdde3e23adf5e2dee45db590f929536" name="a9fdde3e23adf5e2dee45db590f929536"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9fdde3e23adf5e2dee45db590f929536">&#9670;&#160;</a></span>mmf_dispbmploop</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d8/d4b/class_m_m_f___disp_bmp_loop.html">MMF_DispBmpLoop</a> mmf_dispbmploop(<a class="el" href="#ae5787632bc3db94c6c5def4529222b0a">MMF_ID_DISPBMPLOOP</a>) </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#ae5787632bc3db94c6c5def4529222b0a">MMF_ID_DISPBMPLOOP</a></td>          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>循环显示图片功能实例 </p>
+
+<p class="reference">被这些函数引用 <a class="el" href="#a0347e4a83067f757d0f774afc26c6a4f">MMFPSetup()</a>.</p>
+
+</div>
+</div>
+<a id="a29a016a96f12cce90b6b7b9db297817e" name="a29a016a96f12cce90b6b7b9db297817e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29a016a96f12cce90b6b7b9db297817e">&#9670;&#160;</a></span>mmf_dispbmpstatic</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dc/d41/class_m_m_f___disp_bmp_static.html">MMF_DispBmpStatic</a> mmf_dispbmpstatic(<a class="el" href="#a1ac57b2c1ad9ffd0e53a7c7dee7620e0">MMF_ID_DISPBMPSTATIC</a>) </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#a1ac57b2c1ad9ffd0e53a7c7dee7620e0">MMF_ID_DISPBMPSTATIC</a></td>          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>显示BMP静止功能 </p>
+
+<p class="reference">被这些函数引用 <a class="el" href="../../d8/da8/class_m_m_main.html#a96eadc18e89aa24f3b433810a264e883">MMMain::LoadCfg()</a> , 以及 <a class="el" href="#a0347e4a83067f757d0f774afc26c6a4f">MMFPSetup()</a>.</p>
+
+</div>
+</div>
+<a id="a5d5de4ca79250d079898a1f08b31c9db" name="a5d5de4ca79250d079898a1f08b31c9db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d5de4ca79250d079898a1f08b31c9db">&#9670;&#160;</a></span>mmf_dispdate_1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d2/ddf/class_m_m_f___disp_date__1.html">MMF_DispDate_1</a> mmf_dispdate_1(<a class="el" href="#a8386af8e50c32589164dbf5f3dc8b1b4">MMF_ID_DISPDATE_1</a>) </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#a8386af8e50c32589164dbf5f3dc8b1b4">MMF_ID_DISPDATE_1</a></td>          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>显示日期功能块实例 </p>
+
+<p class="reference">被这些函数引用 <a class="el" href="#a0347e4a83067f757d0f774afc26c6a4f">MMFPSetup()</a>.</p>
+
+</div>
+</div>
+<a id="af8f3ce5c1d16020d3f875ba87f978609" name="af8f3ce5c1d16020d3f875ba87f978609"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8f3ce5c1d16020d3f875ba87f978609">&#9670;&#160;</a></span>mmf_dispdatetime</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/dcf/class_m_m_f___disp_date_time.html">MMF_DispDateTime</a> mmf_dispdatetime(<a class="el" href="#aa6e5ca6fce2101bff8573b536d958e58">MMF_ID_DISPDATETIME</a>) </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#aa6e5ca6fce2101bff8573b536d958e58">MMF_ID_DISPDATETIME</a></td>          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>显示日期时间功能实例 </p>
+
+<p class="reference">被这些函数引用 <a class="el" href="#a0347e4a83067f757d0f774afc26c6a4f">MMFPSetup()</a>.</p>
+
+</div>
+</div>
+<a id="af3b3e723cd1b313fda292caec2f3593f" name="af3b3e723cd1b313fda292caec2f3593f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3b3e723cd1b313fda292caec2f3593f">&#9670;&#160;</a></span>mmf_dispdht_1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d6/d58/class_m_m_f___disp_d_h_t__1.html">MMF_DispDHT_1</a> mmf_dispdht_1(<a class="el" href="#aa9b8283d3e8a354511859f5dda5da192">MMF_ID_DISPDHT_1</a>) </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#aa9b8283d3e8a354511859f5dda5da192">MMF_ID_DISPDHT_1</a></td>          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>显示温湿度功能块实例 </p>
+
+<p class="reference">被这些函数引用 <a class="el" href="#a0347e4a83067f757d0f774afc26c6a4f">MMFPSetup()</a>.</p>
+
+</div>
+</div>
+<a id="ac4d2395ec8c95ca8f072fbf90f3ef2de" name="ac4d2395ec8c95ca8f072fbf90f3ef2de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4d2395ec8c95ca8f072fbf90f3ef2de">&#9670;&#160;</a></span>mmf_disptime_1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/d34/class_m_m_f___disp_time__1.html">MMF_DispTime_1</a> mmf_disptime_1(<a class="el" href="#a7b735d12f0fbc0bf9cefcc3aaf66c2bf">MMF_ID_DISPTIME_1</a>) </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#a7b735d12f0fbc0bf9cefcc3aaf66c2bf">MMF_ID_DISPTIME_1</a></td>          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>显示时间功能块实例 </p>
+
+<p class="reference">被这些函数引用 <a class="el" href="#a0347e4a83067f757d0f774afc26c6a4f">MMFPSetup()</a>.</p>
+
+</div>
+</div>
+<a id="ae86a07e1a118528ea62b8a1551b1af03" name="ae86a07e1a118528ea62b8a1551b1af03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae86a07e1a118528ea62b8a1551b1af03">&#9670;&#160;</a></span>mmf_disptimedht</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d4/def/class_m_m_f___disp_time_d_h_t.html">MMF_DispTimeDHT</a> mmf_disptimedht(<a class="el" href="#a67f51de0935cbafe682d7dd2bfabced0">MMF_ID_DISPTIMEDHT</a>) </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#a67f51de0935cbafe682d7dd2bfabced0">MMF_ID_DISPTIMEDHT</a></td>          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>显示时间DHT功能实例 </p>
+
+<p class="reference">被这些函数引用 <a class="el" href="#a0347e4a83067f757d0f774afc26c6a4f">MMFPSetup()</a>.</p>
+
+</div>
+</div>
+<a id="a9ef6f4ce311bdefd782760e60973c360" name="a9ef6f4ce311bdefd782760e60973c360"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ef6f4ce311bdefd782760e60973c360">&#9670;&#160;</a></span>mmf_fillrainbow</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d2/d30/class_m_m_f___fill_rainbow.html">MMF_FillRainbow</a> mmf_fillrainbow(<a class="el" href="#a57e7db033a5792648543954f695c2c0a">MMF_ID_FILLRAINBOW</a>) </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#a57e7db033a5792648543954f695c2c0a">MMF_ID_FILLRAINBOW</a></td>          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>彩虹填充功能块实例 </p>
+
+<p class="reference">被这些函数引用 <a class="el" href="#a0347e4a83067f757d0f774afc26c6a4f">MMFPSetup()</a>.</p>
+
+</div>
+</div>
+<a id="afc2e90d65497d9a619a7a01de8887afb" name="afc2e90d65497d9a619a7a01de8887afb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc2e90d65497d9a619a7a01de8887afb">&#9670;&#160;</a></span>mmf_matrixtest</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../da/d7b/class_m_m_f___matrix_test.html">MMF_MatrixTest</a> mmf_matrixtest(<a class="el" href="#a06417a8e1976ba4a5fa4691e682d77ab">MMF_ID_MATRIXTEST</a>) </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#a06417a8e1976ba4a5fa4691e682d77ab">MMF_ID_MATRIXTEST</a></td>          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>矩阵功能块实例 </p>
+
+<p class="reference">被这些函数引用 <a class="el" href="#a0347e4a83067f757d0f774afc26c6a4f">MMFPSetup()</a>.</p>
+
+</div>
+</div>
+<a id="a8c92373c7e0207f39a3136a87e475559" name="a8c92373c7e0207f39a3136a87e475559"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c92373c7e0207f39a3136a87e475559">&#9670;&#160;</a></span>mmf_scoreboard</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/d2f/class_m_m_f___score_board.html">MMF_ScoreBoard</a> mmf_scoreboard(<a class="el" href="#a223362d434f9fbe9fdf948669c8cf452">MMF_ID_SCOREBOARD</a>) </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#a223362d434f9fbe9fdf948669c8cf452">MMF_ID_SCOREBOARD</a></td>          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>记分牌功能块实例 </p>
+
+<p class="reference">被这些函数引用 <a class="el" href="#a0347e4a83067f757d0f774afc26c6a4f">MMFPSetup()</a>.</p>
+
+</div>
+</div>
+<a id="acbcce4b29f0f915b3cab5a1be15d2ee4" name="acbcce4b29f0f915b3cab5a1be15d2ee4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acbcce4b29f0f915b3cab5a1be15d2ee4">&#9670;&#160;</a></span>mmf_stopwatch</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/d5c/class_m_m_f___stop_watch.html">MMF_StopWatch</a> mmf_stopwatch(<a class="el" href="#aed50f98e52a95ed69ed76d34d08534fd">MMF_ID_STOPWATCH</a>) </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#aed50f98e52a95ed69ed76d34d08534fd">MMF_ID_STOPWATCH</a></td>          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">被这些函数引用 <a class="el" href="#a0347e4a83067f757d0f774afc26c6a4f">MMFPSetup()</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="../../d9/de2/_m_m_f_p_setup_8hpp.html">MMFPSetup.hpp</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+  </ul>
+</div>
+</body>
+</html>

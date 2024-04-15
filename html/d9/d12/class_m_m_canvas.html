@@ -1,0 +1,338 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MagicMatrix 魔法矩阵: MMCanvas类 参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../clipboard.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../LOGO 64x64.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">MagicMatrix 魔法矩阵
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('d9/d12/class_m_m_canvas.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="../../d6/d74/class_m_m_canvas-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">MMCanvas类 参考<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>画布类  
+ <a href="#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../d5/d0f/_m_m_canvas_8hpp_source.html">MMCanvas.hpp</a>&gt;</code></p>
+<div class="dynheader">
+类 MMCanvas 继承关系图:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="../../d9/d12/class_m_m_canvas.png" usemap="#MMCanvas_map" alt=""/>
+  <map id="MMCanvas_map" name="MMCanvas_map">
+<area href="../../d3/df9/class_m_m_ram_bmp.html" title="内存图片类" alt="MMRamBmp" shape="rect" coords="0,56,82,80"/>
+<area href="../../d3/d6d/class_m_m_scr.html" title="矩阵屏幕类" alt="MMScr" shape="rect" coords="92,56,174,80"/>
+  </map>
+</div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a04d4a1a8e943a90fb4e2950331ec20ed" id="r_a04d4a1a8e943a90fb4e2950331ec20ed"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a04d4a1a8e943a90fb4e2950331ec20ed">SetPixel</a> (int16_t x, int16_t y, uint8_t R, uint8_t G, uint8_t B)=0</td></tr>
+<tr class="memdesc:a04d4a1a8e943a90fb4e2950331ec20ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置一个像素点  <br /></td></tr>
+<tr class="separator:a04d4a1a8e943a90fb4e2950331ec20ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3240813f4609f0da7278a9ed1131a2a0" id="r_a3240813f4609f0da7278a9ed1131a2a0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3240813f4609f0da7278a9ed1131a2a0">SetPixel</a> (int16_t x, int16_t y, <a class="el" href="../../d3/d2e/struct_r_g_b.html">RGB</a> rgb)</td></tr>
+<tr class="memdesc:a3240813f4609f0da7278a9ed1131a2a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">设置一个像素点  <br /></td></tr>
+<tr class="separator:a3240813f4609f0da7278a9ed1131a2a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97879ab2f9ffa45af6b83471d889fb61" id="r_a97879ab2f9ffa45af6b83471d889fb61"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a97879ab2f9ffa45af6b83471d889fb61">FillAll</a> (uint8_t R, uint8_t G, uint8_t B)</td></tr>
+<tr class="memdesc:a97879ab2f9ffa45af6b83471d889fb61"><td class="mdescLeft">&#160;</td><td class="mdescRight">填充所有  <br /></td></tr>
+<tr class="separator:a97879ab2f9ffa45af6b83471d889fb61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a091d771fe8f0f66f6d71f3b6243d43b1" id="r_a091d771fe8f0f66f6d71f3b6243d43b1"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a091d771fe8f0f66f6d71f3b6243d43b1">SetEmpty</a> ()</td></tr>
+<tr class="memdesc:a091d771fe8f0f66f6d71f3b6243d43b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">清空屏幕  <br /></td></tr>
+<tr class="separator:a091d771fe8f0f66f6d71f3b6243d43b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>画布类 </p>
+<p>实现画布功能相关的接口，由子类实现 </p>
+</div><h2 class="groupheader">成员函数说明</h2>
+<a id="a97879ab2f9ffa45af6b83471d889fb61" name="a97879ab2f9ffa45af6b83471d889fb61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97879ab2f9ffa45af6b83471d889fb61">&#9670;&#160;</a></span>FillAll()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MMCanvas::FillAll </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>R</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>G</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>B</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>填充所有 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">R</td><td>红色值 </td></tr>
+    <tr><td class="paramname">G</td><td>绿色值 </td></tr>
+    <tr><td class="paramname">B</td><td>蓝色值 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="reference">引用了 <a class="el" href="../../d6/d2b/_m_m_define_8hpp.html#a33fdd808e6d49f14e5d6e679e6a6dbea">M_HEIGHT</a>, <a class="el" href="../../d6/d2b/_m_m_define_8hpp.html#a3be0529049ae7cb377b60ef8ee4970b0">M_WIDTH</a> , 以及 <a class="el" href="#a04d4a1a8e943a90fb4e2950331ec20ed">SetPixel()</a>.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="../../d7/d40/class_m_m_fill.html#a7ef3ba0542648284a20c05249123c689">MMFill::AlarmLamp()</a>, <a class="el" href="../../d8/d4b/class_m_m_f___disp_bmp_loop.html#ace0e9e1afe69b6b5255bda430bd98650">MMF_DispBmpLoop::Exec()</a>, <a class="el" href="../../dc/d41/class_m_m_f___disp_bmp_static.html#ab7869a4c7a92cca07464fd92a1c31852">MMF_DispBmpStatic::Exec()</a>, <a class="el" href="../../da/d7b/class_m_m_f___matrix_test.html#a420f5b45e78af8437ce62ea7b4b053cd">MMF_MatrixTest::Exec()</a>, <a class="el" href="../../d7/d40/class_m_m_fill.html#ac42a848a4a58828067624eb2f23580fe">MMFill::MatrixTest()</a> , 以及 <a class="el" href="#a091d771fe8f0f66f6d71f3b6243d43b1">SetEmpty()</a>.</p>
+
+</div>
+</div>
+<a id="a091d771fe8f0f66f6d71f3b6243d43b1" name="a091d771fe8f0f66f6d71f3b6243d43b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a091d771fe8f0f66f6d71f3b6243d43b1">&#9670;&#160;</a></span>SetEmpty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void MMCanvas::SetEmpty </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>清空屏幕 </p>
+<dl class="section note"><dt>注解</dt><dd>需要手动重新绘制屏幕 </dd></dl>
+
+<p>被 <a class="el" href="../../d3/df9/class_m_m_ram_bmp.html#a84aae577c0111d3397839d9c265feb46">MMRamBmp</a> 重载.</p>
+
+<p class="reference">引用了 <a class="el" href="#a97879ab2f9ffa45af6b83471d889fb61">FillAll()</a>.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="../../d3/d6d/class_m_m_scr.html#a4c24fb1b0ff38ea04ee9a737e47e4ca3">MMScr::Clear()</a>, <a class="el" href="../../d7/d40/class_m_m_fill.html#a666e52956d528dc9646d041457039bd7">MMFill::ColFill()</a>, <a class="el" href="../../d7/d40/class_m_m_fill.html#ada8bbed1d8ab908c4269507ef13cf655">MMFill::DiagFill()</a>, <a class="el" href="../../d7/d40/class_m_m_fill.html#a2304841d813e2a30e8617a2e808aeeac">MMFill::DiagFill_1()</a>, <a class="el" href="../../d7/d5c/class_m_m_f___stop_watch.html#a9f2a13ee41612ed5d434acf0cd62e8e1">MMF_StopWatch::Disp()</a>, <a class="el" href="../../dc/dbc/class_m_m_f___count_down.html#a55ec870ac223e2093954639cc041d942">MMF_CountDown::DispRemain()</a>, <a class="el" href="../../d2/d30/class_m_m_f___fill_rainbow.html#a0ffbd4fb174621aad8c8f76dd6582166">MMF_FillRainbow::Exec()</a>, <a class="el" href="../../da/d7b/class_m_m_f___matrix_test.html#a420f5b45e78af8437ce62ea7b4b053cd">MMF_MatrixTest::Exec()</a>, <a class="el" href="../../d7/d40/class_m_m_fill.html#ac42a848a4a58828067624eb2f23580fe">MMFill::MatrixTest()</a>, <a class="el" href="../../d7/d40/class_m_m_fill.html#aa574b9386e3c0c5baee6ef8370becc7c">MMFill::PixTestLogicalOrder()</a> , 以及 <a class="el" href="../../d7/d40/class_m_m_fill.html#afb776de434de0a76684f9527c0a78f3f">MMFill::SnakeFill()</a>.</p>
+
+</div>
+</div>
+<a id="a3240813f4609f0da7278a9ed1131a2a0" name="a3240813f4609f0da7278a9ed1131a2a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3240813f4609f0da7278a9ed1131a2a0">&#9670;&#160;</a></span>SetPixel() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void MMCanvas::SetPixel </td>
+          <td>(</td>
+          <td class="paramtype">int16_t</td>          <td class="paramname"><span class="paramname"><em>x</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int16_t</td>          <td class="paramname"><span class="paramname"><em>y</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d3/d2e/struct_r_g_b.html">RGB</a></td>          <td class="paramname"><span class="paramname"><em>rgb</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置一个像素点 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>横坐标 </td></tr>
+    <tr><td class="paramname">y</td><td>纵坐标 </td></tr>
+    <tr><td class="paramname">rgb</td><td>RGB结构体 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="reference">引用了 <a class="el" href="../../d3/d2e/struct_r_g_b.html#a8acb10a36384ff4890fd925ece447bf4">RGB::B</a>, <a class="el" href="../../d3/d2e/struct_r_g_b.html#a6deeb10e5707a4029fd79e38abe53f6d">RGB::G</a>, <a class="el" href="../../d3/d2e/struct_r_g_b.html#ac85e490cdcda4227a3f84f2d9e9da4cb">RGB::R</a> , 以及 <a class="el" href="#a04d4a1a8e943a90fb4e2950331ec20ed">SetPixel()</a>.</p>
+
+</div>
+</div>
+<a id="a04d4a1a8e943a90fb4e2950331ec20ed" name="a04d4a1a8e943a90fb4e2950331ec20ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04d4a1a8e943a90fb4e2950331ec20ed">&#9670;&#160;</a></span>SetPixel() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void MMCanvas::SetPixel </td>
+          <td>(</td>
+          <td class="paramtype">int16_t</td>          <td class="paramname"><span class="paramname"><em>x</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int16_t</td>          <td class="paramname"><span class="paramname"><em>y</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>R</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>G</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t</td>          <td class="paramname"><span class="paramname"><em>B</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>设置一个像素点 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>横坐标 </td></tr>
+    <tr><td class="paramname">y</td><td>纵坐标 </td></tr>
+    <tr><td class="paramname">R</td><td>红色值 </td></tr>
+    <tr><td class="paramname">G</td><td>绿色值 </td></tr>
+    <tr><td class="paramname">B</td><td>蓝色值 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>注解</dt><dd>此方法需要子类实现 </dd></dl>
+
+<p>在 <a class="el" href="../../d3/df9/class_m_m_ram_bmp.html#a73365a559efa4224a7f46913b08f0ee9">MMRamBmp</a> , 以及 <a class="el" href="../../d3/d6d/class_m_m_scr.html#a7eda1be25d2bc27aa9293e7c3aa7d0ec">MMScr</a> 内被实现.</p>
+
+<p class="reference">被这些函数引用 <a class="el" href="../../d2/d25/class_m_m_grap.html#a474020f945d5a0ef1e6bc3536d892bb3">MMGrap::DrawMMChar()</a>, <a class="el" href="../../d3/d6d/class_m_m_scr.html#a71aff872991f5964151f28ae292faabe">MMScr::DrawRamBmp()</a>, <a class="el" href="#a97879ab2f9ffa45af6b83471d889fb61">FillAll()</a> , 以及 <a class="el" href="#a3240813f4609f0da7278a9ed1131a2a0">SetPixel()</a>.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li><a class="el" href="../../d5/d0f/_m_m_canvas_8hpp_source.html">MMCanvas.hpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d9/d12/class_m_m_canvas.html">MMCanvas</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+  </ul>
+</div>
+</body>
+</html>

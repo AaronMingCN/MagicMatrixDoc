@@ -1,0 +1,19 @@
+var NAVTREEINDEX2 =
+{
+"functions_~.html":[4,3,0,18],
+"globals.html":[5,1,0],
+"globals_defs.html":[5,1,4],
+"globals_func.html":[5,1,1],
+"globals_type.html":[5,1,3],
+"globals_vars.html":[5,1,2],
+"hierarchy.html":[4,2],
+"index.html":[],
+"index.html#功能":[1],
+"index.html#后期扩展功能":[2],
+"index.html#基础功能":[1,0],
+"index.html#扩展功能":[1,1],
+"index.html#菜单树":[0],
+"index.html#辅助功能":[1,2],
+"index.html#远程功能":[1,3],
+"pages.html":[]
+};

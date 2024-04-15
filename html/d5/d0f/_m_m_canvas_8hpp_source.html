@@ -1,0 +1,189 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MagicMatrix 魔法矩阵: MMCanvas.hpp 源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../clipboard.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../LOGO 64x64.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">MagicMatrix 魔法矩阵
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(1); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('d5/d0f/_m_m_canvas_8hpp_source.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">MMCanvas.hpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="../../d5/d0f/_m_m_canvas_8hpp.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/**</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment"> * @file MMCanvas.hpp</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"> * @date 2024/03/27 06:17:26</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment"> * @author  </span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"> * @version 1.0</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment"> * @brief 画布接口</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment"> * @details 实现画布接口用于在不同的设备绘图，内存或矩阵屏</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#ifndef _MMCANVAS_HPP</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#define _MMCANVAS_HPP</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment"></span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment">/// @brief 画布类</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment">/// @details 实现画布功能相关的接口，由子类实现</span></div>
+<div class="foldopen" id="foldopen00015" data-start="{" data-end="};">
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="../../d9/d12/class_m_m_canvas.html">   15</a></span><span class="comment"></span><span class="keyword">class </span><a class="code hl_class" href="../../d9/d12/class_m_m_canvas.html">MMCanvas</a> {</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">public</span>:<span class="comment"></span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment">    /// @brief 设置一个像素点</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">    /// @param x 横坐标</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment">    /// @param y 纵坐标</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">    /// @param R 红色值</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment">    /// @param G 绿色值</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">    /// @param B 蓝色值</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment">    /// @note 此方法需要子类实现</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="../../d9/d12/class_m_m_canvas.html#a04d4a1a8e943a90fb4e2950331ec20ed">   24</a></span><span class="comment"></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="../../d9/d12/class_m_m_canvas.html#a04d4a1a8e943a90fb4e2950331ec20ed">SetPixel</a>(int16_t x, int16_t y, uint8_t R, uint8_t G, uint8_t B) = 0;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment"></span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment">    /// @brief 设置一个像素点</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="comment">    /// @param x 横坐标</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment">    /// @param y 纵坐标</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment">    /// @param rgb RGB结构体</span></div>
+<div class="foldopen" id="foldopen00030" data-start="{" data-end="}">
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="../../d9/d12/class_m_m_canvas.html#a3240813f4609f0da7278a9ed1131a2a0">   30</a></span><span class="comment"></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="../../d9/d12/class_m_m_canvas.html#a3240813f4609f0da7278a9ed1131a2a0">SetPixel</a>(int16_t x, int16_t y, <a class="code hl_struct" href="../../d3/d2e/struct_r_g_b.html">RGB</a> rgb)</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    {</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        this-&gt;<a class="code hl_function" href="../../d9/d12/class_m_m_canvas.html#a04d4a1a8e943a90fb4e2950331ec20ed">SetPixel</a>(x, y, rgb.<a class="code hl_variable" href="../../d3/d2e/struct_r_g_b.html#ac85e490cdcda4227a3f84f2d9e9da4cb">R</a>, rgb.<a class="code hl_variable" href="../../d3/d2e/struct_r_g_b.html#a6deeb10e5707a4029fd79e38abe53f6d">G</a>, rgb.<a class="code hl_variable" href="../../d3/d2e/struct_r_g_b.html#a8acb10a36384ff4890fd925ece447bf4">B</a>);</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    }</div>
+</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment"></span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment">    /// @brief 填充所有</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment">    /// @param R 红色值</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="comment">    /// @param G 绿色值</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="comment">    /// @param B 蓝色值</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="comment"></span>    <span class="comment">// 填充整个屏幕</span></div>
+<div class="foldopen" id="foldopen00040" data-start="{" data-end="}">
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="../../d9/d12/class_m_m_canvas.html#a97879ab2f9ffa45af6b83471d889fb61">   40</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="../../d9/d12/class_m_m_canvas.html#a97879ab2f9ffa45af6b83471d889fb61">FillAll</a>(uint8_t R, uint8_t G, uint8_t B)</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    {</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        <span class="keywordflow">for</span> (int16_t y = 0; y &lt; <a class="code hl_define" href="../../d6/d2b/_m_m_define_8hpp.html#a33fdd808e6d49f14e5d6e679e6a6dbea">M_HEIGHT</a>; ++y) { <span class="comment">// 将所有颜色清空</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>            <span class="keywordflow">for</span> (int16_t x = 0; x &lt; <a class="code hl_define" href="../../d6/d2b/_m_m_define_8hpp.html#a3be0529049ae7cb377b60ef8ee4970b0">M_WIDTH</a>; ++x) {</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>                this-&gt;<a class="code hl_function" href="../../d9/d12/class_m_m_canvas.html#a04d4a1a8e943a90fb4e2950331ec20ed">SetPixel</a>(x, y, R, G, B);</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>            }</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        }</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    }</div>
+</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="comment"></span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="comment">    /// @brief 清空屏幕</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="comment">    /// @note 需要手动重新绘制屏幕</span></div>
+<div class="foldopen" id="foldopen00051" data-start="{" data-end="}">
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="../../d9/d12/class_m_m_canvas.html#a091d771fe8f0f66f6d71f3b6243d43b1">   51</a></span><span class="comment"></span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="../../d9/d12/class_m_m_canvas.html#a091d771fe8f0f66f6d71f3b6243d43b1">SetEmpty</a>()</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    {</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        this-&gt;<a class="code hl_function" href="../../d9/d12/class_m_m_canvas.html#a97879ab2f9ffa45af6b83471d889fb61">FillAll</a>(0, 0, 0);</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    }</div>
+</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>};</div>
+</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="a_m_m_define_8hpp_html_a33fdd808e6d49f14e5d6e679e6a6dbea"><div class="ttname"><a href="../../d6/d2b/_m_m_define_8hpp.html#a33fdd808e6d49f14e5d6e679e6a6dbea">M_HEIGHT</a></div><div class="ttdeci">#define M_HEIGHT</div><div class="ttdoc">定义矩阵屏幕行数</div><div class="ttdef"><b>Definition</b> MMDefine.hpp:68</div></div>
+<div class="ttc" id="a_m_m_define_8hpp_html_a3be0529049ae7cb377b60ef8ee4970b0"><div class="ttname"><a href="../../d6/d2b/_m_m_define_8hpp.html#a3be0529049ae7cb377b60ef8ee4970b0">M_WIDTH</a></div><div class="ttdeci">#define M_WIDTH</div><div class="ttdef"><b>Definition</b> MMDefine.hpp:69</div></div>
+<div class="ttc" id="aclass_m_m_canvas_html"><div class="ttname"><a href="../../d9/d12/class_m_m_canvas.html">MMCanvas</a></div><div class="ttdoc">画布类</div><div class="ttdef"><b>Definition</b> MMCanvas.hpp:15</div></div>
+<div class="ttc" id="aclass_m_m_canvas_html_a04d4a1a8e943a90fb4e2950331ec20ed"><div class="ttname"><a href="../../d9/d12/class_m_m_canvas.html#a04d4a1a8e943a90fb4e2950331ec20ed">MMCanvas::SetPixel</a></div><div class="ttdeci">virtual void SetPixel(int16_t x, int16_t y, uint8_t R, uint8_t G, uint8_t B)=0</div><div class="ttdoc">设置一个像素点</div></div>
+<div class="ttc" id="aclass_m_m_canvas_html_a091d771fe8f0f66f6d71f3b6243d43b1"><div class="ttname"><a href="../../d9/d12/class_m_m_canvas.html#a091d771fe8f0f66f6d71f3b6243d43b1">MMCanvas::SetEmpty</a></div><div class="ttdeci">virtual void SetEmpty()</div><div class="ttdoc">清空屏幕</div><div class="ttdef"><b>Definition</b> MMCanvas.hpp:51</div></div>
+<div class="ttc" id="aclass_m_m_canvas_html_a3240813f4609f0da7278a9ed1131a2a0"><div class="ttname"><a href="../../d9/d12/class_m_m_canvas.html#a3240813f4609f0da7278a9ed1131a2a0">MMCanvas::SetPixel</a></div><div class="ttdeci">virtual void SetPixel(int16_t x, int16_t y, RGB rgb)</div><div class="ttdoc">设置一个像素点</div><div class="ttdef"><b>Definition</b> MMCanvas.hpp:30</div></div>
+<div class="ttc" id="aclass_m_m_canvas_html_a97879ab2f9ffa45af6b83471d889fb61"><div class="ttname"><a href="../../d9/d12/class_m_m_canvas.html#a97879ab2f9ffa45af6b83471d889fb61">MMCanvas::FillAll</a></div><div class="ttdeci">void FillAll(uint8_t R, uint8_t G, uint8_t B)</div><div class="ttdoc">填充所有</div><div class="ttdef"><b>Definition</b> MMCanvas.hpp:40</div></div>
+<div class="ttc" id="astruct_r_g_b_html"><div class="ttname"><a href="../../d3/d2e/struct_r_g_b.html">RGB</a></div><div class="ttdoc">定义时钟计数的类型</div><div class="ttdef"><b>Definition</b> MMDefine.hpp:153</div></div>
+<div class="ttc" id="astruct_r_g_b_html_a6deeb10e5707a4029fd79e38abe53f6d"><div class="ttname"><a href="../../d3/d2e/struct_r_g_b.html#a6deeb10e5707a4029fd79e38abe53f6d">RGB::G</a></div><div class="ttdeci">uint8_t G</div><div class="ttdoc">绿色值 0~255</div><div class="ttdef"><b>Definition</b> MMDefine.hpp:155</div></div>
+<div class="ttc" id="astruct_r_g_b_html_a8acb10a36384ff4890fd925ece447bf4"><div class="ttname"><a href="../../d3/d2e/struct_r_g_b.html#a8acb10a36384ff4890fd925ece447bf4">RGB::B</a></div><div class="ttdeci">uint8_t B</div><div class="ttdoc">蓝色值 0~255</div><div class="ttdef"><b>Definition</b> MMDefine.hpp:156</div></div>
+<div class="ttc" id="astruct_r_g_b_html_ac85e490cdcda4227a3f84f2d9e9da4cb"><div class="ttname"><a href="../../d3/d2e/struct_r_g_b.html#ac85e490cdcda4227a3f84f2d9e9da4cb">RGB::R</a></div><div class="ttdeci">uint8_t R</div><div class="ttdoc">红色值 0~255</div><div class="ttdef"><b>Definition</b> MMDefine.hpp:154</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="../../d5/d0f/_m_m_canvas_8hpp.html">MMCanvas.hpp</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+  </ul>
+</div>
+</body>
+</html>

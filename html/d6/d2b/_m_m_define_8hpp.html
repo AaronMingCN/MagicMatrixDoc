@@ -1,0 +1,1457 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MagicMatrix 魔法矩阵: MMDefine.hpp 文件参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../clipboard.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../LOGO 64x64.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">MagicMatrix 魔法矩阵
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('d6/d2b/_m_m_define_8hpp.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#define-members">宏定义</a>  </div>
+  <div class="headertitle"><div class="title">MMDefine.hpp 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>系统相关定义  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &lt;pins_arduino.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="../../d7/d08/_m_m_func_pool_8hpp_source.html">MMFunc/MMFuncPool.hpp</a>&quot;</code><br />
+<code>#include &lt;RP2040_SD.h&gt;</code><br />
+<code>#include &lt;SPI.h&gt;</code><br />
+</div>
+<p><a href="../../d6/d2b/_m_m_define_8hpp_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d2e/struct_r_g_b.html">RGB</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">定义时钟计数的类型  <a href="../../d3/d2e/struct_r_g_b.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+宏定义</h2></td></tr>
+<tr class="memitem:aef13d3efb4b39f064a8db5d4faa0f07a" id="r_aef13d3efb4b39f064a8db5d4faa0f07a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aef13d3efb4b39f064a8db5d4faa0f07a">MMDEBUG</a></td></tr>
+<tr class="separator:aef13d3efb4b39f064a8db5d4faa0f07a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4d4eb9f2374fd8fdd97954821bbe8f3" id="r_ab4d4eb9f2374fd8fdd97954821bbe8f3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab4d4eb9f2374fd8fdd97954821bbe8f3">C_RP2040</a></td></tr>
+<tr class="separator:ab4d4eb9f2374fd8fdd97954821bbe8f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5e4cc21960bf3b4f1b91cf788937c65" id="r_aa5e4cc21960bf3b4f1b91cf788937c65"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa5e4cc21960bf3b4f1b91cf788937c65">PIN_S1_TX</a>&#160;&#160;&#160;SERIAL1_TX</td></tr>
+<tr class="memdesc:aa5e4cc21960bf3b4f1b91cf788937c65"><td class="mdescLeft">&#160;</td><td class="mdescRight">定义蓝牙使用串行数据引脚 PIN_SERIAL_TX (0ul) 系统默认  <br /></td></tr>
+<tr class="separator:aa5e4cc21960bf3b4f1b91cf788937c65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e9f8655e0ae1fdce4ce479f38a3c411" id="r_a5e9f8655e0ae1fdce4ce479f38a3c411"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5e9f8655e0ae1fdce4ce479f38a3c411">PIN_S1_RX</a>&#160;&#160;&#160;SERIAL1_RX</td></tr>
+<tr class="memdesc:a5e9f8655e0ae1fdce4ce479f38a3c411"><td class="mdescLeft">&#160;</td><td class="mdescRight">定义蓝牙使用串行数据引脚 PIN_SERIAL_RX (1ul)  <br /></td></tr>
+<tr class="separator:a5e9f8655e0ae1fdce4ce479f38a3c411"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a321a21dfec72b4478e65892953628f26" id="r_a321a21dfec72b4478e65892953628f26"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a321a21dfec72b4478e65892953628f26">PIN_IRR</a>&#160;&#160;&#160;(2u)</td></tr>
+<tr class="memdesc:a321a21dfec72b4478e65892953628f26"><td class="mdescLeft">&#160;</td><td class="mdescRight">定义红外线接收引脚  <br /></td></tr>
+<tr class="separator:a321a21dfec72b4478e65892953628f26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a488451fba5db6042f21672f7444bfe53" id="r_a488451fba5db6042f21672f7444bfe53"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a488451fba5db6042f21672f7444bfe53">PIN_M</a>&#160;&#160;&#160;(3u)</td></tr>
+<tr class="memdesc:a488451fba5db6042f21672f7444bfe53"><td class="mdescLeft">&#160;</td><td class="mdescRight">定义矩阵屏幕引脚  <br /></td></tr>
+<tr class="separator:a488451fba5db6042f21672f7444bfe53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49edbf26f72ccb8175fd2a896ee7d71f" id="r_a49edbf26f72ccb8175fd2a896ee7d71f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a49edbf26f72ccb8175fd2a896ee7d71f">PIN_I2C_DAT</a>&#160;&#160;&#160;PIN_WIRE_SDA</td></tr>
+<tr class="memdesc:a49edbf26f72ccb8175fd2a896ee7d71f"><td class="mdescLeft">&#160;</td><td class="mdescRight">I2C数据引脚, 4  <br /></td></tr>
+<tr class="separator:a49edbf26f72ccb8175fd2a896ee7d71f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a169ff6e615c8620dd6c20e128d29f521" id="r_a169ff6e615c8620dd6c20e128d29f521"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a169ff6e615c8620dd6c20e128d29f521">PIN_I2C_CLK</a>&#160;&#160;&#160;PIN_WIRE_SCL</td></tr>
+<tr class="memdesc:a169ff6e615c8620dd6c20e128d29f521"><td class="mdescLeft">&#160;</td><td class="mdescRight">I2C时钟引脚, 5  <br /></td></tr>
+<tr class="separator:a169ff6e615c8620dd6c20e128d29f521"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae40a7830411bcd1f870ae4e4a4b30e7b" id="r_ae40a7830411bcd1f870ae4e4a4b30e7b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae40a7830411bcd1f870ae4e4a4b30e7b">PIN_DS1302_CS</a>&#160;&#160;&#160;(6u)</td></tr>
+<tr class="memdesc:ae40a7830411bcd1f870ae4e4a4b30e7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">DS1302选择引脚  <br /></td></tr>
+<tr class="separator:ae40a7830411bcd1f870ae4e4a4b30e7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae31e73ed29a89d681154d60c736d8892" id="r_ae31e73ed29a89d681154d60c736d8892"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae31e73ed29a89d681154d60c736d8892">PIN_DHT</a>&#160;&#160;&#160;(21u)</td></tr>
+<tr class="memdesc:ae31e73ed29a89d681154d60c736d8892"><td class="mdescLeft">&#160;</td><td class="mdescRight">定义DHT温湿度传感器引脚  <br /></td></tr>
+<tr class="separator:ae31e73ed29a89d681154d60c736d8892"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af344657d4cdc6769fe25af1c8334a1d4" id="r_af344657d4cdc6769fe25af1c8334a1d4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af344657d4cdc6769fe25af1c8334a1d4">PIN_LED_BUILTIN</a>&#160;&#160;&#160;LED_BUILTIN</td></tr>
+<tr class="memdesc:af344657d4cdc6769fe25af1c8334a1d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">板载LED引脚, 25  <br /></td></tr>
+<tr class="separator:af344657d4cdc6769fe25af1c8334a1d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a192ea8eaba652d29bfc08675edebb6a2" id="r_a192ea8eaba652d29bfc08675edebb6a2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a192ea8eaba652d29bfc08675edebb6a2">PIN_BUZZER</a>&#160;&#160;&#160;(20u)</td></tr>
+<tr class="memdesc:a192ea8eaba652d29bfc08675edebb6a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">蜂鸣器引脚  <br /></td></tr>
+<tr class="separator:a192ea8eaba652d29bfc08675edebb6a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1dea129d5bf64c56c8f9fc9b004b0584" id="r_a1dea129d5bf64c56c8f9fc9b004b0584"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1dea129d5bf64c56c8f9fc9b004b0584">PIN_PIRR</a>&#160;&#160;&#160;(22u)</td></tr>
+<tr class="memdesc:a1dea129d5bf64c56c8f9fc9b004b0584"><td class="mdescLeft">&#160;</td><td class="mdescRight">人体红外传感器引脚  <br /></td></tr>
+<tr class="separator:a1dea129d5bf64c56c8f9fc9b004b0584"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97d2783b878057b5a06a1e0223cc2a09" id="r_a97d2783b878057b5a06a1e0223cc2a09"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a97d2783b878057b5a06a1e0223cc2a09">PIN_SD_MOSI</a>&#160;&#160;&#160;PIN_SPI0_MOSI</td></tr>
+<tr class="memdesc:a97d2783b878057b5a06a1e0223cc2a09"><td class="mdescLeft">&#160;</td><td class="mdescRight">定义SD访问相关的引脚  <br /></td></tr>
+<tr class="separator:a97d2783b878057b5a06a1e0223cc2a09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88a0bc76c8a5051ed6483fd5cfc950b1" id="r_a88a0bc76c8a5051ed6483fd5cfc950b1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a88a0bc76c8a5051ed6483fd5cfc950b1">PIN_SD_MISO</a>&#160;&#160;&#160;PIN_SPI0_MISO</td></tr>
+<tr class="separator:a88a0bc76c8a5051ed6483fd5cfc950b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ee1777ea50c55d652fc622d8749f92d" id="r_a7ee1777ea50c55d652fc622d8749f92d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7ee1777ea50c55d652fc622d8749f92d">PIN_SD_SCK</a>&#160;&#160;&#160;PIN_SPI0_SCK</td></tr>
+<tr class="separator:a7ee1777ea50c55d652fc622d8749f92d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4194e137da9429104d8a3bc4ef0346f2" id="r_a4194e137da9429104d8a3bc4ef0346f2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4194e137da9429104d8a3bc4ef0346f2">PIN_SD_SS</a>&#160;&#160;&#160;PIN_SPI0_SS</td></tr>
+<tr class="separator:a4194e137da9429104d8a3bc4ef0346f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33fdd808e6d49f14e5d6e679e6a6dbea" id="r_a33fdd808e6d49f14e5d6e679e6a6dbea"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a33fdd808e6d49f14e5d6e679e6a6dbea">M_HEIGHT</a>&#160;&#160;&#160;(16)</td></tr>
+<tr class="memdesc:a33fdd808e6d49f14e5d6e679e6a6dbea"><td class="mdescLeft">&#160;</td><td class="mdescRight">定义矩阵屏幕行数  <br /></td></tr>
+<tr class="separator:a33fdd808e6d49f14e5d6e679e6a6dbea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3be0529049ae7cb377b60ef8ee4970b0" id="r_a3be0529049ae7cb377b60ef8ee4970b0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3be0529049ae7cb377b60ef8ee4970b0">M_WIDTH</a>&#160;&#160;&#160;(16)</td></tr>
+<tr class="separator:a3be0529049ae7cb377b60ef8ee4970b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6061e00ce4f75ea9bcfa9e545d235829" id="r_a6061e00ce4f75ea9bcfa9e545d235829"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6061e00ce4f75ea9bcfa9e545d235829">M_MATRIXTYPE</a>&#160;&#160;&#160;(NEO_MATRIX_TOP + NEO_MATRIX_LEFT + NEO_MATRIX_COLUMNS + NEO_MATRIX_ZIGZAG)</td></tr>
+<tr class="memdesc:a6061e00ce4f75ea9bcfa9e545d235829"><td class="mdescLeft">&#160;</td><td class="mdescRight">定义矩阵屏幕类型  <br /></td></tr>
+<tr class="separator:a6061e00ce4f75ea9bcfa9e545d235829"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3944d4b6bf5a79ee3e0b97390ac2965d" id="r_a3944d4b6bf5a79ee3e0b97390ac2965d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3944d4b6bf5a79ee3e0b97390ac2965d">M_LEDTYPE</a>&#160;&#160;&#160;(NEO_GRB + NEO_KHZ800)</td></tr>
+<tr class="memdesc:a3944d4b6bf5a79ee3e0b97390ac2965d"><td class="mdescLeft">&#160;</td><td class="mdescRight">定义LED类型  <br /></td></tr>
+<tr class="separator:a3944d4b6bf5a79ee3e0b97390ac2965d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b9d6992c50a3f5bc5be8d8085fab72b" id="r_a1b9d6992c50a3f5bc5be8d8085fab72b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1b9d6992c50a3f5bc5be8d8085fab72b">M_PIXS</a>&#160;&#160;&#160;(<a class="el" href="#a33fdd808e6d49f14e5d6e679e6a6dbea">M_HEIGHT</a> * <a class="el" href="#a3be0529049ae7cb377b60ef8ee4970b0">M_WIDTH</a>)</td></tr>
+<tr class="memdesc:a1b9d6992c50a3f5bc5be8d8085fab72b"><td class="mdescLeft">&#160;</td><td class="mdescRight">定义矩阵像素数  <br /></td></tr>
+<tr class="separator:a1b9d6992c50a3f5bc5be8d8085fab72b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d04ea8ac17e242b84428cc1c4777af3" id="r_a7d04ea8ac17e242b84428cc1c4777af3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7d04ea8ac17e242b84428cc1c4777af3">M_BRIGHT</a>&#160;&#160;&#160;(20)</td></tr>
+<tr class="memdesc:a7d04ea8ac17e242b84428cc1c4777af3"><td class="mdescLeft">&#160;</td><td class="mdescRight">屏幕亮度0~255  <br /></td></tr>
+<tr class="separator:a7d04ea8ac17e242b84428cc1c4777af3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb66e831b931e6f2bbf30adc20759f92" id="r_aeb66e831b931e6f2bbf30adc20759f92"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeb66e831b931e6f2bbf30adc20759f92">M_BIRGHT_STANDBY</a>&#160;&#160;&#160;(1u)</td></tr>
+<tr class="memdesc:aeb66e831b931e6f2bbf30adc20759f92"><td class="mdescLeft">&#160;</td><td class="mdescRight">工作亮度  <br /></td></tr>
+<tr class="separator:aeb66e831b931e6f2bbf30adc20759f92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1919268ea6f5f4e6bc692f6835dbc92b" id="r_a1919268ea6f5f4e6bc692f6835dbc92b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1919268ea6f5f4e6bc692f6835dbc92b">M_PIRR_DELAY</a>&#160;&#160;&#160;(20000u)</td></tr>
+<tr class="memdesc:a1919268ea6f5f4e6bc692f6835dbc92b"><td class="mdescLeft">&#160;</td><td class="mdescRight">人体检测延迟，毫秒  <br /></td></tr>
+<tr class="separator:a1919268ea6f5f4e6bc692f6835dbc92b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a094654ad63fa9df96cd6bcf953c5f246" id="r_a094654ad63fa9df96cd6bcf953c5f246"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a094654ad63fa9df96cd6bcf953c5f246">IRK_NONE</a>&#160;&#160;&#160;(0)</td></tr>
+<tr class="memdesc:a094654ad63fa9df96cd6bcf953c5f246"><td class="mdescLeft">&#160;</td><td class="mdescRight">空  <br /></td></tr>
+<tr class="separator:a094654ad63fa9df96cd6bcf953c5f246"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac911042aaa9459a4694dc33d4187e91b" id="r_ac911042aaa9459a4694dc33d4187e91b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac911042aaa9459a4694dc33d4187e91b">IRK_CH_MINUS</a>&#160;&#160;&#160;(69)</td></tr>
+<tr class="memdesc:ac911042aaa9459a4694dc33d4187e91b"><td class="mdescLeft">&#160;</td><td class="mdescRight">CH+  <br /></td></tr>
+<tr class="separator:ac911042aaa9459a4694dc33d4187e91b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0a3dc216da146de38b3f55fd9b9dbb7" id="r_aa0a3dc216da146de38b3f55fd9b9dbb7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa0a3dc216da146de38b3f55fd9b9dbb7">IRK_CH</a>&#160;&#160;&#160;(70)</td></tr>
+<tr class="memdesc:aa0a3dc216da146de38b3f55fd9b9dbb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">CH  <br /></td></tr>
+<tr class="separator:aa0a3dc216da146de38b3f55fd9b9dbb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae67d38fa1b9334be806a3c9706e64750" id="r_ae67d38fa1b9334be806a3c9706e64750"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae67d38fa1b9334be806a3c9706e64750">IRK_CH_PLUS</a>&#160;&#160;&#160;(71)</td></tr>
+<tr class="memdesc:ae67d38fa1b9334be806a3c9706e64750"><td class="mdescLeft">&#160;</td><td class="mdescRight">CH-  <br /></td></tr>
+<tr class="separator:ae67d38fa1b9334be806a3c9706e64750"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26be76e9f712c4056406f23a84dd41ab" id="r_a26be76e9f712c4056406f23a84dd41ab"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a26be76e9f712c4056406f23a84dd41ab">IRK_PRE</a>&#160;&#160;&#160;(68)</td></tr>
+<tr class="memdesc:a26be76e9f712c4056406f23a84dd41ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">上一曲  <br /></td></tr>
+<tr class="separator:a26be76e9f712c4056406f23a84dd41ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29354283a280903ed62fa33042ba6113" id="r_a29354283a280903ed62fa33042ba6113"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a29354283a280903ed62fa33042ba6113">IRK_NXT</a>&#160;&#160;&#160;(64)</td></tr>
+<tr class="memdesc:a29354283a280903ed62fa33042ba6113"><td class="mdescLeft">&#160;</td><td class="mdescRight">下一曲  <br /></td></tr>
+<tr class="separator:a29354283a280903ed62fa33042ba6113"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e1712ba163d2c0c5e4f585895238d0d" id="r_a5e1712ba163d2c0c5e4f585895238d0d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5e1712ba163d2c0c5e4f585895238d0d">IRK_PAUSE</a>&#160;&#160;&#160;(67)</td></tr>
+<tr class="memdesc:a5e1712ba163d2c0c5e4f585895238d0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">暂停  <br /></td></tr>
+<tr class="separator:a5e1712ba163d2c0c5e4f585895238d0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac34d81c3a912247cd07297cc308c969e" id="r_ac34d81c3a912247cd07297cc308c969e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac34d81c3a912247cd07297cc308c969e">IRK_MINUS</a>&#160;&#160;&#160;(7)</td></tr>
+<tr class="memdesc:ac34d81c3a912247cd07297cc308c969e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Minus  <br /></td></tr>
+<tr class="separator:ac34d81c3a912247cd07297cc308c969e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc949fa13918eb3aad6fd43fead6aa08" id="r_afc949fa13918eb3aad6fd43fead6aa08"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afc949fa13918eb3aad6fd43fead6aa08">IRK_PLUS</a>&#160;&#160;&#160;(21)</td></tr>
+<tr class="memdesc:afc949fa13918eb3aad6fd43fead6aa08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Plus  <br /></td></tr>
+<tr class="separator:afc949fa13918eb3aad6fd43fead6aa08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64a59b0b4fa39418668013d5c858fd00" id="r_a64a59b0b4fa39418668013d5c858fd00"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a64a59b0b4fa39418668013d5c858fd00">IRK_EQ</a>&#160;&#160;&#160;(9)</td></tr>
+<tr class="memdesc:a64a59b0b4fa39418668013d5c858fd00"><td class="mdescLeft">&#160;</td><td class="mdescRight">EQ  <br /></td></tr>
+<tr class="separator:a64a59b0b4fa39418668013d5c858fd00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4b41fd6e812ff525a2f53ea58a33edd" id="r_ad4b41fd6e812ff525a2f53ea58a33edd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad4b41fd6e812ff525a2f53ea58a33edd">IRK_0</a>&#160;&#160;&#160;(22)</td></tr>
+<tr class="memdesc:ad4b41fd6e812ff525a2f53ea58a33edd"><td class="mdescLeft">&#160;</td><td class="mdescRight">0  <br /></td></tr>
+<tr class="separator:ad4b41fd6e812ff525a2f53ea58a33edd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b9b3706ea51ff110b84466347c938d2" id="r_a6b9b3706ea51ff110b84466347c938d2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6b9b3706ea51ff110b84466347c938d2">IRK_100</a>&#160;&#160;&#160;(25)</td></tr>
+<tr class="memdesc:a6b9b3706ea51ff110b84466347c938d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">100  <br /></td></tr>
+<tr class="separator:a6b9b3706ea51ff110b84466347c938d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aceeaf11943e7f8929346559876ff04e3" id="r_aceeaf11943e7f8929346559876ff04e3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aceeaf11943e7f8929346559876ff04e3">IRK_200</a>&#160;&#160;&#160;(13)</td></tr>
+<tr class="memdesc:aceeaf11943e7f8929346559876ff04e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">200  <br /></td></tr>
+<tr class="separator:aceeaf11943e7f8929346559876ff04e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad34c7a0ca95061a374a575a3261c5908" id="r_ad34c7a0ca95061a374a575a3261c5908"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad34c7a0ca95061a374a575a3261c5908">IRK_1</a>&#160;&#160;&#160;(12)</td></tr>
+<tr class="memdesc:ad34c7a0ca95061a374a575a3261c5908"><td class="mdescLeft">&#160;</td><td class="mdescRight">1  <br /></td></tr>
+<tr class="separator:ad34c7a0ca95061a374a575a3261c5908"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8f985931c7771304296cf9cf4e7722e" id="r_ae8f985931c7771304296cf9cf4e7722e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae8f985931c7771304296cf9cf4e7722e">IRK_2</a>&#160;&#160;&#160;(24)</td></tr>
+<tr class="memdesc:ae8f985931c7771304296cf9cf4e7722e"><td class="mdescLeft">&#160;</td><td class="mdescRight">2  <br /></td></tr>
+<tr class="separator:ae8f985931c7771304296cf9cf4e7722e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b4a87b9c3ecbcee9f20bd84e1e06e91" id="r_a8b4a87b9c3ecbcee9f20bd84e1e06e91"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8b4a87b9c3ecbcee9f20bd84e1e06e91">IRK_3</a>&#160;&#160;&#160;(94)</td></tr>
+<tr class="memdesc:a8b4a87b9c3ecbcee9f20bd84e1e06e91"><td class="mdescLeft">&#160;</td><td class="mdescRight">3  <br /></td></tr>
+<tr class="separator:a8b4a87b9c3ecbcee9f20bd84e1e06e91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36615d2229fccec2de4a33a5c6c2b1f7" id="r_a36615d2229fccec2de4a33a5c6c2b1f7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a36615d2229fccec2de4a33a5c6c2b1f7">IRK_4</a>&#160;&#160;&#160;(8)</td></tr>
+<tr class="memdesc:a36615d2229fccec2de4a33a5c6c2b1f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">4  <br /></td></tr>
+<tr class="separator:a36615d2229fccec2de4a33a5c6c2b1f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab58bac0c80c0278e152141556ceb13b2" id="r_ab58bac0c80c0278e152141556ceb13b2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab58bac0c80c0278e152141556ceb13b2">IRK_5</a>&#160;&#160;&#160;(28)</td></tr>
+<tr class="memdesc:ab58bac0c80c0278e152141556ceb13b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">5  <br /></td></tr>
+<tr class="separator:ab58bac0c80c0278e152141556ceb13b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1af9098cb8ab603c2e215893ce358a1" id="r_af1af9098cb8ab603c2e215893ce358a1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af1af9098cb8ab603c2e215893ce358a1">IRK_6</a>&#160;&#160;&#160;(90)</td></tr>
+<tr class="memdesc:af1af9098cb8ab603c2e215893ce358a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">6  <br /></td></tr>
+<tr class="separator:af1af9098cb8ab603c2e215893ce358a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87638a5e470454d2c38c4eccf10ae810" id="r_a87638a5e470454d2c38c4eccf10ae810"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a87638a5e470454d2c38c4eccf10ae810">IRK_7</a>&#160;&#160;&#160;(66)</td></tr>
+<tr class="memdesc:a87638a5e470454d2c38c4eccf10ae810"><td class="mdescLeft">&#160;</td><td class="mdescRight">7  <br /></td></tr>
+<tr class="separator:a87638a5e470454d2c38c4eccf10ae810"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8295257477f5641aa4b04fde877ed8f1" id="r_a8295257477f5641aa4b04fde877ed8f1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8295257477f5641aa4b04fde877ed8f1">IRK_8</a>&#160;&#160;&#160;(82)</td></tr>
+<tr class="memdesc:a8295257477f5641aa4b04fde877ed8f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">8  <br /></td></tr>
+<tr class="separator:a8295257477f5641aa4b04fde877ed8f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75ae27e6458988915d8d7e5c9c80ed38" id="r_a75ae27e6458988915d8d7e5c9c80ed38"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a75ae27e6458988915d8d7e5c9c80ed38">IRK_9</a>&#160;&#160;&#160;(74)</td></tr>
+<tr class="memdesc:a75ae27e6458988915d8d7e5c9c80ed38"><td class="mdescLeft">&#160;</td><td class="mdescRight">9  <br /></td></tr>
+<tr class="separator:a75ae27e6458988915d8d7e5c9c80ed38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4819a49b102bf151f4e4ed3e056e6fbb" id="r_a4819a49b102bf151f4e4ed3e056e6fbb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4819a49b102bf151f4e4ed3e056e6fbb">IRK_A</a>&#160;&#160;&#160;<a class="el" href="#ac911042aaa9459a4694dc33d4187e91b">IRK_CH_MINUS</a></td></tr>
+<tr class="memdesc:a4819a49b102bf151f4e4ed3e056e6fbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">A  <br /></td></tr>
+<tr class="separator:a4819a49b102bf151f4e4ed3e056e6fbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaff5d832e8e9ba9996c8916446e047d5" id="r_aaff5d832e8e9ba9996c8916446e047d5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaff5d832e8e9ba9996c8916446e047d5">IRK_B</a>&#160;&#160;&#160;<a class="el" href="#aa0a3dc216da146de38b3f55fd9b9dbb7">IRK_CH</a></td></tr>
+<tr class="memdesc:aaff5d832e8e9ba9996c8916446e047d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">B  <br /></td></tr>
+<tr class="separator:aaff5d832e8e9ba9996c8916446e047d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1617a3afc8564fef9a28ca6ef8289c6c" id="r_a1617a3afc8564fef9a28ca6ef8289c6c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1617a3afc8564fef9a28ca6ef8289c6c">IRK_C</a>&#160;&#160;&#160;<a class="el" href="#ae67d38fa1b9334be806a3c9706e64750">IRK_CH_PLUS</a></td></tr>
+<tr class="memdesc:a1617a3afc8564fef9a28ca6ef8289c6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">C  <br /></td></tr>
+<tr class="separator:a1617a3afc8564fef9a28ca6ef8289c6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71f7ecf5ae428b241cd20d013bcc33c4" id="r_a71f7ecf5ae428b241cd20d013bcc33c4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a71f7ecf5ae428b241cd20d013bcc33c4">IRK_D</a>&#160;&#160;&#160;<a class="el" href="#a26be76e9f712c4056406f23a84dd41ab">IRK_PRE</a></td></tr>
+<tr class="memdesc:a71f7ecf5ae428b241cd20d013bcc33c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">D  <br /></td></tr>
+<tr class="separator:a71f7ecf5ae428b241cd20d013bcc33c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3803fbcd48cc23374aba54b16ab97652" id="r_a3803fbcd48cc23374aba54b16ab97652"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3803fbcd48cc23374aba54b16ab97652">IRK_UP</a>&#160;&#160;&#160;<a class="el" href="#a29354283a280903ed62fa33042ba6113">IRK_NXT</a></td></tr>
+<tr class="memdesc:a3803fbcd48cc23374aba54b16ab97652"><td class="mdescLeft">&#160;</td><td class="mdescRight">Up  <br /></td></tr>
+<tr class="separator:a3803fbcd48cc23374aba54b16ab97652"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c00ca032c51096ff1213097b0825993" id="r_a0c00ca032c51096ff1213097b0825993"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0c00ca032c51096ff1213097b0825993">IRK_E</a>&#160;&#160;&#160;<a class="el" href="#a5e1712ba163d2c0c5e4f585895238d0d">IRK_PAUSE</a></td></tr>
+<tr class="memdesc:a0c00ca032c51096ff1213097b0825993"><td class="mdescLeft">&#160;</td><td class="mdescRight">E  <br /></td></tr>
+<tr class="separator:a0c00ca032c51096ff1213097b0825993"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61b3b16151bde755e29f584814013405" id="r_a61b3b16151bde755e29f584814013405"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a61b3b16151bde755e29f584814013405">IRK_LEFT</a>&#160;&#160;&#160;<a class="el" href="#ac34d81c3a912247cd07297cc308c969e">IRK_MINUS</a></td></tr>
+<tr class="memdesc:a61b3b16151bde755e29f584814013405"><td class="mdescLeft">&#160;</td><td class="mdescRight">Left  <br /></td></tr>
+<tr class="separator:a61b3b16151bde755e29f584814013405"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b1f3c502bb8735fb089d66e89d0bbc3" id="r_a6b1f3c502bb8735fb089d66e89d0bbc3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6b1f3c502bb8735fb089d66e89d0bbc3">IRK_SET</a>&#160;&#160;&#160;<a class="el" href="#afc949fa13918eb3aad6fd43fead6aa08">IRK_PLUS</a></td></tr>
+<tr class="memdesc:a6b1f3c502bb8735fb089d66e89d0bbc3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set  <br /></td></tr>
+<tr class="separator:a6b1f3c502bb8735fb089d66e89d0bbc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8aea16fac8c06740e5ea12d1b502a0e" id="r_af8aea16fac8c06740e5ea12d1b502a0e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af8aea16fac8c06740e5ea12d1b502a0e">IRK_RIGHT</a>&#160;&#160;&#160;<a class="el" href="#a64a59b0b4fa39418668013d5c858fd00">IRK_EQ</a></td></tr>
+<tr class="memdesc:af8aea16fac8c06740e5ea12d1b502a0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Right  <br /></td></tr>
+<tr class="separator:af8aea16fac8c06740e5ea12d1b502a0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03e3090879744e8495043b710fa21416" id="r_a03e3090879744e8495043b710fa21416"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a03e3090879744e8495043b710fa21416">IRK_DOWN</a>&#160;&#160;&#160;<a class="el" href="#a6b9b3706ea51ff110b84466347c938d2">IRK_100</a></td></tr>
+<tr class="memdesc:a03e3090879744e8495043b710fa21416"><td class="mdescLeft">&#160;</td><td class="mdescRight">Down  <br /></td></tr>
+<tr class="separator:a03e3090879744e8495043b710fa21416"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fd6d07f3b400875ef9e03f8a3686530" id="r_a2fd6d07f3b400875ef9e03f8a3686530"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2fd6d07f3b400875ef9e03f8a3686530">IRK_F</a>&#160;&#160;&#160;<a class="el" href="#aceeaf11943e7f8929346559876ff04e3">IRK_200</a></td></tr>
+<tr class="memdesc:a2fd6d07f3b400875ef9e03f8a3686530"><td class="mdescLeft">&#160;</td><td class="mdescRight">F  <br /></td></tr>
+<tr class="separator:a2fd6d07f3b400875ef9e03f8a3686530"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b58eafee28645b1da98d84b7ecb0f0b" id="r_a1b58eafee28645b1da98d84b7ecb0f0b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1b58eafee28645b1da98d84b7ecb0f0b">IRR_WAITKEYTUP</a>&#160;&#160;&#160;500</td></tr>
+<tr class="memdesc:a1b58eafee28645b1da98d84b7ecb0f0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">当按键识别后的等待抬起的时长，毫秒  <br /></td></tr>
+<tr class="separator:a1b58eafee28645b1da98d84b7ecb0f0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a248f19b3069fa436b8bb34eb3dc0b869" id="r_a248f19b3069fa436b8bb34eb3dc0b869"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a248f19b3069fa436b8bb34eb3dc0b869">FILENAME_CFG</a>&#160;&#160;&#160;&quot;MMCFG.js&quot;</td></tr>
+<tr class="memdesc:a248f19b3069fa436b8bb34eb3dc0b869"><td class="mdescLeft">&#160;</td><td class="mdescRight">配置文件名称  <br /></td></tr>
+<tr class="separator:a248f19b3069fa436b8bb34eb3dc0b869"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3128fd6810b7983226d2e4c849e28962" id="r_a3128fd6810b7983226d2e4c849e28962"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3128fd6810b7983226d2e4c849e28962">FILENAME_LOGO</a>&#160;&#160;&#160;&quot;LOGO.bmp&quot;</td></tr>
+<tr class="memdesc:a3128fd6810b7983226d2e4c849e28962"><td class="mdescLeft">&#160;</td><td class="mdescRight">定义LOGO在SD卡中的文件名  <br /></td></tr>
+<tr class="separator:a3128fd6810b7983226d2e4c849e28962"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4563e0c12bc96d779a42a82c6438834" id="r_ae4563e0c12bc96d779a42a82c6438834"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae4563e0c12bc96d779a42a82c6438834">DIR_BMPLOOP</a>&#160;&#160;&#160;&quot;/bmp/&quot;</td></tr>
+<tr class="memdesc:ae4563e0c12bc96d779a42a82c6438834"><td class="mdescLeft">&#160;</td><td class="mdescRight">定义循环显示的BMP文件夹  <br /></td></tr>
+<tr class="separator:ae4563e0c12bc96d779a42a82c6438834"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67fa3be333f3071e8c126978e0de0af8" id="r_a67fa3be333f3071e8c126978e0de0af8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a67fa3be333f3071e8c126978e0de0af8">DIR_BMPSTATIC</a>&#160;&#160;&#160;&quot;/BMPSta/&quot;</td></tr>
+<tr class="memdesc:a67fa3be333f3071e8c126978e0de0af8"><td class="mdescLeft">&#160;</td><td class="mdescRight">定义静态显示的BMP图片文件夹  <br /></td></tr>
+<tr class="separator:a67fa3be333f3071e8c126978e0de0af8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03eab8c254dbf5f68fcbfda590b58a9f" id="r_a03eab8c254dbf5f68fcbfda590b58a9f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a03eab8c254dbf5f68fcbfda590b58a9f">CFG_MENUCATE</a>&#160;&#160;&#160;&quot;CurrMenuCate&quot;</td></tr>
+<tr class="memdesc:a03eab8c254dbf5f68fcbfda590b58a9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">配置文件中菜单分类的名称  <br /></td></tr>
+<tr class="separator:a03eab8c254dbf5f68fcbfda590b58a9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab919e3b475fd4e50fc160326a16991e1" id="r_ab919e3b475fd4e50fc160326a16991e1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab919e3b475fd4e50fc160326a16991e1">CFG_MENUITEM</a>&#160;&#160;&#160;&quot;CurrMenuItem&quot;</td></tr>
+<tr class="memdesc:ab919e3b475fd4e50fc160326a16991e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">配置文件中菜单项的名称  <br /></td></tr>
+<tr class="separator:ab919e3b475fd4e50fc160326a16991e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e891660ae94717771a6286c88b1da4d" id="r_a8e891660ae94717771a6286c88b1da4d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8e891660ae94717771a6286c88b1da4d">CFG_DISPBMPIDX</a>&#160;&#160;&#160;&quot;CurrBmpIdx&quot;</td></tr>
+<tr class="memdesc:a8e891660ae94717771a6286c88b1da4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">BMP静态显示当前的序号  <br /></td></tr>
+<tr class="separator:a8e891660ae94717771a6286c88b1da4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>系统相关定义 </p>
+<dl class="section date"><dt>日期</dt><dd>2024/02/13 10:35:10 </dd></dl>
+<dl class="section author"><dt>作者</dt><dd><br  />
+ </dd></dl>
+<dl class="section version"><dt>版本</dt><dd>1.0 </dd></dl>
+</div><h2 class="groupheader">宏定义说明</h2>
+<a id="ab4d4eb9f2374fd8fdd97954821bbe8f3" name="ab4d4eb9f2374fd8fdd97954821bbe8f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4d4eb9f2374fd8fdd97954821bbe8f3">&#9670;&#160;</a></span>C_RP2040</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define C_RP2040</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8e891660ae94717771a6286c88b1da4d" name="a8e891660ae94717771a6286c88b1da4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e891660ae94717771a6286c88b1da4d">&#9670;&#160;</a></span>CFG_DISPBMPIDX</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CFG_DISPBMPIDX&#160;&#160;&#160;&quot;CurrBmpIdx&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>BMP静态显示当前的序号 </p>
+
+<p class="reference">被这些函数引用 <a class="el" href="../../dc/d41/class_m_m_f___disp_bmp_static.html#ab7869a4c7a92cca07464fd92a1c31852">MMF_DispBmpStatic::Exec()</a> , 以及 <a class="el" href="../../d8/da8/class_m_m_main.html#a96eadc18e89aa24f3b433810a264e883">MMMain::LoadCfg()</a>.</p>
+
+</div>
+</div>
+<a id="a03eab8c254dbf5f68fcbfda590b58a9f" name="a03eab8c254dbf5f68fcbfda590b58a9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03eab8c254dbf5f68fcbfda590b58a9f">&#9670;&#160;</a></span>CFG_MENUCATE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CFG_MENUCATE&#160;&#160;&#160;&quot;CurrMenuCate&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>配置文件中菜单分类的名称 </p>
+
+<p class="reference">被这些函数引用 <a class="el" href="../../d8/da8/class_m_m_main.html#a96eadc18e89aa24f3b433810a264e883">MMMain::LoadCfg()</a> , 以及 <a class="el" href="../../dd/d0e/class_m_m_menu.html#a4910e5531ee3067f8ec76aee1af35fe3">MMMenu::Switch()</a>.</p>
+
+</div>
+</div>
+<a id="ab919e3b475fd4e50fc160326a16991e1" name="ab919e3b475fd4e50fc160326a16991e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab919e3b475fd4e50fc160326a16991e1">&#9670;&#160;</a></span>CFG_MENUITEM</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CFG_MENUITEM&#160;&#160;&#160;&quot;CurrMenuItem&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>配置文件中菜单项的名称 </p>
+
+<p class="reference">被这些函数引用 <a class="el" href="../../d8/da8/class_m_m_main.html#a96eadc18e89aa24f3b433810a264e883">MMMain::LoadCfg()</a> , 以及 <a class="el" href="../../dd/d0e/class_m_m_menu.html#a4910e5531ee3067f8ec76aee1af35fe3">MMMenu::Switch()</a>.</p>
+
+</div>
+</div>
+<a id="ae4563e0c12bc96d779a42a82c6438834" name="ae4563e0c12bc96d779a42a82c6438834"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4563e0c12bc96d779a42a82c6438834">&#9670;&#160;</a></span>DIR_BMPLOOP</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DIR_BMPLOOP&#160;&#160;&#160;&quot;/bmp/&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>定义循环显示的BMP文件夹 </p>
+
+<p class="reference">被这些函数引用 <a class="el" href="../../d8/d4b/class_m_m_f___disp_bmp_loop.html#ace0e9e1afe69b6b5255bda430bd98650">MMF_DispBmpLoop::Exec()</a>.</p>
+
+</div>
+</div>
+<a id="a67fa3be333f3071e8c126978e0de0af8" name="a67fa3be333f3071e8c126978e0de0af8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67fa3be333f3071e8c126978e0de0af8">&#9670;&#160;</a></span>DIR_BMPSTATIC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DIR_BMPSTATIC&#160;&#160;&#160;&quot;/BMPSta/&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>定义静态显示的BMP图片文件夹 </p>
+
+<p class="reference">被这些函数引用 <a class="el" href="../../dc/d41/class_m_m_f___disp_bmp_static.html#a455cfebc136eadcf9b3ee6521f596d09">MMF_DispBmpStatic::DrawBMPByOrder()</a> , 以及 <a class="el" href="../../dc/d41/class_m_m_f___disp_bmp_static.html#a56ae05f904ff71d87ff4cb61bb19b964">MMF_DispBmpStatic::GetFileCount()</a>.</p>
+
+</div>
+</div>
+<a id="a248f19b3069fa436b8bb34eb3dc0b869" name="a248f19b3069fa436b8bb34eb3dc0b869"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a248f19b3069fa436b8bb34eb3dc0b869">&#9670;&#160;</a></span>FILENAME_CFG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FILENAME_CFG&#160;&#160;&#160;&quot;MMCFG.js&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>配置文件名称 </p>
+<dl class="section note"><dt>注解</dt><dd>保存的格式位JSON格式，由于FAT文件系统不支持4个字符的扩展名，所以这里用js </dd></dl>
+
+<p class="reference">被这些函数引用 <a class="el" href="../../d3/dae/class_m_m_config.html#a42bb4ad11cb1728f42f123215899bae0">MMConfig::Load()</a> , 以及 <a class="el" href="../../d3/dae/class_m_m_config.html#af9b6400a1f85ac0aad4b91b5efcc5b96">MMConfig::Save()</a>.</p>
+
+</div>
+</div>
+<a id="a3128fd6810b7983226d2e4c849e28962" name="a3128fd6810b7983226d2e4c849e28962"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3128fd6810b7983226d2e4c849e28962">&#9670;&#160;</a></span>FILENAME_LOGO</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FILENAME_LOGO&#160;&#160;&#160;&quot;LOGO.bmp&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>定义LOGO在SD卡中的文件名 </p>
+
+<p class="reference">被这些函数引用 <a class="el" href="../../d2/d25/class_m_m_grap.html#a2aacedf428f3313c96d6847bc82e9acd">MMGrap::DispLOGO()</a>.</p>
+
+</div>
+</div>
+<a id="ad4b41fd6e812ff525a2f53ea58a33edd" name="ad4b41fd6e812ff525a2f53ea58a33edd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4b41fd6e812ff525a2f53ea58a33edd">&#9670;&#160;</a></span>IRK_0</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define IRK_0&#160;&#160;&#160;(22)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>0 </p>
+
+<p class="reference">被这些函数引用 <a class="el" href="../../d8/da8/class_m_m_main.html#a19c58f26e45125a91aa999bfeed2c24d">MMMain::IRRVal()</a>.</p>
+
+</div>
+</div>
+<a id="ad34c7a0ca95061a374a575a3261c5908" name="ad34c7a0ca95061a374a575a3261c5908"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad34c7a0ca95061a374a575a3261c5908">&#9670;&#160;</a></span>IRK_1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define IRK_1&#160;&#160;&#160;(12)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>1 </p>
+
+<p class="reference">被这些函数引用 <a class="el" href="../../d8/da8/class_m_m_main.html#a19c58f26e45125a91aa999bfeed2c24d">MMMain::IRRVal()</a>.</p>
+
+</div>
+</div>
+<a id="a6b9b3706ea51ff110b84466347c938d2" name="a6b9b3706ea51ff110b84466347c938d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b9b3706ea51ff110b84466347c938d2">&#9670;&#160;</a></span>IRK_100</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define IRK_100&#160;&#160;&#160;(25)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>100 </p>
+
+</div>
+</div>
+<a id="ae8f985931c7771304296cf9cf4e7722e" name="ae8f985931c7771304296cf9cf4e7722e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8f985931c7771304296cf9cf4e7722e">&#9670;&#160;</a></span>IRK_2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define IRK_2&#160;&#160;&#160;(24)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>2 </p>
+
+<p class="reference">被这些函数引用 <a class="el" href="../../d8/da8/class_m_m_main.html#a19c58f26e45125a91aa999bfeed2c24d">MMMain::IRRVal()</a>.</p>
+
+</div>
+</div>
+<a id="aceeaf11943e7f8929346559876ff04e3" name="aceeaf11943e7f8929346559876ff04e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aceeaf11943e7f8929346559876ff04e3">&#9670;&#160;</a></span>IRK_200</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define IRK_200&#160;&#160;&#160;(13)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>200 </p>
+
+</div>
+</div>
+<a id="a8b4a87b9c3ecbcee9f20bd84e1e06e91" name="a8b4a87b9c3ecbcee9f20bd84e1e06e91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b4a87b9c3ecbcee9f20bd84e1e06e91">&#9670;&#160;</a></span>IRK_3</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define IRK_3&#160;&#160;&#160;(94)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>3 </p>
+
+<p class="reference">被这些函数引用 <a class="el" href="../../d8/da8/class_m_m_main.html#a19c58f26e45125a91aa999bfeed2c24d">MMMain::IRRVal()</a>.</p>
+
+</div>
+</div>
+<a id="a36615d2229fccec2de4a33a5c6c2b1f7" name="a36615d2229fccec2de4a33a5c6c2b1f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36615d2229fccec2de4a33a5c6c2b1f7">&#9670;&#160;</a></span>IRK_4</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define IRK_4&#160;&#160;&#160;(8)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>4 </p>
+
+<p class="reference">被这些函数引用 <a class="el" href="../../d8/da8/class_m_m_main.html#a19c58f26e45125a91aa999bfeed2c24d">MMMain::IRRVal()</a>.</p>
+
+</div>
+</div>
+<a id="ab58bac0c80c0278e152141556ceb13b2" name="ab58bac0c80c0278e152141556ceb13b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab58bac0c80c0278e152141556ceb13b2">&#9670;&#160;</a></span>IRK_5</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define IRK_5&#160;&#160;&#160;(28)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>5 </p>
+
+<p class="reference">被这些函数引用 <a class="el" href="../../d8/da8/class_m_m_main.html#a19c58f26e45125a91aa999bfeed2c24d">MMMain::IRRVal()</a>.</p>
+
+</div>
+</div>
+<a id="af1af9098cb8ab603c2e215893ce358a1" name="af1af9098cb8ab603c2e215893ce358a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1af9098cb8ab603c2e215893ce358a1">&#9670;&#160;</a></span>IRK_6</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define IRK_6&#160;&#160;&#160;(90)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>6 </p>
+
+<p class="reference">被这些函数引用 <a class="el" href="../../d8/da8/class_m_m_main.html#a19c58f26e45125a91aa999bfeed2c24d">MMMain::IRRVal()</a>.</p>
+
+</div>
+</div>
+<a id="a87638a5e470454d2c38c4eccf10ae810" name="a87638a5e470454d2c38c4eccf10ae810"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87638a5e470454d2c38c4eccf10ae810">&#9670;&#160;</a></span>IRK_7</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define IRK_7&#160;&#160;&#160;(66)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>7 </p>
+
+<p class="reference">被这些函数引用 <a class="el" href="../../d8/da8/class_m_m_main.html#a19c58f26e45125a91aa999bfeed2c24d">MMMain::IRRVal()</a>.</p>
+
+</div>
+</div>
+<a id="a8295257477f5641aa4b04fde877ed8f1" name="a8295257477f5641aa4b04fde877ed8f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8295257477f5641aa4b04fde877ed8f1">&#9670;&#160;</a></span>IRK_8</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define IRK_8&#160;&#160;&#160;(82)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>8 </p>
+
+<p class="reference">被这些函数引用 <a class="el" href="../../d8/da8/class_m_m_main.html#a19c58f26e45125a91aa999bfeed2c24d">MMMain::IRRVal()</a>.</p>
+
+</div>
+</div>
+<a id="a75ae27e6458988915d8d7e5c9c80ed38" name="a75ae27e6458988915d8d7e5c9c80ed38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75ae27e6458988915d8d7e5c9c80ed38">&#9670;&#160;</a></span>IRK_9</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define IRK_9&#160;&#160;&#160;(74)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>9 </p>
+
+<p class="reference">被这些函数引用 <a class="el" href="../../d8/da8/class_m_m_main.html#a19c58f26e45125a91aa999bfeed2c24d">MMMain::IRRVal()</a>.</p>
+
+</div>
+</div>
+<a id="a4819a49b102bf151f4e4ed3e056e6fbb" name="a4819a49b102bf151f4e4ed3e056e6fbb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4819a49b102bf151f4e4ed3e056e6fbb">&#9670;&#160;</a></span>IRK_A</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define IRK_A&#160;&#160;&#160;<a class="el" href="#ac911042aaa9459a4694dc33d4187e91b">IRK_CH_MINUS</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A </p>
+
+<p class="reference">被这些函数引用 <a class="el" href="../../d8/da8/class_m_m_main.html#ac333785f214b3af1daf8b4b003baff22">MMMain::IRRSetMenu()</a>.</p>
+
+</div>
+</div>
+<a id="aaff5d832e8e9ba9996c8916446e047d5" name="aaff5d832e8e9ba9996c8916446e047d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaff5d832e8e9ba9996c8916446e047d5">&#9670;&#160;</a></span>IRK_B</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define IRK_B&#160;&#160;&#160;<a class="el" href="#aa0a3dc216da146de38b3f55fd9b9dbb7">IRK_CH</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>B </p>
+
+<p class="reference">被这些函数引用 <a class="el" href="../../d8/da8/class_m_m_main.html#ac333785f214b3af1daf8b4b003baff22">MMMain::IRRSetMenu()</a>.</p>
+
+</div>
+</div>
+<a id="a1617a3afc8564fef9a28ca6ef8289c6c" name="a1617a3afc8564fef9a28ca6ef8289c6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1617a3afc8564fef9a28ca6ef8289c6c">&#9670;&#160;</a></span>IRK_C</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define IRK_C&#160;&#160;&#160;<a class="el" href="#ae67d38fa1b9334be806a3c9706e64750">IRK_CH_PLUS</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>C </p>
+
+<p class="reference">被这些函数引用 <a class="el" href="../../d8/da8/class_m_m_main.html#ac333785f214b3af1daf8b4b003baff22">MMMain::IRRSetMenu()</a>.</p>
+
+</div>
+</div>
+<a id="aa0a3dc216da146de38b3f55fd9b9dbb7" name="aa0a3dc216da146de38b3f55fd9b9dbb7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0a3dc216da146de38b3f55fd9b9dbb7">&#9670;&#160;</a></span>IRK_CH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define IRK_CH&#160;&#160;&#160;(70)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>CH </p>
+
+</div>
+</div>
+<a id="ac911042aaa9459a4694dc33d4187e91b" name="ac911042aaa9459a4694dc33d4187e91b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac911042aaa9459a4694dc33d4187e91b">&#9670;&#160;</a></span>IRK_CH_MINUS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define IRK_CH_MINUS&#160;&#160;&#160;(69)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>CH+ </p>
+
+</div>
+</div>
+<a id="ae67d38fa1b9334be806a3c9706e64750" name="ae67d38fa1b9334be806a3c9706e64750"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae67d38fa1b9334be806a3c9706e64750">&#9670;&#160;</a></span>IRK_CH_PLUS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define IRK_CH_PLUS&#160;&#160;&#160;(71)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>CH- </p>
+
+</div>
+</div>
+<a id="a71f7ecf5ae428b241cd20d013bcc33c4" name="a71f7ecf5ae428b241cd20d013bcc33c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71f7ecf5ae428b241cd20d013bcc33c4">&#9670;&#160;</a></span>IRK_D</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define IRK_D&#160;&#160;&#160;<a class="el" href="#a26be76e9f712c4056406f23a84dd41ab">IRK_PRE</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>D </p>
+
+<p class="reference">被这些函数引用 <a class="el" href="../../d8/da8/class_m_m_main.html#ac333785f214b3af1daf8b4b003baff22">MMMain::IRRSetMenu()</a>.</p>
+
+</div>
+</div>
+<a id="a03e3090879744e8495043b710fa21416" name="a03e3090879744e8495043b710fa21416"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03e3090879744e8495043b710fa21416">&#9670;&#160;</a></span>IRK_DOWN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define IRK_DOWN&#160;&#160;&#160;<a class="el" href="#a6b9b3706ea51ff110b84466347c938d2">IRK_100</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Down </p>
+
+<p class="reference">被这些函数引用 <a class="el" href="../../dc/dbc/class_m_m_f___count_down.html#aebd68038f1b4d2650a70ce9e4c97ffa8">MMF_CountDown::Exec()</a>, <a class="el" href="../../d7/d4f/class_m_m_f___dice.html#a00ca8fe3cb6be0d4f14318ef818f5b98">MMF_Dice::Exec()</a>, <a class="el" href="../../d8/d4b/class_m_m_f___disp_bmp_loop.html#ace0e9e1afe69b6b5255bda430bd98650">MMF_DispBmpLoop::Exec()</a>, <a class="el" href="../../dd/d2f/class_m_m_f___score_board.html#a5bf1006b86ca0b2beb427508843f41c9">MMF_ScoreBoard::Exec()</a> , 以及 <a class="el" href="../../d7/d5c/class_m_m_f___stop_watch.html#aaa2329e1f5dc48c7cbe6cd3f8e2a159a">MMF_StopWatch::Exec()</a>.</p>
+
+</div>
+</div>
+<a id="a0c00ca032c51096ff1213097b0825993" name="a0c00ca032c51096ff1213097b0825993"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c00ca032c51096ff1213097b0825993">&#9670;&#160;</a></span>IRK_E</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define IRK_E&#160;&#160;&#160;<a class="el" href="#a5e1712ba163d2c0c5e4f585895238d0d">IRK_PAUSE</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>E </p>
+
+<p class="reference">被这些函数引用 <a class="el" href="../../d8/da8/class_m_m_main.html#ac333785f214b3af1daf8b4b003baff22">MMMain::IRRSetMenu()</a>.</p>
+
+</div>
+</div>
+<a id="a64a59b0b4fa39418668013d5c858fd00" name="a64a59b0b4fa39418668013d5c858fd00"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64a59b0b4fa39418668013d5c858fd00">&#9670;&#160;</a></span>IRK_EQ</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define IRK_EQ&#160;&#160;&#160;(9)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>EQ </p>
+
+</div>
+</div>
+<a id="a2fd6d07f3b400875ef9e03f8a3686530" name="a2fd6d07f3b400875ef9e03f8a3686530"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2fd6d07f3b400875ef9e03f8a3686530">&#9670;&#160;</a></span>IRK_F</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define IRK_F&#160;&#160;&#160;<a class="el" href="#aceeaf11943e7f8929346559876ff04e3">IRK_200</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>F </p>
+
+</div>
+</div>
+<a id="a61b3b16151bde755e29f584814013405" name="a61b3b16151bde755e29f584814013405"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61b3b16151bde755e29f584814013405">&#9670;&#160;</a></span>IRK_LEFT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define IRK_LEFT&#160;&#160;&#160;<a class="el" href="#ac34d81c3a912247cd07297cc308c969e">IRK_MINUS</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Left </p>
+
+<p class="reference">被这些函数引用 <a class="el" href="../../dc/dbc/class_m_m_f___count_down.html#aebd68038f1b4d2650a70ce9e4c97ffa8">MMF_CountDown::Exec()</a>, <a class="el" href="../../d7/d4f/class_m_m_f___dice.html#a00ca8fe3cb6be0d4f14318ef818f5b98">MMF_Dice::Exec()</a>, <a class="el" href="../../dc/d41/class_m_m_f___disp_bmp_static.html#ab7869a4c7a92cca07464fd92a1c31852">MMF_DispBmpStatic::Exec()</a>, <a class="el" href="../../dd/d2f/class_m_m_f___score_board.html#a5bf1006b86ca0b2beb427508843f41c9">MMF_ScoreBoard::Exec()</a> , 以及 <a class="el" href="../../d7/d5c/class_m_m_f___stop_watch.html#aaa2329e1f5dc48c7cbe6cd3f8e2a159a">MMF_StopWatch::Exec()</a>.</p>
+
+</div>
+</div>
+<a id="ac34d81c3a912247cd07297cc308c969e" name="ac34d81c3a912247cd07297cc308c969e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac34d81c3a912247cd07297cc308c969e">&#9670;&#160;</a></span>IRK_MINUS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define IRK_MINUS&#160;&#160;&#160;(7)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Minus </p>
+
+</div>
+</div>
+<a id="a094654ad63fa9df96cd6bcf953c5f246" name="a094654ad63fa9df96cd6bcf953c5f246"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a094654ad63fa9df96cd6bcf953c5f246">&#9670;&#160;</a></span>IRK_NONE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define IRK_NONE&#160;&#160;&#160;(0)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>空 </p>
+
+<p class="reference">被这些函数引用 <a class="el" href="../../d8/d4b/class_m_m_f___disp_bmp_loop.html#ace0e9e1afe69b6b5255bda430bd98650">MMF_DispBmpLoop::Exec()</a>, <a class="el" href="../../dc/d41/class_m_m_f___disp_bmp_static.html#ab7869a4c7a92cca07464fd92a1c31852">MMF_DispBmpStatic::Exec()</a>, <a class="el" href="../../d8/da8/class_m_m_main.html#a7cf5e110c33a356d3908ce65e0cfb5bc">MMMain::IDelay()</a>, <a class="el" href="../../dd/d90/class_m_m_hardware.html#a7c059b3660b5841519d14489d9856f83">MMHardware::IRRCode()</a> , 以及 <a class="el" href="../../d8/da8/class_m_m_main.html#ac333785f214b3af1daf8b4b003baff22">MMMain::IRRSetMenu()</a>.</p>
+
+</div>
+</div>
+<a id="a29354283a280903ed62fa33042ba6113" name="a29354283a280903ed62fa33042ba6113"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29354283a280903ed62fa33042ba6113">&#9670;&#160;</a></span>IRK_NXT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define IRK_NXT&#160;&#160;&#160;(64)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>下一曲 </p>
+
+</div>
+</div>
+<a id="a5e1712ba163d2c0c5e4f585895238d0d" name="a5e1712ba163d2c0c5e4f585895238d0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e1712ba163d2c0c5e4f585895238d0d">&#9670;&#160;</a></span>IRK_PAUSE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define IRK_PAUSE&#160;&#160;&#160;(67)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>暂停 </p>
+
+</div>
+</div>
+<a id="afc949fa13918eb3aad6fd43fead6aa08" name="afc949fa13918eb3aad6fd43fead6aa08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc949fa13918eb3aad6fd43fead6aa08">&#9670;&#160;</a></span>IRK_PLUS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define IRK_PLUS&#160;&#160;&#160;(21)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Plus </p>
+
+</div>
+</div>
+<a id="a26be76e9f712c4056406f23a84dd41ab" name="a26be76e9f712c4056406f23a84dd41ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26be76e9f712c4056406f23a84dd41ab">&#9670;&#160;</a></span>IRK_PRE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define IRK_PRE&#160;&#160;&#160;(68)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>上一曲 </p>
+
+</div>
+</div>
+<a id="af8aea16fac8c06740e5ea12d1b502a0e" name="af8aea16fac8c06740e5ea12d1b502a0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8aea16fac8c06740e5ea12d1b502a0e">&#9670;&#160;</a></span>IRK_RIGHT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define IRK_RIGHT&#160;&#160;&#160;<a class="el" href="#a64a59b0b4fa39418668013d5c858fd00">IRK_EQ</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Right </p>
+
+<p class="reference">被这些函数引用 <a class="el" href="../../dc/dbc/class_m_m_f___count_down.html#aebd68038f1b4d2650a70ce9e4c97ffa8">MMF_CountDown::Exec()</a>, <a class="el" href="../../d7/d4f/class_m_m_f___dice.html#a00ca8fe3cb6be0d4f14318ef818f5b98">MMF_Dice::Exec()</a>, <a class="el" href="../../dc/d41/class_m_m_f___disp_bmp_static.html#ab7869a4c7a92cca07464fd92a1c31852">MMF_DispBmpStatic::Exec()</a>, <a class="el" href="../../dd/d2f/class_m_m_f___score_board.html#a5bf1006b86ca0b2beb427508843f41c9">MMF_ScoreBoard::Exec()</a> , 以及 <a class="el" href="../../d7/d5c/class_m_m_f___stop_watch.html#aaa2329e1f5dc48c7cbe6cd3f8e2a159a">MMF_StopWatch::Exec()</a>.</p>
+
+</div>
+</div>
+<a id="a6b1f3c502bb8735fb089d66e89d0bbc3" name="a6b1f3c502bb8735fb089d66e89d0bbc3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b1f3c502bb8735fb089d66e89d0bbc3">&#9670;&#160;</a></span>IRK_SET</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define IRK_SET&#160;&#160;&#160;<a class="el" href="#afc949fa13918eb3aad6fd43fead6aa08">IRK_PLUS</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set </p>
+
+<p class="reference">被这些函数引用 <a class="el" href="../../dc/dbc/class_m_m_f___count_down.html#aebd68038f1b4d2650a70ce9e4c97ffa8">MMF_CountDown::Exec()</a>, <a class="el" href="../../dd/d2f/class_m_m_f___score_board.html#a5bf1006b86ca0b2beb427508843f41c9">MMF_ScoreBoard::Exec()</a> , 以及 <a class="el" href="../../d7/d5c/class_m_m_f___stop_watch.html#aaa2329e1f5dc48c7cbe6cd3f8e2a159a">MMF_StopWatch::Exec()</a>.</p>
+
+</div>
+</div>
+<a id="a3803fbcd48cc23374aba54b16ab97652" name="a3803fbcd48cc23374aba54b16ab97652"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3803fbcd48cc23374aba54b16ab97652">&#9670;&#160;</a></span>IRK_UP</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define IRK_UP&#160;&#160;&#160;<a class="el" href="#a29354283a280903ed62fa33042ba6113">IRK_NXT</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Up </p>
+
+<p class="reference">被这些函数引用 <a class="el" href="../../dc/dbc/class_m_m_f___count_down.html#aebd68038f1b4d2650a70ce9e4c97ffa8">MMF_CountDown::Exec()</a>, <a class="el" href="../../d7/d4f/class_m_m_f___dice.html#a00ca8fe3cb6be0d4f14318ef818f5b98">MMF_Dice::Exec()</a>, <a class="el" href="../../d8/d4b/class_m_m_f___disp_bmp_loop.html#ace0e9e1afe69b6b5255bda430bd98650">MMF_DispBmpLoop::Exec()</a>, <a class="el" href="../../dd/d2f/class_m_m_f___score_board.html#a5bf1006b86ca0b2beb427508843f41c9">MMF_ScoreBoard::Exec()</a> , 以及 <a class="el" href="../../d7/d5c/class_m_m_f___stop_watch.html#aaa2329e1f5dc48c7cbe6cd3f8e2a159a">MMF_StopWatch::Exec()</a>.</p>
+
+</div>
+</div>
+<a id="a1b58eafee28645b1da98d84b7ecb0f0b" name="a1b58eafee28645b1da98d84b7ecb0f0b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b58eafee28645b1da98d84b7ecb0f0b">&#9670;&#160;</a></span>IRR_WAITKEYTUP</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define IRR_WAITKEYTUP&#160;&#160;&#160;500</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>当按键识别后的等待抬起的时长，毫秒 </p>
+
+<p class="reference">被这些函数引用 <a class="el" href="../../d8/d4b/class_m_m_f___disp_bmp_loop.html#ace0e9e1afe69b6b5255bda430bd98650">MMF_DispBmpLoop::Exec()</a> , 以及 <a class="el" href="../../dc/d41/class_m_m_f___disp_bmp_static.html#ab7869a4c7a92cca07464fd92a1c31852">MMF_DispBmpStatic::Exec()</a>.</p>
+
+</div>
+</div>
+<a id="aeb66e831b931e6f2bbf30adc20759f92" name="aeb66e831b931e6f2bbf30adc20759f92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb66e831b931e6f2bbf30adc20759f92">&#9670;&#160;</a></span>M_BIRGHT_STANDBY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define M_BIRGHT_STANDBY&#160;&#160;&#160;(1u)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>工作亮度 </p>
+
+<p class="reference">被这些函数引用 <a class="el" href="../../d3/d6d/class_m_m_scr.html#ada41774ddb91cd909d9040a4610bc241">MMScr::UpdateBrightness()</a>.</p>
+
+</div>
+</div>
+<a id="a7d04ea8ac17e242b84428cc1c4777af3" name="a7d04ea8ac17e242b84428cc1c4777af3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d04ea8ac17e242b84428cc1c4777af3">&#9670;&#160;</a></span>M_BRIGHT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define M_BRIGHT&#160;&#160;&#160;(20)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>屏幕亮度0~255 </p>
+
+<p class="reference">被这些函数引用 <a class="el" href="../../d2/d25/class_m_m_grap.html#a2aacedf428f3313c96d6847bc82e9acd">MMGrap::DispLOGO()</a>, <a class="el" href="../../dd/d90/class_m_m_hardware.html#abcee21bd3596ee467d52e8073ecdd3c2">MMHardware::Init()</a> , 以及 <a class="el" href="../../d3/d6d/class_m_m_scr.html#ada41774ddb91cd909d9040a4610bc241">MMScr::UpdateBrightness()</a>.</p>
+
+</div>
+</div>
+<a id="a33fdd808e6d49f14e5d6e679e6a6dbea" name="a33fdd808e6d49f14e5d6e679e6a6dbea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33fdd808e6d49f14e5d6e679e6a6dbea">&#9670;&#160;</a></span>M_HEIGHT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define M_HEIGHT&#160;&#160;&#160;(16)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>定义矩阵屏幕行数 </p>
+
+<p class="reference">被这些函数引用 <a class="el" href="../../d7/d40/class_m_m_fill.html#a666e52956d528dc9646d041457039bd7">MMFill::ColFill()</a>, <a class="el" href="../../d7/d40/class_m_m_fill.html#a2304841d813e2a30e8617a2e808aeeac">MMFill::DiagFill_1()</a>, <a class="el" href="../../dd/ddc/class_m_m_s_d.html#a1d43fd7b5460ded545c9ea5308314bfd">MMSD::DrawBitmapFile()</a>, <a class="el" href="../../d3/d6d/class_m_m_scr.html#a71aff872991f5964151f28ae292faabe">MMScr::DrawRamBmp()</a>, <a class="el" href="../../d2/d30/class_m_m_f___fill_rainbow.html#a0ffbd4fb174621aad8c8f76dd6582166">MMF_FillRainbow::Exec()</a>, <a class="el" href="../../d9/d12/class_m_m_canvas.html#a97879ab2f9ffa45af6b83471d889fb61">MMCanvas::FillAll()</a>, <a class="el" href="../../dd/ddc/class_m_m_s_d.html#acae723b49241f396580a093a90fc3ba7">MMSD::LoadBitmapToRamBmp()</a>, <a class="el" href="../../d7/d40/class_m_m_fill.html#aa574b9386e3c0c5baee6ef8370becc7c">MMFill::PixTestLogicalOrder()</a>, <a class="el" href="../../d7/d40/class_m_m_fill.html#a11467082b165b338673ed7fbcdb0f5b9">MMFill::RectFill()</a>, <a class="el" href="../../d7/d40/class_m_m_fill.html#a265b5611b222dff31cbba4102a406d29">MMFill::RowFill()</a>, <a class="el" href="../../d7/d40/class_m_m_fill.html#afb776de434de0a76684f9527c0a78f3f">MMFill::SnakeFill()</a> , 以及 <a class="el" href="../../d6/d72/class_m_m_debug.html#a0b5ec1c4e80e8aac3ca0a896bf2c66c4">MMDebug::TestMMRamBmp()</a>.</p>
+
+</div>
+</div>
+<a id="a3944d4b6bf5a79ee3e0b97390ac2965d" name="a3944d4b6bf5a79ee3e0b97390ac2965d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3944d4b6bf5a79ee3e0b97390ac2965d">&#9670;&#160;</a></span>M_LEDTYPE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define M_LEDTYPE&#160;&#160;&#160;(NEO_GRB + NEO_KHZ800)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>定义LED类型 </p>
+
+</div>
+</div>
+<a id="a6061e00ce4f75ea9bcfa9e545d235829" name="a6061e00ce4f75ea9bcfa9e545d235829"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6061e00ce4f75ea9bcfa9e545d235829">&#9670;&#160;</a></span>M_MATRIXTYPE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define M_MATRIXTYPE&#160;&#160;&#160;(NEO_MATRIX_TOP + NEO_MATRIX_LEFT + NEO_MATRIX_COLUMNS + NEO_MATRIX_ZIGZAG)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>定义矩阵屏幕类型 </p>
+
+</div>
+</div>
+<a id="a1919268ea6f5f4e6bc692f6835dbc92b" name="a1919268ea6f5f4e6bc692f6835dbc92b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1919268ea6f5f4e6bc692f6835dbc92b">&#9670;&#160;</a></span>M_PIRR_DELAY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define M_PIRR_DELAY&#160;&#160;&#160;(20000u)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>人体检测延迟，毫秒 </p>
+
+<p class="reference">被这些函数引用 <a class="el" href="../../d3/d6d/class_m_m_scr.html#ada41774ddb91cd909d9040a4610bc241">MMScr::UpdateBrightness()</a>.</p>
+
+</div>
+</div>
+<a id="a1b9d6992c50a3f5bc5be8d8085fab72b" name="a1b9d6992c50a3f5bc5be8d8085fab72b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b9d6992c50a3f5bc5be8d8085fab72b">&#9670;&#160;</a></span>M_PIXS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define M_PIXS&#160;&#160;&#160;(<a class="el" href="#a33fdd808e6d49f14e5d6e679e6a6dbea">M_HEIGHT</a> * <a class="el" href="#a3be0529049ae7cb377b60ef8ee4970b0">M_WIDTH</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>定义矩阵像素数 </p>
+
+<p class="reference">被这些函数引用 <a class="el" href="../../d7/d40/class_m_m_fill.html#a4fd77e82aa84ed96e205fbbf5751820a">MMFill::PixTestPhysicalOrder()</a>.</p>
+
+</div>
+</div>
+<a id="a3be0529049ae7cb377b60ef8ee4970b0" name="a3be0529049ae7cb377b60ef8ee4970b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3be0529049ae7cb377b60ef8ee4970b0">&#9670;&#160;</a></span>M_WIDTH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define M_WIDTH&#160;&#160;&#160;(16)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>定义矩阵屏幕列数 </p>
+
+<p class="reference">被这些函数引用 <a class="el" href="../../d7/d40/class_m_m_fill.html#a666e52956d528dc9646d041457039bd7">MMFill::ColFill()</a>, <a class="el" href="../../d7/d40/class_m_m_fill.html#ada8bbed1d8ab908c4269507ef13cf655">MMFill::DiagFill()</a>, <a class="el" href="../../d7/d40/class_m_m_fill.html#a2304841d813e2a30e8617a2e808aeeac">MMFill::DiagFill_1()</a>, <a class="el" href="../../dd/ddc/class_m_m_s_d.html#a1d43fd7b5460ded545c9ea5308314bfd">MMSD::DrawBitmapFile()</a>, <a class="el" href="../../d3/d6d/class_m_m_scr.html#a71aff872991f5964151f28ae292faabe">MMScr::DrawRamBmp()</a>, <a class="el" href="../../d2/d30/class_m_m_f___fill_rainbow.html#a0ffbd4fb174621aad8c8f76dd6582166">MMF_FillRainbow::Exec()</a>, <a class="el" href="../../d9/d12/class_m_m_canvas.html#a97879ab2f9ffa45af6b83471d889fb61">MMCanvas::FillAll()</a>, <a class="el" href="../../dd/ddc/class_m_m_s_d.html#acae723b49241f396580a093a90fc3ba7">MMSD::LoadBitmapToRamBmp()</a>, <a class="el" href="../../d7/d40/class_m_m_fill.html#aa574b9386e3c0c5baee6ef8370becc7c">MMFill::PixTestLogicalOrder()</a>, <a class="el" href="../../d7/d40/class_m_m_fill.html#a11467082b165b338673ed7fbcdb0f5b9">MMFill::RectFill()</a>, <a class="el" href="../../d7/d40/class_m_m_fill.html#a265b5611b222dff31cbba4102a406d29">MMFill::RowFill()</a>, <a class="el" href="../../d7/d40/class_m_m_fill.html#afb776de434de0a76684f9527c0a78f3f">MMFill::SnakeFill()</a> , 以及 <a class="el" href="../../d6/d72/class_m_m_debug.html#a0b5ec1c4e80e8aac3ca0a896bf2c66c4">MMDebug::TestMMRamBmp()</a>.</p>
+
+</div>
+</div>
+<a id="aef13d3efb4b39f064a8db5d4faa0f07a" name="aef13d3efb4b39f064a8db5d4faa0f07a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef13d3efb4b39f064a8db5d4faa0f07a">&#9670;&#160;</a></span>MMDEBUG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MMDEBUG</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a192ea8eaba652d29bfc08675edebb6a2" name="a192ea8eaba652d29bfc08675edebb6a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a192ea8eaba652d29bfc08675edebb6a2">&#9670;&#160;</a></span>PIN_BUZZER</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PIN_BUZZER&#160;&#160;&#160;(20u)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>蜂鸣器引脚 </p>
+
+<p class="reference">被这些函数引用 <a class="el" href="../../dd/d90/class_m_m_hardware.html#acf49efae0075707c832bbdf45ee0b1a1">MMHardware::Beep()</a> , 以及 <a class="el" href="../../d8/da8/class_m_m_main.html#af37ef7599a15746eadbb3be0e7a07ecd">MMMain::Init()</a>.</p>
+
+</div>
+</div>
+<a id="ae31e73ed29a89d681154d60c736d8892" name="ae31e73ed29a89d681154d60c736d8892"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae31e73ed29a89d681154d60c736d8892">&#9670;&#160;</a></span>PIN_DHT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PIN_DHT&#160;&#160;&#160;(21u)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>定义DHT温湿度传感器引脚 </p>
+
+</div>
+</div>
+<a id="ae40a7830411bcd1f870ae4e4a4b30e7b" name="ae40a7830411bcd1f870ae4e4a4b30e7b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae40a7830411bcd1f870ae4e4a4b30e7b">&#9670;&#160;</a></span>PIN_DS1302_CS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PIN_DS1302_CS&#160;&#160;&#160;(6u)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>DS1302选择引脚 </p>
+
+</div>
+</div>
+<a id="a169ff6e615c8620dd6c20e128d29f521" name="a169ff6e615c8620dd6c20e128d29f521"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a169ff6e615c8620dd6c20e128d29f521">&#9670;&#160;</a></span>PIN_I2C_CLK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PIN_I2C_CLK&#160;&#160;&#160;PIN_WIRE_SCL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>I2C时钟引脚, 5 </p>
+
+</div>
+</div>
+<a id="a49edbf26f72ccb8175fd2a896ee7d71f" name="a49edbf26f72ccb8175fd2a896ee7d71f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49edbf26f72ccb8175fd2a896ee7d71f">&#9670;&#160;</a></span>PIN_I2C_DAT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PIN_I2C_DAT&#160;&#160;&#160;PIN_WIRE_SDA</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>I2C数据引脚, 4 </p>
+
+</div>
+</div>
+<a id="a321a21dfec72b4478e65892953628f26" name="a321a21dfec72b4478e65892953628f26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a321a21dfec72b4478e65892953628f26">&#9670;&#160;</a></span>PIN_IRR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PIN_IRR&#160;&#160;&#160;(2u)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>定义红外线接收引脚 </p>
+
+</div>
+</div>
+<a id="af344657d4cdc6769fe25af1c8334a1d4" name="af344657d4cdc6769fe25af1c8334a1d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af344657d4cdc6769fe25af1c8334a1d4">&#9670;&#160;</a></span>PIN_LED_BUILTIN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PIN_LED_BUILTIN&#160;&#160;&#160;LED_BUILTIN</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>板载LED引脚, 25 </p>
+
+</div>
+</div>
+<a id="a488451fba5db6042f21672f7444bfe53" name="a488451fba5db6042f21672f7444bfe53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a488451fba5db6042f21672f7444bfe53">&#9670;&#160;</a></span>PIN_M</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PIN_M&#160;&#160;&#160;(3u)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>定义矩阵屏幕引脚 </p>
+
+</div>
+</div>
+<a id="a1dea129d5bf64c56c8f9fc9b004b0584" name="a1dea129d5bf64c56c8f9fc9b004b0584"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1dea129d5bf64c56c8f9fc9b004b0584">&#9670;&#160;</a></span>PIN_PIRR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PIN_PIRR&#160;&#160;&#160;(22u)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>人体红外传感器引脚 </p>
+
+<p class="reference">被这些函数引用 <a class="el" href="../../dd/d90/class_m_m_hardware.html#af29bd8ddf65d6fb6abe3a77a173db5fb">MMHardware::GetPIRR()</a> , 以及 <a class="el" href="../../dd/d90/class_m_m_hardware.html#abcee21bd3596ee467d52e8073ecdd3c2">MMHardware::Init()</a>.</p>
+
+</div>
+</div>
+<a id="a5e9f8655e0ae1fdce4ce479f38a3c411" name="a5e9f8655e0ae1fdce4ce479f38a3c411"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e9f8655e0ae1fdce4ce479f38a3c411">&#9670;&#160;</a></span>PIN_S1_RX</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PIN_S1_RX&#160;&#160;&#160;SERIAL1_RX</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>定义蓝牙使用串行数据引脚 PIN_SERIAL_RX (1ul) </p>
+
+</div>
+</div>
+<a id="aa5e4cc21960bf3b4f1b91cf788937c65" name="aa5e4cc21960bf3b4f1b91cf788937c65"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5e4cc21960bf3b4f1b91cf788937c65">&#9670;&#160;</a></span>PIN_S1_TX</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PIN_S1_TX&#160;&#160;&#160;SERIAL1_TX</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>定义蓝牙使用串行数据引脚 PIN_SERIAL_TX (0ul) 系统默认 </p>
+
+</div>
+</div>
+<a id="a88a0bc76c8a5051ed6483fd5cfc950b1" name="a88a0bc76c8a5051ed6483fd5cfc950b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88a0bc76c8a5051ed6483fd5cfc950b1">&#9670;&#160;</a></span>PIN_SD_MISO</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PIN_SD_MISO&#160;&#160;&#160;PIN_SPI0_MISO</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">被这些函数引用 <a class="el" href="../../d6/d72/class_m_m_debug.html#ac0133a5b6625056386cfe496ac354183">MMDebug::TestSD()</a>.</p>
+
+</div>
+</div>
+<a id="a97d2783b878057b5a06a1e0223cc2a09" name="a97d2783b878057b5a06a1e0223cc2a09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97d2783b878057b5a06a1e0223cc2a09">&#9670;&#160;</a></span>PIN_SD_MOSI</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PIN_SD_MOSI&#160;&#160;&#160;PIN_SPI0_MOSI</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>定义SD访问相关的引脚 </p>
+
+<p class="reference">被这些函数引用 <a class="el" href="../../d6/d72/class_m_m_debug.html#ac0133a5b6625056386cfe496ac354183">MMDebug::TestSD()</a>.</p>
+
+</div>
+</div>
+<a id="a7ee1777ea50c55d652fc622d8749f92d" name="a7ee1777ea50c55d652fc622d8749f92d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ee1777ea50c55d652fc622d8749f92d">&#9670;&#160;</a></span>PIN_SD_SCK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PIN_SD_SCK&#160;&#160;&#160;PIN_SPI0_SCK</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">被这些函数引用 <a class="el" href="../../d6/d72/class_m_m_debug.html#ac0133a5b6625056386cfe496ac354183">MMDebug::TestSD()</a>.</p>
+
+</div>
+</div>
+<a id="a4194e137da9429104d8a3bc4ef0346f2" name="a4194e137da9429104d8a3bc4ef0346f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4194e137da9429104d8a3bc4ef0346f2">&#9670;&#160;</a></span>PIN_SD_SS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PIN_SD_SS&#160;&#160;&#160;PIN_SPI0_SS</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="reference">被这些函数引用 <a class="el" href="../../dd/ddc/class_m_m_s_d.html#a60eb9113a7d0bc2fa6193af2162ee45b">MMSD::DrawBitmapFile()</a>, <a class="el" href="../../dc/d41/class_m_m_f___disp_bmp_static.html#a455cfebc136eadcf9b3ee6521f596d09">MMF_DispBmpStatic::DrawBMPByOrder()</a>, <a class="el" href="../../d8/d4b/class_m_m_f___disp_bmp_loop.html#ace0e9e1afe69b6b5255bda430bd98650">MMF_DispBmpLoop::Exec()</a>, <a class="el" href="../../dc/d41/class_m_m_f___disp_bmp_static.html#a56ae05f904ff71d87ff4cb61bb19b964">MMF_DispBmpStatic::GetFileCount()</a>, <a class="el" href="../../dd/ddc/class_m_m_s_d.html#aa3195fed7334cfa45852700683f7ff20">MMSD::LoadBitmapToRamBmp()</a>, <a class="el" href="../../dd/ddc/class_m_m_s_d.html#ada6e4aace53af02fa7ab0ec948e65458">MMSD::LoadJsonFromFile()</a>, <a class="el" href="../../dd/ddc/class_m_m_s_d.html#a463fc7742fd9b4043b95079e8ab4d022">MMSD::SaveJsonToFile()</a> , 以及 <a class="el" href="../../d6/d72/class_m_m_debug.html#ac0133a5b6625056386cfe496ac354183">MMDebug::TestSD()</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="../../d6/d2b/_m_m_define_8hpp.html">MMDefine.hpp</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+  </ul>
+</div>
+</body>
+</html>

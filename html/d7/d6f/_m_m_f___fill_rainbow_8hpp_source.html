@@ -1,0 +1,206 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MagicMatrix 魔法矩阵: MMF_FillRainbow.hpp 源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../clipboard.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../LOGO 64x64.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">MagicMatrix 魔法矩阵
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(1); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('d7/d6f/_m_m_f___fill_rainbow_8hpp_source.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">MMF_FillRainbow.hpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="../../d7/d6f/_m_m_f___fill_rainbow_8hpp.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/**</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment"> * @file MMF_FillRainbow.hpp</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"> * @date 2024/02/26 16:59:45</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment"> * @author  </span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"> * @version 1.0</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment"> * @brief 彩虹填充</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment"> * @details</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#ifndef _MMF_FILLRAINBOW_HPP</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#define _MMF_FILLRAINBOW_HPP</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;<a class="code" href="../../d4/dea/_m_m_fill_8hpp.html">../MMFill.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &quot;<a class="code" href="../../dd/d7a/_m_m_func_8hpp.html">MMFunc.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &quot;<a class="code" href="../../d8/db3/_m_m_scr_8hpp.html">MMScr.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment">// 矩阵屏幕测试类，测试RGB显示</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment"></span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment">/// @brief 彩虹填充</span></div>
+<div class="foldopen" id="foldopen00020" data-start="{" data-end="};">
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="../../d2/d30/class_m_m_f___fill_rainbow.html">   20</a></span><span class="comment"></span><span class="keyword">class </span><a class="code hl_class" href="../../d2/d30/class_m_m_f___fill_rainbow.html">MMF_FillRainbow</a> : <span class="keyword">public</span> <a class="code hl_class" href="../../dc/d05/class_m_m_func.html">MMFunc</a> {</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">public</span>:<span class="comment"></span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">    /// @brief 构造函数</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment">    /// @param fid 当前功能ID</span></div>
+<div class="foldopen" id="foldopen00024" data-start="{" data-end="}">
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="../../d2/d30/class_m_m_f___fill_rainbow.html#ac5197aff18c634bfb7a0c78160e8d176">   24</a></span><span class="comment"></span>    <a class="code hl_function" href="../../d2/d30/class_m_m_f___fill_rainbow.html#ac5197aff18c634bfb7a0c78160e8d176">MMF_FillRainbow</a>(uint16_t fid)</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        : <a class="code hl_class" href="../../dc/d05/class_m_m_func.html">MMFunc</a>(fid)</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    {</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    }</div>
+</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment"></span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment">    /// @brief 执行功能</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment">    /// @param IDelay 询问等待接口</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment">    /// @return 执行结果</span></div>
+<div class="foldopen" id="foldopen00032" data-start="{" data-end="}">
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="../../d2/d30/class_m_m_f___fill_rainbow.html#a0ffbd4fb174621aad8c8f76dd6582166">   32</a></span><span class="comment"></span>    <span class="keyword">virtual</span> <a class="code hl_typedef" href="../../dd/d7a/_m_m_func_8hpp.html#a9972882404fa9bc03a9b187727f4d028">MMFExecR_t</a> <a class="code hl_function" href="../../d2/d30/class_m_m_f___fill_rainbow.html#a0ffbd4fb174621aad8c8f76dd6582166">Exec</a>(<a class="code hl_class" href="../../d0/dae/class_inquire_delay.html">InquireDelay</a>* IDelay)</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    {</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        <span class="keywordflow">do</span> {</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code hl_define" href="../../d6/d2b/_m_m_define_8hpp.html#a33fdd808e6d49f14e5d6e679e6a6dbea">M_HEIGHT</a>; ++i) {</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>                <span class="keywordtype">int</span> r = i, c = 0;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>                <span class="keywordflow">while</span> (r &gt;= 0) {</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>                    <a class="code hl_variable" href="../../d8/db3/_m_m_scr_8hpp.html#a9263f0075bce75561a1faef94ec32a20">mmscr</a>.<a class="code hl_function" href="../../d3/d6d/class_m_m_scr.html#a7eda1be25d2bc27aa9293e7c3aa7d0ec">SetPixel</a>(c, r, 255, (r * 255 / <a class="code hl_define" href="../../d6/d2b/_m_m_define_8hpp.html#a33fdd808e6d49f14e5d6e679e6a6dbea">M_HEIGHT</a>), (c * 255 / <a class="code hl_define" href="../../d6/d2b/_m_m_define_8hpp.html#a3be0529049ae7cb377b60ef8ee4970b0">M_WIDTH</a>));</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>                    --r, ++c;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>                }</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>                <span class="keywordflow">if</span> (!IDelay-&gt;<a class="code hl_function" href="../../d0/dae/class_inquire_delay.html#a0868fc0af527ea2983130038e0aa6461">IDelay</a>(100))</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>                    <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>                <a class="code hl_variable" href="../../d8/db3/_m_m_scr_8hpp.html#a9263f0075bce75561a1faef94ec32a20">mmscr</a>.<a class="code hl_function" href="../../d3/d6d/class_m_m_scr.html#aaa0cc2b3c845462a66c865454051858c">Update</a>();</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>                <span class="keywordflow">while</span> (<a class="code hl_variable" href="../../d6/d16/_m_m_hardware_8hpp.html#a13e9b093d353efd2754d5b9cc4c90280">mmhardware</a>.<a class="code hl_variable" href="../../dd/d90/class_m_m_hardware.html#a8b7021026fdb67a4f22e101f81125eef">matrix</a>.availableForWrite())</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>                    delay(10); <span class="comment">// 等待设备就绪</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>            }</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code hl_define" href="../../d6/d2b/_m_m_define_8hpp.html#a3be0529049ae7cb377b60ef8ee4970b0">M_WIDTH</a>; ++i) {</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>                <span class="keywordtype">int</span> r = <a class="code hl_define" href="../../d6/d2b/_m_m_define_8hpp.html#a33fdd808e6d49f14e5d6e679e6a6dbea">M_HEIGHT</a>, c = i;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>                <span class="keywordflow">while</span> (c &lt; <a class="code hl_define" href="../../d6/d2b/_m_m_define_8hpp.html#a3be0529049ae7cb377b60ef8ee4970b0">M_WIDTH</a>) {</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>                    <a class="code hl_variable" href="../../d8/db3/_m_m_scr_8hpp.html#a9263f0075bce75561a1faef94ec32a20">mmscr</a>.<a class="code hl_function" href="../../d3/d6d/class_m_m_scr.html#a7eda1be25d2bc27aa9293e7c3aa7d0ec">SetPixel</a>(c, r, 255, (r * 255 / <a class="code hl_define" href="../../d6/d2b/_m_m_define_8hpp.html#a33fdd808e6d49f14e5d6e679e6a6dbea">M_HEIGHT</a>), (c * 255 / <a class="code hl_define" href="../../d6/d2b/_m_m_define_8hpp.html#a3be0529049ae7cb377b60ef8ee4970b0">M_WIDTH</a>));</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>                    --r, ++c;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>                }</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>                <span class="keywordflow">if</span> (!IDelay-&gt;<a class="code hl_function" href="../../d0/dae/class_inquire_delay.html#a0868fc0af527ea2983130038e0aa6461">IDelay</a>(100))</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>                    <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>                <a class="code hl_variable" href="../../d8/db3/_m_m_scr_8hpp.html#a9263f0075bce75561a1faef94ec32a20">mmscr</a>.<a class="code hl_function" href="../../d3/d6d/class_m_m_scr.html#aaa0cc2b3c845462a66c865454051858c">Update</a>();</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>                <span class="keywordflow">while</span> (<a class="code hl_variable" href="../../d6/d16/_m_m_hardware_8hpp.html#a13e9b093d353efd2754d5b9cc4c90280">mmhardware</a>.<a class="code hl_variable" href="../../dd/d90/class_m_m_hardware.html#a8b7021026fdb67a4f22e101f81125eef">matrix</a>.availableForWrite())</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>                    delay(10); <span class="comment">// 等待设备就绪</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>            }</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>            <a class="code hl_variable" href="../../d8/db3/_m_m_scr_8hpp.html#a9263f0075bce75561a1faef94ec32a20">mmscr</a>.<a class="code hl_function" href="../../d9/d12/class_m_m_canvas.html#a091d771fe8f0f66f6d71f3b6243d43b1">SetEmpty</a>();</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        } <span class="keywordflow">while</span> (IDelay-&gt;<a class="code hl_function" href="../../d0/dae/class_inquire_delay.html#a0868fc0af527ea2983130038e0aa6461">IDelay</a>(100));</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        <span class="keywordflow">return</span> <a class="code hl_define" href="../../dd/d7a/_m_m_func_8hpp.html#a82edcf2f045473e48a87ca55498824d9">EXECR_OK</a>;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    }</div>
+</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>};</div>
+</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="a_m_m_define_8hpp_html_a33fdd808e6d49f14e5d6e679e6a6dbea"><div class="ttname"><a href="../../d6/d2b/_m_m_define_8hpp.html#a33fdd808e6d49f14e5d6e679e6a6dbea">M_HEIGHT</a></div><div class="ttdeci">#define M_HEIGHT</div><div class="ttdoc">定义矩阵屏幕行数</div><div class="ttdef"><b>Definition</b> MMDefine.hpp:68</div></div>
+<div class="ttc" id="a_m_m_define_8hpp_html_a3be0529049ae7cb377b60ef8ee4970b0"><div class="ttname"><a href="../../d6/d2b/_m_m_define_8hpp.html#a3be0529049ae7cb377b60ef8ee4970b0">M_WIDTH</a></div><div class="ttdeci">#define M_WIDTH</div><div class="ttdef"><b>Definition</b> MMDefine.hpp:69</div></div>
+<div class="ttc" id="a_m_m_fill_8hpp_html"><div class="ttname"><a href="../../d4/dea/_m_m_fill_8hpp.html">MMFill.hpp</a></div><div class="ttdoc">矩阵屏幕相关的填充功能</div></div>
+<div class="ttc" id="a_m_m_func_8hpp_html"><div class="ttname"><a href="../../dd/d7a/_m_m_func_8hpp.html">MMFunc.hpp</a></div><div class="ttdoc">功能块的基础类</div></div>
+<div class="ttc" id="a_m_m_func_8hpp_html_a82edcf2f045473e48a87ca55498824d9"><div class="ttname"><a href="../../dd/d7a/_m_m_func_8hpp.html#a82edcf2f045473e48a87ca55498824d9">EXECR_OK</a></div><div class="ttdeci">#define EXECR_OK</div><div class="ttdoc">执行结果 OK</div><div class="ttdef"><b>Definition</b> MMFunc.hpp:19</div></div>
+<div class="ttc" id="a_m_m_func_8hpp_html_a9972882404fa9bc03a9b187727f4d028"><div class="ttname"><a href="../../dd/d7a/_m_m_func_8hpp.html#a9972882404fa9bc03a9b187727f4d028">MMFExecR_t</a></div><div class="ttdeci">uint16_t MMFExecR_t</div><div class="ttdoc">定义功能执行结果类型</div><div class="ttdef"><b>Definition</b> MMFunc.hpp:30</div></div>
+<div class="ttc" id="a_m_m_hardware_8hpp_html_a13e9b093d353efd2754d5b9cc4c90280"><div class="ttname"><a href="../../d6/d16/_m_m_hardware_8hpp.html#a13e9b093d353efd2754d5b9cc4c90280">mmhardware</a></div><div class="ttdeci">class MMHardware mmhardware</div></div>
+<div class="ttc" id="a_m_m_scr_8hpp_html"><div class="ttname"><a href="../../d8/db3/_m_m_scr_8hpp.html">MMScr.hpp</a></div><div class="ttdoc">矩阵屏幕功能相关封装</div></div>
+<div class="ttc" id="a_m_m_scr_8hpp_html_a9263f0075bce75561a1faef94ec32a20"><div class="ttname"><a href="../../d8/db3/_m_m_scr_8hpp.html#a9263f0075bce75561a1faef94ec32a20">mmscr</a></div><div class="ttdeci">MMScr mmscr</div></div>
+<div class="ttc" id="aclass_inquire_delay_html"><div class="ttname"><a href="../../d0/dae/class_inquire_delay.html">InquireDelay</a></div><div class="ttdoc">查询等待类型(接口)</div><div class="ttdef"><b>Definition</b> MMFunc.hpp:39</div></div>
+<div class="ttc" id="aclass_inquire_delay_html_a0868fc0af527ea2983130038e0aa6461"><div class="ttname"><a href="../../d0/dae/class_inquire_delay.html#a0868fc0af527ea2983130038e0aa6461">InquireDelay::IDelay</a></div><div class="ttdeci">virtual bool IDelay(unsigned long ms)</div><div class="ttdoc">询问并等待</div><div class="ttdef"><b>Definition</b> MMFunc.hpp:54</div></div>
+<div class="ttc" id="aclass_m_m_canvas_html_a091d771fe8f0f66f6d71f3b6243d43b1"><div class="ttname"><a href="../../d9/d12/class_m_m_canvas.html#a091d771fe8f0f66f6d71f3b6243d43b1">MMCanvas::SetEmpty</a></div><div class="ttdeci">virtual void SetEmpty()</div><div class="ttdoc">清空屏幕</div><div class="ttdef"><b>Definition</b> MMCanvas.hpp:51</div></div>
+<div class="ttc" id="aclass_m_m_f___fill_rainbow_html"><div class="ttname"><a href="../../d2/d30/class_m_m_f___fill_rainbow.html">MMF_FillRainbow</a></div><div class="ttdoc">彩虹填充</div><div class="ttdef"><b>Definition</b> MMF_FillRainbow.hpp:20</div></div>
+<div class="ttc" id="aclass_m_m_f___fill_rainbow_html_a0ffbd4fb174621aad8c8f76dd6582166"><div class="ttname"><a href="../../d2/d30/class_m_m_f___fill_rainbow.html#a0ffbd4fb174621aad8c8f76dd6582166">MMF_FillRainbow::Exec</a></div><div class="ttdeci">virtual MMFExecR_t Exec(InquireDelay *IDelay)</div><div class="ttdoc">执行功能</div><div class="ttdef"><b>Definition</b> MMF_FillRainbow.hpp:32</div></div>
+<div class="ttc" id="aclass_m_m_f___fill_rainbow_html_ac5197aff18c634bfb7a0c78160e8d176"><div class="ttname"><a href="../../d2/d30/class_m_m_f___fill_rainbow.html#ac5197aff18c634bfb7a0c78160e8d176">MMF_FillRainbow::MMF_FillRainbow</a></div><div class="ttdeci">MMF_FillRainbow(uint16_t fid)</div><div class="ttdoc">构造函数</div><div class="ttdef"><b>Definition</b> MMF_FillRainbow.hpp:24</div></div>
+<div class="ttc" id="aclass_m_m_func_html"><div class="ttname"><a href="../../dc/d05/class_m_m_func.html">MMFunc</a></div><div class="ttdoc">功能基础类</div><div class="ttdef"><b>Definition</b> MMFunc.hpp:80</div></div>
+<div class="ttc" id="aclass_m_m_hardware_html_a8b7021026fdb67a4f22e101f81125eef"><div class="ttname"><a href="../../dd/d90/class_m_m_hardware.html#a8b7021026fdb67a4f22e101f81125eef">MMHardware::matrix</a></div><div class="ttdeci">Adafruit_NeoMatrix matrix</div><div class="ttdoc">矩阵模块</div><div class="ttdef"><b>Definition</b> MMHardware.hpp:53</div></div>
+<div class="ttc" id="aclass_m_m_scr_html_a7eda1be25d2bc27aa9293e7c3aa7d0ec"><div class="ttname"><a href="../../d3/d6d/class_m_m_scr.html#a7eda1be25d2bc27aa9293e7c3aa7d0ec">MMScr::SetPixel</a></div><div class="ttdeci">virtual void SetPixel(int16_t x, int16_t y, uint8_t R, uint8_t G, uint8_t B)</div><div class="ttdoc">设置一个像素点</div><div class="ttdef"><b>Definition</b> MMScr.hpp:65</div></div>
+<div class="ttc" id="aclass_m_m_scr_html_aaa0cc2b3c845462a66c865454051858c"><div class="ttname"><a href="../../d3/d6d/class_m_m_scr.html#aaa0cc2b3c845462a66c865454051858c">MMScr::Update</a></div><div class="ttdeci">void Update()</div><div class="ttdoc">更新矩阵重新绘制</div><div class="ttdef"><b>Definition</b> MMScr.hpp:44</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="../../dir_1c49e53fcfd3949c530dabe651cf32b3.html">MMFunc</a></li><li class="navelem"><a class="el" href="../../d7/d6f/_m_m_f___fill_rainbow_8hpp.html">MMF_FillRainbow.hpp</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+  </ul>
+</div>
+</body>
+</html>

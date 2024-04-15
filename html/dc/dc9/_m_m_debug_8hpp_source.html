@@ -1,0 +1,451 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MagicMatrix 魔法矩阵: MMDebug.hpp 源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../clipboard.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../LOGO 64x64.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">MagicMatrix 魔法矩阵
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(1); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('dc/dc9/_m_m_debug_8hpp_source.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">MMDebug.hpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="../../dc/dc9/_m_m_debug_8hpp.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/**</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment"> * @file MMDebug.hpp</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"> * @date 2024/02/13 10:31:50</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment"> * @author  </span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"> * @version 1.0</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment"> * @brief 调试相关功能</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment"> * @details 设备相关的调试</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &quot;<a class="code" href="../../d6/d2b/_m_m_define_8hpp.html">MMDefine.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#ifdef MMDEBUG </span><span class="comment">// 如果打开调试</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#ifndef _MMDEBUG_HPP</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#define _MMDEBUG_HPP</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &lt;ArduinoJson.h&gt;</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#include &quot;<a class="code" href="../../d4/db6/_m_m_grap_8hpp.html">MMGrap.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#include &quot;<a class="code" href="../../d6/d16/_m_m_hardware_8hpp.html">MMHardware.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#include &quot;<a class="code" href="../../dd/d0c/_m_m_ram_bmp_8hpp.html">MMRamBmp.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include &quot;<a class="code" href="../../d0/da4/_m_m_s_d_8hpp.html">MMSD.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#include &quot;<a class="code" href="../../d8/db3/_m_m_scr_8hpp.html">MMScr.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment"></span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment">/// @brief 调试相关功能类</span></div>
+<div class="foldopen" id="foldopen00026" data-start="{" data-end="};">
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="../../d6/d72/class_m_m_debug.html">   26</a></span><span class="comment"></span><span class="keyword">class </span><a class="code hl_class" href="../../d6/d72/class_m_m_debug.html">MMDebug</a> {</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="keyword">public</span>:<span class="comment"></span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment">    /// @brief 测试红外线接收</span></div>
+<div class="foldopen" id="foldopen00029" data-start="{" data-end="}">
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="../../d6/d72/class_m_m_debug.html#a058f5c2e2823b1cdc0c0c2edb0d7f8c4">   29</a></span><span class="comment"></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="../../d6/d72/class_m_m_debug.html#a058f5c2e2823b1cdc0c0c2edb0d7f8c4">TestIRR</a>()</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    {</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        <a class="code hl_define" href="../../d6/d16/_m_m_hardware_8hpp.html#a9757131cd175465e6220de58b57f6b78">UART_USB</a>.println(<a class="code hl_variable" href="../../d6/d16/_m_m_hardware_8hpp.html#a13e9b093d353efd2754d5b9cc4c90280">mmhardware</a>.<a class="code hl_function" href="../../dd/d90/class_m_m_hardware.html#a7c059b3660b5841519d14489d9856f83">IRRCode</a>());</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        delay(100);</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    }</div>
+</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment"></span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment">    /// @brief 测试RTC显示时间</span></div>
+<div class="foldopen" id="foldopen00036" data-start="{" data-end="}">
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="../../d6/d72/class_m_m_debug.html#a391fdb8cd8fb9712fe7a8959fa3bd616">   36</a></span><span class="comment"></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="../../d6/d72/class_m_m_debug.html#a391fdb8cd8fb9712fe7a8959fa3bd616">TestRTC</a>()</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    {</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        <span class="keywordtype">char</span> buff[26] = {};</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        RtcDateTime now = <a class="code hl_variable" href="../../d6/d16/_m_m_hardware_8hpp.html#a13e9b093d353efd2754d5b9cc4c90280">mmhardware</a>.<a class="code hl_variable" href="../../dd/d90/class_m_m_hardware.html#a49cfa403e9a32d1dfc8f2e390201a52f">Rtc</a>.GetDateTime();</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        sprintf(buff, <span class="stringliteral">&quot;%04d-%02d-%02d %02d:%02d:%02d&quot;</span>,</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>            now.Year(), now.Month(), now.Day(),</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>            now.Hour(), now.Minute(), now.Second());</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        <a class="code hl_define" href="../../d6/d16/_m_m_hardware_8hpp.html#a9757131cd175465e6220de58b57f6b78">UART_USB</a>.println(buff);</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    }</div>
+</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment"></span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="comment">    /// @brief 测试SD卡文件访问</span></div>
+<div class="foldopen" id="foldopen00047" data-start="{" data-end="}">
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="../../d6/d72/class_m_m_debug.html#ac0133a5b6625056386cfe496ac354183">   47</a></span><span class="comment"></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="../../d6/d72/class_m_m_debug.html#ac0133a5b6625056386cfe496ac354183">TestSD</a>()</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    {</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="preprocessor">#if defined(ARDUINO_ARCH_MBED)</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        <a class="code hl_define" href="../../d6/d16/_m_m_hardware_8hpp.html#a9757131cd175465e6220de58b57f6b78">UART_USB</a>.print(<span class="stringliteral">&quot;Starting SD Card ReadWrite on MBED &quot;</span>);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        <a class="code hl_define" href="../../d6/d16/_m_m_hardware_8hpp.html#a9757131cd175465e6220de58b57f6b78">UART_USB</a>.print(<span class="stringliteral">&quot;Starting SD Card ReadWrite on &quot;</span>);</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        <span class="comment">// SD卡文件对象</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        File myFile;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        <a class="code hl_define" href="../../d6/d16/_m_m_hardware_8hpp.html#a9757131cd175465e6220de58b57f6b78">UART_USB</a>.println(BOARD_NAME);</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        <a class="code hl_define" href="../../d6/d16/_m_m_hardware_8hpp.html#a9757131cd175465e6220de58b57f6b78">UART_USB</a>.println(RP2040_SD_VERSION);</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        <a class="code hl_define" href="../../d6/d16/_m_m_hardware_8hpp.html#a9757131cd175465e6220de58b57f6b78">UART_USB</a>.print(<span class="stringliteral">&quot;Initializing SD card with SS = &quot;</span>);</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        <a class="code hl_define" href="../../d6/d16/_m_m_hardware_8hpp.html#a9757131cd175465e6220de58b57f6b78">UART_USB</a>.println(<a class="code hl_define" href="../../d6/d2b/_m_m_define_8hpp.html#a4194e137da9429104d8a3bc4ef0346f2">PIN_SD_SS</a>);</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        <a class="code hl_define" href="../../d6/d16/_m_m_hardware_8hpp.html#a9757131cd175465e6220de58b57f6b78">UART_USB</a>.print(<span class="stringliteral">&quot;SCK = &quot;</span>);</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        <a class="code hl_define" href="../../d6/d16/_m_m_hardware_8hpp.html#a9757131cd175465e6220de58b57f6b78">UART_USB</a>.println(<a class="code hl_define" href="../../d6/d2b/_m_m_define_8hpp.html#a7ee1777ea50c55d652fc622d8749f92d">PIN_SD_SCK</a>);</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        <a class="code hl_define" href="../../d6/d16/_m_m_hardware_8hpp.html#a9757131cd175465e6220de58b57f6b78">UART_USB</a>.print(<span class="stringliteral">&quot;MOSI = &quot;</span>);</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        <a class="code hl_define" href="../../d6/d16/_m_m_hardware_8hpp.html#a9757131cd175465e6220de58b57f6b78">UART_USB</a>.println(<a class="code hl_define" href="../../d6/d2b/_m_m_define_8hpp.html#a97d2783b878057b5a06a1e0223cc2a09">PIN_SD_MOSI</a>);</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        <a class="code hl_define" href="../../d6/d16/_m_m_hardware_8hpp.html#a9757131cd175465e6220de58b57f6b78">UART_USB</a>.print(<span class="stringliteral">&quot;MISO = &quot;</span>);</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        <a class="code hl_define" href="../../d6/d16/_m_m_hardware_8hpp.html#a9757131cd175465e6220de58b57f6b78">UART_USB</a>.println(<a class="code hl_define" href="../../d6/d2b/_m_m_define_8hpp.html#a88a0bc76c8a5051ed6483fd5cfc950b1">PIN_SD_MISO</a>);</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        <span class="keywordflow">if</span> (!SD.begin(<a class="code hl_define" href="../../d6/d2b/_m_m_define_8hpp.html#a4194e137da9429104d8a3bc4ef0346f2">PIN_SD_SS</a>)) {</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>            <a class="code hl_define" href="../../d6/d16/_m_m_hardware_8hpp.html#a9757131cd175465e6220de58b57f6b78">UART_USB</a>.println(<span class="stringliteral">&quot;SD Initialization failed!&quot;</span>);</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>            <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        }</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        <a class="code hl_define" href="../../d6/d16/_m_m_hardware_8hpp.html#a9757131cd175465e6220de58b57f6b78">UART_USB</a>.println(<span class="stringliteral">&quot;SD Initialization done.&quot;</span>);</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="preprocessor">#define fileName &quot;newtest0.txt&quot;</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        <span class="keywordtype">char</span> writeData[] = <span class="stringliteral">&quot;Testing writing to &quot;</span> <a class="code hl_define" href="../../dc/dc9/_m_m_debug_8hpp.html#aa7f2ee2cf168724e2255f28b496c2c85">fileName</a>;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        <span class="comment">// open the file. note that only one file can be open at a time,</span></div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        <span class="comment">// so you have to close this one before opening another.</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        myFile = SD.open(<a class="code hl_define" href="../../dc/dc9/_m_m_debug_8hpp.html#aa7f2ee2cf168724e2255f28b496c2c85">fileName</a>, FILE_WRITE);</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        <span class="comment">// if the file opened okay, write to it:</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        <span class="keywordflow">if</span> (myFile) {</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>            <a class="code hl_define" href="../../d6/d16/_m_m_hardware_8hpp.html#a9757131cd175465e6220de58b57f6b78">UART_USB</a>.print(<span class="stringliteral">&quot;Writing to &quot;</span>);</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>            <a class="code hl_define" href="../../d6/d16/_m_m_hardware_8hpp.html#a9757131cd175465e6220de58b57f6b78">UART_USB</a>.print(<a class="code hl_define" href="../../dc/dc9/_m_m_debug_8hpp.html#aa7f2ee2cf168724e2255f28b496c2c85">fileName</a>);</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>            <a class="code hl_define" href="../../d6/d16/_m_m_hardware_8hpp.html#a9757131cd175465e6220de58b57f6b78">UART_USB</a>.print(<span class="stringliteral">&quot; ==&gt; &quot;</span>);</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>            <a class="code hl_define" href="../../d6/d16/_m_m_hardware_8hpp.html#a9757131cd175465e6220de58b57f6b78">UART_USB</a>.println(writeData);</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>            myFile.println(writeData);</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>            <span class="comment">// close the file:</span></div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>            myFile.close();</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>            <a class="code hl_define" href="../../d6/d16/_m_m_hardware_8hpp.html#a9757131cd175465e6220de58b57f6b78">UART_USB</a>.println(<span class="stringliteral">&quot;done.&quot;</span>);</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>            <span class="comment">// if the file didn&#39;t open, print an error:</span></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>            <a class="code hl_define" href="../../d6/d16/_m_m_hardware_8hpp.html#a9757131cd175465e6220de58b57f6b78">UART_USB</a>.print(<span class="stringliteral">&quot;Error opening &quot;</span>);</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>            <a class="code hl_define" href="../../d6/d16/_m_m_hardware_8hpp.html#a9757131cd175465e6220de58b57f6b78">UART_USB</a>.println(<a class="code hl_define" href="../../dc/dc9/_m_m_debug_8hpp.html#aa7f2ee2cf168724e2255f28b496c2c85">fileName</a>);</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>        }</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>        <span class="comment">// re-open the file for reading:</span></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>        myFile = SD.open(<a class="code hl_define" href="../../dc/dc9/_m_m_debug_8hpp.html#aa7f2ee2cf168724e2255f28b496c2c85">fileName</a>, FILE_READ);</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>        <span class="keywordflow">if</span> (myFile) {</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>            <a class="code hl_define" href="../../d6/d16/_m_m_hardware_8hpp.html#a9757131cd175465e6220de58b57f6b78">UART_USB</a>.print(<span class="stringliteral">&quot;Reading from &quot;</span>);</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>            <a class="code hl_define" href="../../d6/d16/_m_m_hardware_8hpp.html#a9757131cd175465e6220de58b57f6b78">UART_USB</a>.println(<a class="code hl_define" href="../../dc/dc9/_m_m_debug_8hpp.html#aa7f2ee2cf168724e2255f28b496c2c85">fileName</a>);</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>            <a class="code hl_define" href="../../d6/d16/_m_m_hardware_8hpp.html#a9757131cd175465e6220de58b57f6b78">UART_USB</a>.println(<span class="stringliteral">&quot;===============&quot;</span>);</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span> </div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>            <span class="comment">// read from the file until there&#39;s nothing else in it:</span></div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>            <span class="comment">// while (myFile.available())</span></div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>            <span class="comment">// {</span></div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>            <a class="code hl_define" href="../../d6/d16/_m_m_hardware_8hpp.html#a9757131cd175465e6220de58b57f6b78">UART_USB</a>.write(myFile.read());</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>            <span class="comment">// }</span></div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span> </div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>            <span class="comment">// close the file:</span></div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>            myFile.close();</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>            <a class="code hl_define" href="../../d6/d16/_m_m_hardware_8hpp.html#a9757131cd175465e6220de58b57f6b78">UART_USB</a>.println(<span class="stringliteral">&quot;===============&quot;</span>);</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>            <span class="comment">// if the file didn&#39;t open, print an error:</span></div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>            <a class="code hl_define" href="../../d6/d16/_m_m_hardware_8hpp.html#a9757131cd175465e6220de58b57f6b78">UART_USB</a>.print(<span class="stringliteral">&quot;Error opening &quot;</span>);</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>            <a class="code hl_define" href="../../d6/d16/_m_m_hardware_8hpp.html#a9757131cd175465e6220de58b57f6b78">UART_USB</a>.println(<a class="code hl_define" href="../../dc/dc9/_m_m_debug_8hpp.html#aa7f2ee2cf168724e2255f28b496c2c85">fileName</a>);</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>        }</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    }</div>
+</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span><span class="comment"></span> </div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span><span class="comment">    /// @brief 测试温湿度显示</span></div>
+<div class="foldopen" id="foldopen00126" data-start="{" data-end="}">
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno"><a class="line" href="../../d6/d72/class_m_m_debug.html#aac76d1842253691426945cb41d6cc404">  126</a></span><span class="comment"></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="../../d6/d72/class_m_m_debug.html#aac76d1842253691426945cb41d6cc404">TestDHT</a>()</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>    {</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>        <a class="code hl_define" href="../../d6/d16/_m_m_hardware_8hpp.html#a9757131cd175465e6220de58b57f6b78">UART_USB</a>.println(F(<span class="stringliteral">&quot;DHTxx Unified Sensor Example&quot;</span>));</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>        <span class="comment">// Print temperature sensor details.</span></div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>        sensor_t sensor;</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>        <a class="code hl_variable" href="../../d6/d16/_m_m_hardware_8hpp.html#a13e9b093d353efd2754d5b9cc4c90280">mmhardware</a>.<a class="code hl_variable" href="../../dd/d90/class_m_m_hardware.html#a1fafc2cbccdc5500c78b342bdd7f8de3">dht</a>.temperature().getSensor(&amp;sensor);</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>        <a class="code hl_define" href="../../d6/d16/_m_m_hardware_8hpp.html#a9757131cd175465e6220de58b57f6b78">UART_USB</a>.println(F(<span class="stringliteral">&quot;------------------------------------&quot;</span>));</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>        <a class="code hl_define" href="../../d6/d16/_m_m_hardware_8hpp.html#a9757131cd175465e6220de58b57f6b78">UART_USB</a>.println(F(<span class="stringliteral">&quot;Temperature Sensor&quot;</span>));</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>        <a class="code hl_define" href="../../d6/d16/_m_m_hardware_8hpp.html#a9757131cd175465e6220de58b57f6b78">UART_USB</a>.print(F(<span class="stringliteral">&quot;Sensor Type: &quot;</span>));</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>        <a class="code hl_define" href="../../d6/d16/_m_m_hardware_8hpp.html#a9757131cd175465e6220de58b57f6b78">UART_USB</a>.println(sensor.name);</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>        <a class="code hl_define" href="../../d6/d16/_m_m_hardware_8hpp.html#a9757131cd175465e6220de58b57f6b78">UART_USB</a>.print(F(<span class="stringliteral">&quot;Driver Ver:  &quot;</span>));</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>        <a class="code hl_define" href="../../d6/d16/_m_m_hardware_8hpp.html#a9757131cd175465e6220de58b57f6b78">UART_USB</a>.println(sensor.version);</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>        <a class="code hl_define" href="../../d6/d16/_m_m_hardware_8hpp.html#a9757131cd175465e6220de58b57f6b78">UART_USB</a>.print(F(<span class="stringliteral">&quot;Unique ID:   &quot;</span>));</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>        <a class="code hl_define" href="../../d6/d16/_m_m_hardware_8hpp.html#a9757131cd175465e6220de58b57f6b78">UART_USB</a>.println(sensor.sensor_id);</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>        <a class="code hl_define" href="../../d6/d16/_m_m_hardware_8hpp.html#a9757131cd175465e6220de58b57f6b78">UART_USB</a>.print(F(<span class="stringliteral">&quot;Max Value:   &quot;</span>));</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>        <a class="code hl_define" href="../../d6/d16/_m_m_hardware_8hpp.html#a9757131cd175465e6220de58b57f6b78">UART_USB</a>.print(sensor.max_value);</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>        <a class="code hl_define" href="../../d6/d16/_m_m_hardware_8hpp.html#a9757131cd175465e6220de58b57f6b78">UART_USB</a>.println(F(<span class="stringliteral">&quot;°C&quot;</span>));</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>        <a class="code hl_define" href="../../d6/d16/_m_m_hardware_8hpp.html#a9757131cd175465e6220de58b57f6b78">UART_USB</a>.print(F(<span class="stringliteral">&quot;Min Value:   &quot;</span>));</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>        <a class="code hl_define" href="../../d6/d16/_m_m_hardware_8hpp.html#a9757131cd175465e6220de58b57f6b78">UART_USB</a>.print(sensor.min_value);</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>        <a class="code hl_define" href="../../d6/d16/_m_m_hardware_8hpp.html#a9757131cd175465e6220de58b57f6b78">UART_USB</a>.println(F(<span class="stringliteral">&quot;°C&quot;</span>));</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>        <a class="code hl_define" href="../../d6/d16/_m_m_hardware_8hpp.html#a9757131cd175465e6220de58b57f6b78">UART_USB</a>.print(F(<span class="stringliteral">&quot;Resolution:  &quot;</span>));</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>        <a class="code hl_define" href="../../d6/d16/_m_m_hardware_8hpp.html#a9757131cd175465e6220de58b57f6b78">UART_USB</a>.print(sensor.resolution);</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>        <a class="code hl_define" href="../../d6/d16/_m_m_hardware_8hpp.html#a9757131cd175465e6220de58b57f6b78">UART_USB</a>.println(F(<span class="stringliteral">&quot;°C&quot;</span>));</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>        <a class="code hl_define" href="../../d6/d16/_m_m_hardware_8hpp.html#a9757131cd175465e6220de58b57f6b78">UART_USB</a>.println(F(<span class="stringliteral">&quot;------------------------------------&quot;</span>));</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>        <span class="comment">// Print humidity sensor details.</span></div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>        <a class="code hl_variable" href="../../d6/d16/_m_m_hardware_8hpp.html#a13e9b093d353efd2754d5b9cc4c90280">mmhardware</a>.<a class="code hl_variable" href="../../dd/d90/class_m_m_hardware.html#a1fafc2cbccdc5500c78b342bdd7f8de3">dht</a>.humidity().getSensor(&amp;sensor);</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>        <a class="code hl_define" href="../../d6/d16/_m_m_hardware_8hpp.html#a9757131cd175465e6220de58b57f6b78">UART_USB</a>.println(F(<span class="stringliteral">&quot;Humidity Sensor&quot;</span>));</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>        <a class="code hl_define" href="../../d6/d16/_m_m_hardware_8hpp.html#a9757131cd175465e6220de58b57f6b78">UART_USB</a>.print(F(<span class="stringliteral">&quot;Sensor Type: &quot;</span>));</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>        <a class="code hl_define" href="../../d6/d16/_m_m_hardware_8hpp.html#a9757131cd175465e6220de58b57f6b78">UART_USB</a>.println(sensor.name);</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>        <a class="code hl_define" href="../../d6/d16/_m_m_hardware_8hpp.html#a9757131cd175465e6220de58b57f6b78">UART_USB</a>.print(F(<span class="stringliteral">&quot;Driver Ver:  &quot;</span>));</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>        <a class="code hl_define" href="../../d6/d16/_m_m_hardware_8hpp.html#a9757131cd175465e6220de58b57f6b78">UART_USB</a>.println(sensor.version);</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>        <a class="code hl_define" href="../../d6/d16/_m_m_hardware_8hpp.html#a9757131cd175465e6220de58b57f6b78">UART_USB</a>.print(F(<span class="stringliteral">&quot;Unique ID:   &quot;</span>));</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>        <a class="code hl_define" href="../../d6/d16/_m_m_hardware_8hpp.html#a9757131cd175465e6220de58b57f6b78">UART_USB</a>.println(sensor.sensor_id);</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>        <a class="code hl_define" href="../../d6/d16/_m_m_hardware_8hpp.html#a9757131cd175465e6220de58b57f6b78">UART_USB</a>.print(F(<span class="stringliteral">&quot;Max Value:   &quot;</span>));</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>        <a class="code hl_define" href="../../d6/d16/_m_m_hardware_8hpp.html#a9757131cd175465e6220de58b57f6b78">UART_USB</a>.print(sensor.max_value);</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>        <a class="code hl_define" href="../../d6/d16/_m_m_hardware_8hpp.html#a9757131cd175465e6220de58b57f6b78">UART_USB</a>.println(F(<span class="stringliteral">&quot;%&quot;</span>));</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>        <a class="code hl_define" href="../../d6/d16/_m_m_hardware_8hpp.html#a9757131cd175465e6220de58b57f6b78">UART_USB</a>.print(F(<span class="stringliteral">&quot;Min Value:   &quot;</span>));</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>        <a class="code hl_define" href="../../d6/d16/_m_m_hardware_8hpp.html#a9757131cd175465e6220de58b57f6b78">UART_USB</a>.print(sensor.min_value);</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>        <a class="code hl_define" href="../../d6/d16/_m_m_hardware_8hpp.html#a9757131cd175465e6220de58b57f6b78">UART_USB</a>.println(F(<span class="stringliteral">&quot;%&quot;</span>));</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>        <a class="code hl_define" href="../../d6/d16/_m_m_hardware_8hpp.html#a9757131cd175465e6220de58b57f6b78">UART_USB</a>.print(F(<span class="stringliteral">&quot;Resolution:  &quot;</span>));</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>        <a class="code hl_define" href="../../d6/d16/_m_m_hardware_8hpp.html#a9757131cd175465e6220de58b57f6b78">UART_USB</a>.print(sensor.resolution);</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>        <a class="code hl_define" href="../../d6/d16/_m_m_hardware_8hpp.html#a9757131cd175465e6220de58b57f6b78">UART_USB</a>.println(F(<span class="stringliteral">&quot;%&quot;</span>));</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>        <a class="code hl_define" href="../../d6/d16/_m_m_hardware_8hpp.html#a9757131cd175465e6220de58b57f6b78">UART_USB</a>.println(F(<span class="stringliteral">&quot;------------------------------------&quot;</span>));</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>        <span class="comment">// Get temperature event and print its value.</span></div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>        sensors_event_t event;</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>        <a class="code hl_variable" href="../../d6/d16/_m_m_hardware_8hpp.html#a13e9b093d353efd2754d5b9cc4c90280">mmhardware</a>.<a class="code hl_variable" href="../../dd/d90/class_m_m_hardware.html#a1fafc2cbccdc5500c78b342bdd7f8de3">dht</a>.temperature().getEvent(&amp;event);</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>        <span class="keywordflow">if</span> (isnan(event.temperature)) {</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>            <a class="code hl_define" href="../../d6/d16/_m_m_hardware_8hpp.html#a9757131cd175465e6220de58b57f6b78">UART_USB</a>.println(F(<span class="stringliteral">&quot;Error reading temperature!&quot;</span>));</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>            <a class="code hl_define" href="../../d6/d16/_m_m_hardware_8hpp.html#a9757131cd175465e6220de58b57f6b78">UART_USB</a>.print(F(<span class="stringliteral">&quot;Temperature: &quot;</span>));</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>            <a class="code hl_define" href="../../d6/d16/_m_m_hardware_8hpp.html#a9757131cd175465e6220de58b57f6b78">UART_USB</a>.print(event.temperature);</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>            <a class="code hl_define" href="../../d6/d16/_m_m_hardware_8hpp.html#a9757131cd175465e6220de58b57f6b78">UART_USB</a>.println(F(<span class="stringliteral">&quot;°C&quot;</span>));</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>        }</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>        <span class="comment">// Get humidity event and print its value.</span></div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>        <a class="code hl_variable" href="../../d6/d16/_m_m_hardware_8hpp.html#a13e9b093d353efd2754d5b9cc4c90280">mmhardware</a>.<a class="code hl_variable" href="../../dd/d90/class_m_m_hardware.html#a1fafc2cbccdc5500c78b342bdd7f8de3">dht</a>.humidity().getEvent(&amp;event);</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>        <span class="keywordflow">if</span> (isnan(event.relative_humidity)) {</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>            <a class="code hl_define" href="../../d6/d16/_m_m_hardware_8hpp.html#a9757131cd175465e6220de58b57f6b78">UART_USB</a>.println(F(<span class="stringliteral">&quot;Error reading humidity!&quot;</span>));</div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>            <a class="code hl_define" href="../../d6/d16/_m_m_hardware_8hpp.html#a9757131cd175465e6220de58b57f6b78">UART_USB</a>.print(F(<span class="stringliteral">&quot;Humidity: &quot;</span>));</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>            <a class="code hl_define" href="../../d6/d16/_m_m_hardware_8hpp.html#a9757131cd175465e6220de58b57f6b78">UART_USB</a>.print(event.relative_humidity);</div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>            <a class="code hl_define" href="../../d6/d16/_m_m_hardware_8hpp.html#a9757131cd175465e6220de58b57f6b78">UART_USB</a>.println(F(<span class="stringliteral">&quot;%&quot;</span>));</div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>        }</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>    }</div>
+</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span><span class="comment"></span> </div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span><span class="comment">    /// @brief 测试RamBmp使用</span></div>
+<div class="foldopen" id="foldopen00191" data-start="{" data-end="}">
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno"><a class="line" href="../../d6/d72/class_m_m_debug.html#a0b5ec1c4e80e8aac3ca0a896bf2c66c4">  191</a></span><span class="comment"></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="../../d6/d72/class_m_m_debug.html#a0b5ec1c4e80e8aac3ca0a896bf2c66c4">TestMMRamBmp</a>()</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>    {</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>        <a class="code hl_class" href="../../d3/df9/class_m_m_ram_bmp.html">MMRamBmp</a> rb;</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span> </div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>        <span class="keywordflow">for</span> (uint16_t i = 0; i &lt; <a class="code hl_define" href="../../d6/d2b/_m_m_define_8hpp.html#a33fdd808e6d49f14e5d6e679e6a6dbea">M_HEIGHT</a>; i++) {</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>            <span class="keywordflow">for</span> (uint16_t j = 0; j &lt; <a class="code hl_define" href="../../d6/d2b/_m_m_define_8hpp.html#a3be0529049ae7cb377b60ef8ee4970b0">M_WIDTH</a>; j++) {</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>                <span class="keywordflow">if</span> (j == i)</div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>                    rb.<a class="code hl_function" href="../../d3/df9/class_m_m_ram_bmp.html#a73365a559efa4224a7f46913b08f0ee9">SetPixel</a>(j, i, 255, 0, 0);</div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>                <a class="code hl_variable" href="../../d8/db3/_m_m_scr_8hpp.html#a9263f0075bce75561a1faef94ec32a20">mmscr</a>.<a class="code hl_function" href="../../d3/d6d/class_m_m_scr.html#a71aff872991f5964151f28ae292faabe">DrawRamBmp</a>(rb);</div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>            }</div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>        }</div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>        <a class="code hl_variable" href="../../d8/db3/_m_m_scr_8hpp.html#a9263f0075bce75561a1faef94ec32a20">mmscr</a>.<a class="code hl_function" href="../../d3/d6d/class_m_m_scr.html#aaa0cc2b3c845462a66c865454051858c">Update</a>();</div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>        delay(1000);</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>    }</div>
+</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span><span class="comment"></span> </div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span><span class="comment">    /// @brief 测试json使用</span></div>
+<div class="foldopen" id="foldopen00207" data-start="{" data-end="}">
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno"><a class="line" href="../../d6/d72/class_m_m_debug.html#a68a2966a7bb5b11655226bc8ff8d30bd">  207</a></span><span class="comment"></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="../../d6/d72/class_m_m_debug.html#a68a2966a7bb5b11655226bc8ff8d30bd">TestJSON</a>()</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>    {</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>        <span class="comment">// Allocate the JSON document</span></div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>        JsonDocument doc;</div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span> </div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>        <span class="comment">// Add values in the document</span></div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>        doc[<span class="stringliteral">&quot;sensor&quot;</span>] = <span class="stringliteral">&quot;gps&quot;</span>;</div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>        doc[<span class="stringliteral">&quot;time&quot;</span>] = 1351824120;</div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span> </div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>        <span class="comment">// Add an array</span></div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>        JsonArray data = doc[<span class="stringliteral">&quot;data&quot;</span>].to&lt;JsonArray&gt;();</div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>        data.add(48.756080);</div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span>        data.add(2.302038);</div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span> </div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>        <span class="comment">// Generate the minified JSON and send it to the Serial port</span></div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>        serializeJson(doc, <a class="code hl_define" href="../../d6/d16/_m_m_hardware_8hpp.html#a9757131cd175465e6220de58b57f6b78">UART_USB</a>);</div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>        <span class="comment">// The above line prints:</span></div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>        <span class="comment">// {&quot;sensor&quot;:&quot;gps&quot;,&quot;time&quot;:1351824120,&quot;data&quot;:[48.756080,2.302038]}</span></div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span> </div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>        <span class="comment">// Start a new line</span></div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>        <a class="code hl_define" href="../../d6/d16/_m_m_hardware_8hpp.html#a9757131cd175465e6220de58b57f6b78">UART_USB</a>.println();</div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span> </div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>        <span class="comment">// Generate the prettified JSON and send it to the Serial port</span></div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>        serializeJsonPretty(doc, <a class="code hl_define" href="../../d6/d16/_m_m_hardware_8hpp.html#a9757131cd175465e6220de58b57f6b78">UART_USB</a>);</div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>        <span class="comment">// The above line prints:</span></div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>        <span class="comment">// {</span></div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>        <span class="comment">//   &quot;sensor&quot;: &quot;gps&quot;,</span></div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>        <span class="comment">//   &quot;time&quot;: 1351824120,</span></div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>        <span class="comment">//   &quot;data&quot;: [</span></div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>        <span class="comment">//     48.756080,</span></div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>        <span class="comment">//     2.302038</span></div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>        <span class="comment">//   ]</span></div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>        <span class="comment">// }</span></div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>        <a class="code hl_variable" href="../../d0/da4/_m_m_s_d_8hpp.html#a46d2d7959abbfafcbb3dbdbb9893373c">mmsd</a>.<a class="code hl_function" href="../../dd/ddc/class_m_m_s_d.html#a463fc7742fd9b4043b95079e8ab4d022">SaveJsonToFile</a>(doc, <span class="stringliteral">&quot;111.js&quot;</span>);</div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>    }</div>
+</div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span><span class="comment"></span> </div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span><span class="comment">    /// @brief 测试绘制mm字符</span></div>
+<div class="foldopen" id="foldopen00244" data-start="{" data-end="}">
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno"><a class="line" href="../../d6/d72/class_m_m_debug.html#af5f389f98b56229f8eccb83e30fffd65">  244</a></span><span class="comment"></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="../../d6/d72/class_m_m_debug.html#af5f389f98b56229f8eccb83e30fffd65">TestDispMMChar</a>()</div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>    {</div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>        <a class="code hl_variable" href="../../d4/db6/_m_m_grap_8hpp.html#a3f96522ae25737973d654e60855b3655">mmgrap</a>.<a class="code hl_function" href="../../d2/d25/class_m_m_grap.html#a474020f945d5a0ef1e6bc3536d892bb3">DrawMMChar</a>(0, 0, <a class="code hl_variable" href="../../dd/d36/_m_m_char_define_8hpp.html#afe974091ef76574716bf15b52f919183">mmcharset</a>.<a class="code hl_function" href="../../db/da4/class_m_m_charset.html#a6c218953d5bf1c1c1a26edcb02ec85ee">GetVal</a>(<span class="charliteral">&#39;A&#39;</span>), &amp;<a class="code hl_variable" href="../../d8/db3/_m_m_scr_8hpp.html#a9263f0075bce75561a1faef94ec32a20">mmscr</a>, <span class="keyword">false</span>, NULL, <a class="code hl_variable" href="../../dd/d9d/class_m_m_c_style.html#a4b72b43fb6720e249d4f5842ca8d5929">MMCStyle::Styles</a>[0]);</div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>        <a class="code hl_variable" href="../../d4/db6/_m_m_grap_8hpp.html#a3f96522ae25737973d654e60855b3655">mmgrap</a>.<a class="code hl_function" href="../../d2/d25/class_m_m_grap.html#a474020f945d5a0ef1e6bc3536d892bb3">DrawMMChar</a>(4, 0, <a class="code hl_define" href="../../dd/d36/_m_m_char_define_8hpp.html#a57d0a7f025809b901d5cc88f267ab720">MMCHAR_F</a>, &amp;<a class="code hl_variable" href="../../d8/db3/_m_m_scr_8hpp.html#a9263f0075bce75561a1faef94ec32a20">mmscr</a>, <span class="keyword">false</span>, NULL, <a class="code hl_variable" href="../../dd/d9d/class_m_m_c_style.html#a4b72b43fb6720e249d4f5842ca8d5929">MMCStyle::Styles</a>[1]);</div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>        <a class="code hl_variable" href="../../d4/db6/_m_m_grap_8hpp.html#a3f96522ae25737973d654e60855b3655">mmgrap</a>.<a class="code hl_function" href="../../d2/d25/class_m_m_grap.html#a474020f945d5a0ef1e6bc3536d892bb3">DrawMMChar</a>(8, 0, <a class="code hl_define" href="../../dd/d36/_m_m_char_define_8hpp.html#a125503445b1f9bc14d3c9c711eec862b">MMCHAR_G</a>, &amp;<a class="code hl_variable" href="../../d8/db3/_m_m_scr_8hpp.html#a9263f0075bce75561a1faef94ec32a20">mmscr</a>, <span class="keyword">false</span>, NULL, <a class="code hl_variable" href="../../dd/d9d/class_m_m_c_style.html#a4b72b43fb6720e249d4f5842ca8d5929">MMCStyle::Styles</a>[2]);</div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>        <a class="code hl_variable" href="../../d4/db6/_m_m_grap_8hpp.html#a3f96522ae25737973d654e60855b3655">mmgrap</a>.<a class="code hl_function" href="../../d2/d25/class_m_m_grap.html#a474020f945d5a0ef1e6bc3536d892bb3">DrawMMChar</a>(12, 0, <a class="code hl_define" href="../../dd/d36/_m_m_char_define_8hpp.html#a141463369b79f32e294321464b47ce38">MMCHAR_H</a>, &amp;<a class="code hl_variable" href="../../d8/db3/_m_m_scr_8hpp.html#a9263f0075bce75561a1faef94ec32a20">mmscr</a>, <span class="keyword">false</span>, NULL, <a class="code hl_variable" href="../../dd/d9d/class_m_m_c_style.html#a4b72b43fb6720e249d4f5842ca8d5929">MMCStyle::Styles</a>[3]);</div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span> </div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>        <a class="code hl_variable" href="../../d4/db6/_m_m_grap_8hpp.html#a3f96522ae25737973d654e60855b3655">mmgrap</a>.<a class="code hl_function" href="../../d2/d25/class_m_m_grap.html#a474020f945d5a0ef1e6bc3536d892bb3">DrawMMChar</a>(0, 6, <a class="code hl_define" href="../../dd/d36/_m_m_char_define_8hpp.html#aefb7b9934c419490ad9f0fcccf8d5c82">MMCHAR_FILL</a>, &amp;<a class="code hl_variable" href="../../d8/db3/_m_m_scr_8hpp.html#a9263f0075bce75561a1faef94ec32a20">mmscr</a>, <span class="keyword">false</span>, NULL, <a class="code hl_variable" href="../../dd/d9d/class_m_m_c_style.html#a4b72b43fb6720e249d4f5842ca8d5929">MMCStyle::Styles</a>[4]);</div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>        <a class="code hl_variable" href="../../d4/db6/_m_m_grap_8hpp.html#a3f96522ae25737973d654e60855b3655">mmgrap</a>.<a class="code hl_function" href="../../d2/d25/class_m_m_grap.html#a474020f945d5a0ef1e6bc3536d892bb3">DrawMMChar</a>(4, 6, <a class="code hl_define" href="../../dd/d36/_m_m_char_define_8hpp.html#abaa0c7e11ead7512951d9ade81cf8929">MMCHAR_PLUS</a>, &amp;<a class="code hl_variable" href="../../d8/db3/_m_m_scr_8hpp.html#a9263f0075bce75561a1faef94ec32a20">mmscr</a>, <span class="keyword">false</span>, NULL, <a class="code hl_variable" href="../../dd/d9d/class_m_m_c_style.html#a4b72b43fb6720e249d4f5842ca8d5929">MMCStyle::Styles</a>[5]);</div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>        <a class="code hl_variable" href="../../d4/db6/_m_m_grap_8hpp.html#a3f96522ae25737973d654e60855b3655">mmgrap</a>.<a class="code hl_function" href="../../d2/d25/class_m_m_grap.html#a474020f945d5a0ef1e6bc3536d892bb3">DrawMMChar</a>(8, 6, <a class="code hl_define" href="../../dd/d36/_m_m_char_define_8hpp.html#a7bf72c91b3208baa95bdca3ce34221dc">MMCHAR_COLON</a>, &amp;<a class="code hl_variable" href="../../d8/db3/_m_m_scr_8hpp.html#a9263f0075bce75561a1faef94ec32a20">mmscr</a>, <span class="keyword">false</span>, NULL, <a class="code hl_variable" href="../../dd/d9d/class_m_m_c_style.html#a4b72b43fb6720e249d4f5842ca8d5929">MMCStyle::Styles</a>[0]);</div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>        <a class="code hl_variable" href="../../d4/db6/_m_m_grap_8hpp.html#a3f96522ae25737973d654e60855b3655">mmgrap</a>.<a class="code hl_function" href="../../d2/d25/class_m_m_grap.html#a474020f945d5a0ef1e6bc3536d892bb3">DrawMMChar</a>(12, 6, <a class="code hl_define" href="../../dd/d36/_m_m_char_define_8hpp.html#a36307c9a08761050a0ad9249ec6a39e9">MMCHAR_PERC</a>, &amp;<a class="code hl_variable" href="../../d8/db3/_m_m_scr_8hpp.html#a9263f0075bce75561a1faef94ec32a20">mmscr</a>, <span class="keyword">false</span>, NULL, <a class="code hl_variable" href="../../dd/d9d/class_m_m_c_style.html#a4b72b43fb6720e249d4f5842ca8d5929">MMCStyle::Styles</a>[0]);</div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span> </div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>        <a class="code hl_variable" href="../../d8/db3/_m_m_scr_8hpp.html#a9263f0075bce75561a1faef94ec32a20">mmscr</a>.<a class="code hl_function" href="../../d3/d6d/class_m_m_scr.html#aaa0cc2b3c845462a66c865454051858c">Update</a>();</div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>    }<span class="comment"></span></div>
+</div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span><span class="comment">    /// @brief 测试绘制mm字符串</span></div>
+<div class="foldopen" id="foldopen00259" data-start="{" data-end="}">
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno"><a class="line" href="../../d6/d72/class_m_m_debug.html#a4d10f60176e0a3d0031d0128fc972552">  259</a></span><span class="comment"></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="../../d6/d72/class_m_m_debug.html#a4d10f60176e0a3d0031d0128fc972552">TestDispMMStr</a>()</div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>    {</div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>        String s = <span class="stringliteral">&quot;ABCD&quot;</span>;</div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>        <a class="code hl_variable" href="../../d4/db6/_m_m_grap_8hpp.html#a3f96522ae25737973d654e60855b3655">mmgrap</a>.<a class="code hl_function" href="../../d2/d25/class_m_m_grap.html#a05308590a4fe716dc0b6f96dee0b5724">DrawMMStr</a>(0, 0, s, &amp;<a class="code hl_variable" href="../../d8/db3/_m_m_scr_8hpp.html#a9263f0075bce75561a1faef94ec32a20">mmscr</a>, <span class="keyword">false</span>, NULL, <a class="code hl_variable" href="../../dd/d9d/class_m_m_c_style.html#a4b72b43fb6720e249d4f5842ca8d5929">MMCStyle::Styles</a>[0]);</div>
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>        <a class="code hl_variable" href="../../d4/db6/_m_m_grap_8hpp.html#a3f96522ae25737973d654e60855b3655">mmgrap</a>.<a class="code hl_function" href="../../d2/d25/class_m_m_grap.html#a05308590a4fe716dc0b6f96dee0b5724">DrawMMStr</a>(0, 6, <span class="stringliteral">&quot;KLMP&quot;</span>, &amp;<a class="code hl_variable" href="../../d8/db3/_m_m_scr_8hpp.html#a9263f0075bce75561a1faef94ec32a20">mmscr</a>, <span class="keyword">false</span>, NULL, <a class="code hl_variable" href="../../dd/d9d/class_m_m_c_style.html#a4b72b43fb6720e249d4f5842ca8d5929">MMCStyle::Styles</a>[1]);</div>
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>        <a class="code hl_variable" href="../../d8/db3/_m_m_scr_8hpp.html#a9263f0075bce75561a1faef94ec32a20">mmscr</a>.<a class="code hl_function" href="../../d3/d6d/class_m_m_scr.html#aaa0cc2b3c845462a66c865454051858c">Update</a>();</div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span> </div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>    }</div>
+</div>
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span> </div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno"><a class="line" href="../../dc/dc9/_m_m_debug_8hpp.html#a98c82f80b9f8f788a1a8d799275d825e">  268</a></span>} <a class="code hl_variable" href="../../dc/dc9/_m_m_debug_8hpp.html#a98c82f80b9f8f788a1a8d799275d825e">mmdebug</a>;</div>
+</div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span> </div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span> </div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="a_m_m_char_define_8hpp_html_a125503445b1f9bc14d3c9c711eec862b"><div class="ttname"><a href="../../dd/d36/_m_m_char_define_8hpp.html#a125503445b1f9bc14d3c9c711eec862b">MMCHAR_G</a></div><div class="ttdeci">#define MMCHAR_G</div><div class="ttdoc">定义字符G的字符显示</div><div class="ttdef"><b>Definition</b> MMCharDefine.hpp:260</div></div>
+<div class="ttc" id="a_m_m_char_define_8hpp_html_a141463369b79f32e294321464b47ce38"><div class="ttname"><a href="../../dd/d36/_m_m_char_define_8hpp.html#a141463369b79f32e294321464b47ce38">MMCHAR_H</a></div><div class="ttdeci">#define MMCHAR_H</div><div class="ttdoc">定义字符H的字符显示</div><div class="ttdef"><b>Definition</b> MMCharDefine.hpp:268</div></div>
+<div class="ttc" id="a_m_m_char_define_8hpp_html_a36307c9a08761050a0ad9249ec6a39e9"><div class="ttname"><a href="../../dd/d36/_m_m_char_define_8hpp.html#a36307c9a08761050a0ad9249ec6a39e9">MMCHAR_PERC</a></div><div class="ttdeci">#define MMCHAR_PERC</div><div class="ttdoc">定义字符的字符显示</div><div class="ttdef"><b>Definition</b> MMCharDefine.hpp:348</div></div>
+<div class="ttc" id="a_m_m_char_define_8hpp_html_a57d0a7f025809b901d5cc88f267ab720"><div class="ttname"><a href="../../dd/d36/_m_m_char_define_8hpp.html#a57d0a7f025809b901d5cc88f267ab720">MMCHAR_F</a></div><div class="ttdeci">#define MMCHAR_F</div><div class="ttdoc">定义字符F的字符显示</div><div class="ttdef"><b>Definition</b> MMCharDefine.hpp:252</div></div>
+<div class="ttc" id="a_m_m_char_define_8hpp_html_a7bf72c91b3208baa95bdca3ce34221dc"><div class="ttname"><a href="../../dd/d36/_m_m_char_define_8hpp.html#a7bf72c91b3208baa95bdca3ce34221dc">MMCHAR_COLON</a></div><div class="ttdeci">#define MMCHAR_COLON</div><div class="ttdoc">定义字符:的字符显示</div><div class="ttdef"><b>Definition</b> MMCharDefine.hpp:356</div></div>
+<div class="ttc" id="a_m_m_char_define_8hpp_html_abaa0c7e11ead7512951d9ade81cf8929"><div class="ttname"><a href="../../dd/d36/_m_m_char_define_8hpp.html#abaa0c7e11ead7512951d9ade81cf8929">MMCHAR_PLUS</a></div><div class="ttdeci">#define MMCHAR_PLUS</div><div class="ttdoc">定义字符+的字符显示</div><div class="ttdef"><b>Definition</b> MMCharDefine.hpp:196</div></div>
+<div class="ttc" id="a_m_m_char_define_8hpp_html_aefb7b9934c419490ad9f0fcccf8d5c82"><div class="ttname"><a href="../../dd/d36/_m_m_char_define_8hpp.html#aefb7b9934c419490ad9f0fcccf8d5c82">MMCHAR_FILL</a></div><div class="ttdeci">#define MMCHAR_FILL</div><div class="ttdoc">定义字符填充的字符显示</div><div class="ttdef"><b>Definition</b> MMCharDefine.hpp:100</div></div>
+<div class="ttc" id="a_m_m_char_define_8hpp_html_afe974091ef76574716bf15b52f919183"><div class="ttname"><a href="../../dd/d36/_m_m_char_define_8hpp.html#afe974091ef76574716bf15b52f919183">mmcharset</a></div><div class="ttdeci">class MMCharset mmcharset</div></div>
+<div class="ttc" id="a_m_m_debug_8hpp_html_a98c82f80b9f8f788a1a8d799275d825e"><div class="ttname"><a href="../../dc/dc9/_m_m_debug_8hpp.html#a98c82f80b9f8f788a1a8d799275d825e">mmdebug</a></div><div class="ttdeci">class MMDebug mmdebug</div></div>
+<div class="ttc" id="a_m_m_debug_8hpp_html_aa7f2ee2cf168724e2255f28b496c2c85"><div class="ttname"><a href="../../dc/dc9/_m_m_debug_8hpp.html#aa7f2ee2cf168724e2255f28b496c2c85">fileName</a></div><div class="ttdeci">#define fileName</div></div>
+<div class="ttc" id="a_m_m_define_8hpp_html"><div class="ttname"><a href="../../d6/d2b/_m_m_define_8hpp.html">MMDefine.hpp</a></div><div class="ttdoc">系统相关定义</div></div>
+<div class="ttc" id="a_m_m_define_8hpp_html_a33fdd808e6d49f14e5d6e679e6a6dbea"><div class="ttname"><a href="../../d6/d2b/_m_m_define_8hpp.html#a33fdd808e6d49f14e5d6e679e6a6dbea">M_HEIGHT</a></div><div class="ttdeci">#define M_HEIGHT</div><div class="ttdoc">定义矩阵屏幕行数</div><div class="ttdef"><b>Definition</b> MMDefine.hpp:68</div></div>
+<div class="ttc" id="a_m_m_define_8hpp_html_a3be0529049ae7cb377b60ef8ee4970b0"><div class="ttname"><a href="../../d6/d2b/_m_m_define_8hpp.html#a3be0529049ae7cb377b60ef8ee4970b0">M_WIDTH</a></div><div class="ttdeci">#define M_WIDTH</div><div class="ttdef"><b>Definition</b> MMDefine.hpp:69</div></div>
+<div class="ttc" id="a_m_m_define_8hpp_html_a4194e137da9429104d8a3bc4ef0346f2"><div class="ttname"><a href="../../d6/d2b/_m_m_define_8hpp.html#a4194e137da9429104d8a3bc4ef0346f2">PIN_SD_SS</a></div><div class="ttdeci">#define PIN_SD_SS</div><div class="ttdef"><b>Definition</b> MMDefine.hpp:59</div></div>
+<div class="ttc" id="a_m_m_define_8hpp_html_a7ee1777ea50c55d652fc622d8749f92d"><div class="ttname"><a href="../../d6/d2b/_m_m_define_8hpp.html#a7ee1777ea50c55d652fc622d8749f92d">PIN_SD_SCK</a></div><div class="ttdeci">#define PIN_SD_SCK</div><div class="ttdef"><b>Definition</b> MMDefine.hpp:58</div></div>
+<div class="ttc" id="a_m_m_define_8hpp_html_a88a0bc76c8a5051ed6483fd5cfc950b1"><div class="ttname"><a href="../../d6/d2b/_m_m_define_8hpp.html#a88a0bc76c8a5051ed6483fd5cfc950b1">PIN_SD_MISO</a></div><div class="ttdeci">#define PIN_SD_MISO</div><div class="ttdef"><b>Definition</b> MMDefine.hpp:57</div></div>
+<div class="ttc" id="a_m_m_define_8hpp_html_a97d2783b878057b5a06a1e0223cc2a09"><div class="ttname"><a href="../../d6/d2b/_m_m_define_8hpp.html#a97d2783b878057b5a06a1e0223cc2a09">PIN_SD_MOSI</a></div><div class="ttdeci">#define PIN_SD_MOSI</div><div class="ttdoc">定义SD访问相关的引脚</div><div class="ttdef"><b>Definition</b> MMDefine.hpp:56</div></div>
+<div class="ttc" id="a_m_m_grap_8hpp_html"><div class="ttname"><a href="../../d4/db6/_m_m_grap_8hpp.html">MMGrap.hpp</a></div><div class="ttdoc">图像相关的定义</div></div>
+<div class="ttc" id="a_m_m_grap_8hpp_html_a3f96522ae25737973d654e60855b3655"><div class="ttname"><a href="../../d4/db6/_m_m_grap_8hpp.html#a3f96522ae25737973d654e60855b3655">mmgrap</a></div><div class="ttdeci">class MMGrap mmgrap</div></div>
+<div class="ttc" id="a_m_m_hardware_8hpp_html"><div class="ttname"><a href="../../d6/d16/_m_m_hardware_8hpp.html">MMHardware.hpp</a></div><div class="ttdoc">硬件访问</div></div>
+<div class="ttc" id="a_m_m_hardware_8hpp_html_a13e9b093d353efd2754d5b9cc4c90280"><div class="ttname"><a href="../../d6/d16/_m_m_hardware_8hpp.html#a13e9b093d353efd2754d5b9cc4c90280">mmhardware</a></div><div class="ttdeci">class MMHardware mmhardware</div></div>
+<div class="ttc" id="a_m_m_hardware_8hpp_html_a9757131cd175465e6220de58b57f6b78"><div class="ttname"><a href="../../d6/d16/_m_m_hardware_8hpp.html#a9757131cd175465e6220de58b57f6b78">UART_USB</a></div><div class="ttdeci">#define UART_USB</div><div class="ttdoc">定义USB串口</div><div class="ttdef"><b>Definition</b> MMHardware.hpp:36</div></div>
+<div class="ttc" id="a_m_m_ram_bmp_8hpp_html"><div class="ttname"><a href="../../dd/d0c/_m_m_ram_bmp_8hpp.html">MMRamBmp.hpp</a></div><div class="ttdoc">内存bmp位图,将位图文件保存在ram中</div></div>
+<div class="ttc" id="a_m_m_s_d_8hpp_html"><div class="ttname"><a href="../../d0/da4/_m_m_s_d_8hpp.html">MMSD.hpp</a></div><div class="ttdoc">SD卡访问相关的封装</div></div>
+<div class="ttc" id="a_m_m_s_d_8hpp_html_a46d2d7959abbfafcbb3dbdbb9893373c"><div class="ttname"><a href="../../d0/da4/_m_m_s_d_8hpp.html#a46d2d7959abbfafcbb3dbdbb9893373c">mmsd</a></div><div class="ttdeci">class MMSD mmsd</div></div>
+<div class="ttc" id="a_m_m_scr_8hpp_html"><div class="ttname"><a href="../../d8/db3/_m_m_scr_8hpp.html">MMScr.hpp</a></div><div class="ttdoc">矩阵屏幕功能相关封装</div></div>
+<div class="ttc" id="a_m_m_scr_8hpp_html_a9263f0075bce75561a1faef94ec32a20"><div class="ttname"><a href="../../d8/db3/_m_m_scr_8hpp.html#a9263f0075bce75561a1faef94ec32a20">mmscr</a></div><div class="ttdeci">MMScr mmscr</div></div>
+<div class="ttc" id="aclass_m_m_c_style_html_a4b72b43fb6720e249d4f5842ca8d5929"><div class="ttname"><a href="../../dd/d9d/class_m_m_c_style.html#a4b72b43fb6720e249d4f5842ca8d5929">MMCStyle::Styles</a></div><div class="ttdeci">static OnDrawChar Styles[]</div><div class="ttdoc">初始化样式列表，将样式添加到列表中</div><div class="ttdef"><b>Definition</b> MMCharDefine.hpp:89</div></div>
+<div class="ttc" id="aclass_m_m_charset_html_a6c218953d5bf1c1c1a26edcb02ec85ee"><div class="ttname"><a href="../../db/da4/class_m_m_charset.html#a6c218953d5bf1c1c1a26edcb02ec85ee">MMCharset::GetVal</a></div><div class="ttdeci">uint16_t GetVal(char c, uint16_t Default=MMCHAR_FILL)</div><div class="ttdoc">获得字符值</div><div class="ttdef"><b>Definition</b> MMCharDefine.hpp:455</div></div>
+<div class="ttc" id="aclass_m_m_debug_html"><div class="ttname"><a href="../../d6/d72/class_m_m_debug.html">MMDebug</a></div><div class="ttdoc">调试相关功能类</div><div class="ttdef"><b>Definition</b> MMDebug.hpp:26</div></div>
+<div class="ttc" id="aclass_m_m_debug_html_a058f5c2e2823b1cdc0c0c2edb0d7f8c4"><div class="ttname"><a href="../../d6/d72/class_m_m_debug.html#a058f5c2e2823b1cdc0c0c2edb0d7f8c4">MMDebug::TestIRR</a></div><div class="ttdeci">void TestIRR()</div><div class="ttdoc">测试红外线接收</div><div class="ttdef"><b>Definition</b> MMDebug.hpp:29</div></div>
+<div class="ttc" id="aclass_m_m_debug_html_a0b5ec1c4e80e8aac3ca0a896bf2c66c4"><div class="ttname"><a href="../../d6/d72/class_m_m_debug.html#a0b5ec1c4e80e8aac3ca0a896bf2c66c4">MMDebug::TestMMRamBmp</a></div><div class="ttdeci">void TestMMRamBmp()</div><div class="ttdoc">测试RamBmp使用</div><div class="ttdef"><b>Definition</b> MMDebug.hpp:191</div></div>
+<div class="ttc" id="aclass_m_m_debug_html_a391fdb8cd8fb9712fe7a8959fa3bd616"><div class="ttname"><a href="../../d6/d72/class_m_m_debug.html#a391fdb8cd8fb9712fe7a8959fa3bd616">MMDebug::TestRTC</a></div><div class="ttdeci">void TestRTC()</div><div class="ttdoc">测试RTC显示时间</div><div class="ttdef"><b>Definition</b> MMDebug.hpp:36</div></div>
+<div class="ttc" id="aclass_m_m_debug_html_a4d10f60176e0a3d0031d0128fc972552"><div class="ttname"><a href="../../d6/d72/class_m_m_debug.html#a4d10f60176e0a3d0031d0128fc972552">MMDebug::TestDispMMStr</a></div><div class="ttdeci">void TestDispMMStr()</div><div class="ttdoc">测试绘制mm字符串</div><div class="ttdef"><b>Definition</b> MMDebug.hpp:259</div></div>
+<div class="ttc" id="aclass_m_m_debug_html_a68a2966a7bb5b11655226bc8ff8d30bd"><div class="ttname"><a href="../../d6/d72/class_m_m_debug.html#a68a2966a7bb5b11655226bc8ff8d30bd">MMDebug::TestJSON</a></div><div class="ttdeci">void TestJSON()</div><div class="ttdoc">测试json使用</div><div class="ttdef"><b>Definition</b> MMDebug.hpp:207</div></div>
+<div class="ttc" id="aclass_m_m_debug_html_aac76d1842253691426945cb41d6cc404"><div class="ttname"><a href="../../d6/d72/class_m_m_debug.html#aac76d1842253691426945cb41d6cc404">MMDebug::TestDHT</a></div><div class="ttdeci">void TestDHT()</div><div class="ttdoc">测试温湿度显示</div><div class="ttdef"><b>Definition</b> MMDebug.hpp:126</div></div>
+<div class="ttc" id="aclass_m_m_debug_html_ac0133a5b6625056386cfe496ac354183"><div class="ttname"><a href="../../d6/d72/class_m_m_debug.html#ac0133a5b6625056386cfe496ac354183">MMDebug::TestSD</a></div><div class="ttdeci">void TestSD()</div><div class="ttdoc">测试SD卡文件访问</div><div class="ttdef"><b>Definition</b> MMDebug.hpp:47</div></div>
+<div class="ttc" id="aclass_m_m_debug_html_af5f389f98b56229f8eccb83e30fffd65"><div class="ttname"><a href="../../d6/d72/class_m_m_debug.html#af5f389f98b56229f8eccb83e30fffd65">MMDebug::TestDispMMChar</a></div><div class="ttdeci">void TestDispMMChar()</div><div class="ttdoc">测试绘制mm字符</div><div class="ttdef"><b>Definition</b> MMDebug.hpp:244</div></div>
+<div class="ttc" id="aclass_m_m_grap_html_a05308590a4fe716dc0b6f96dee0b5724"><div class="ttname"><a href="../../d2/d25/class_m_m_grap.html#a05308590a4fe716dc0b6f96dee0b5724">MMGrap::DrawMMStr</a></div><div class="ttdeci">void DrawMMStr(int16_t x, int16_t y, String s, MMCanvas *Canvas, bool Erase=true, RGB *color=NULL, OnDrawChar ondraw=NULL)</div><div class="ttdoc">根据字符串绘制MMChar</div><div class="ttdef"><b>Definition</b> MMGrap.hpp:97</div></div>
+<div class="ttc" id="aclass_m_m_grap_html_a474020f945d5a0ef1e6bc3536d892bb3"><div class="ttname"><a href="../../d2/d25/class_m_m_grap.html#a474020f945d5a0ef1e6bc3536d892bb3">MMGrap::DrawMMChar</a></div><div class="ttdeci">void DrawMMChar(int16_t x, int16_t y, uint16_t mmc, MMCanvas *Canvas, bool Erase=true, RGB *color=NULL, OnDrawChar ondraw=NULL)</div><div class="ttdoc">在MMCanvas指定位置绘制MM字符</div><div class="ttdef"><b>Definition</b> MMGrap.hpp:54</div></div>
+<div class="ttc" id="aclass_m_m_hardware_html_a1fafc2cbccdc5500c78b342bdd7f8de3"><div class="ttname"><a href="../../dd/d90/class_m_m_hardware.html#a1fafc2cbccdc5500c78b342bdd7f8de3">MMHardware::dht</a></div><div class="ttdeci">DHT_Unified dht</div><div class="ttdoc">定义dht温湿度模块</div><div class="ttdef"><b>Definition</b> MMHardware.hpp:45</div></div>
+<div class="ttc" id="aclass_m_m_hardware_html_a49cfa403e9a32d1dfc8f2e390201a52f"><div class="ttname"><a href="../../dd/d90/class_m_m_hardware.html#a49cfa403e9a32d1dfc8f2e390201a52f">MMHardware::Rtc</a></div><div class="ttdeci">RtcDS1302&lt; ThreeWire &gt; Rtc</div><div class="ttdoc">定义rtc时钟模块</div><div class="ttdef"><b>Definition</b> MMHardware.hpp:48</div></div>
+<div class="ttc" id="aclass_m_m_hardware_html_a7c059b3660b5841519d14489d9856f83"><div class="ttname"><a href="../../dd/d90/class_m_m_hardware.html#a7c059b3660b5841519d14489d9856f83">MMHardware::IRRCode</a></div><div class="ttdeci">bool IRRCode(uint16_t &amp;Code, bool WaitData=false)</div><div class="ttdoc">读取红外遥控编码</div><div class="ttdef"><b>Definition</b> MMHardware.hpp:105</div></div>
+<div class="ttc" id="aclass_m_m_ram_bmp_html"><div class="ttname"><a href="../../d3/df9/class_m_m_ram_bmp.html">MMRamBmp</a></div><div class="ttdoc">内存图片类</div><div class="ttdef"><b>Definition</b> MMRamBmp.hpp:16</div></div>
+<div class="ttc" id="aclass_m_m_ram_bmp_html_a73365a559efa4224a7f46913b08f0ee9"><div class="ttname"><a href="../../d3/df9/class_m_m_ram_bmp.html#a73365a559efa4224a7f46913b08f0ee9">MMRamBmp::SetPixel</a></div><div class="ttdeci">virtual void SetPixel(int16_t x, int16_t y, uint8_t R, uint8_t G, uint8_t B)</div><div class="ttdoc">设置一个像素点</div><div class="ttdef"><b>Definition</b> MMRamBmp.hpp:69</div></div>
+<div class="ttc" id="aclass_m_m_s_d_html_a463fc7742fd9b4043b95079e8ab4d022"><div class="ttname"><a href="../../dd/ddc/class_m_m_s_d.html#a463fc7742fd9b4043b95079e8ab4d022">MMSD::SaveJsonToFile</a></div><div class="ttdeci">bool SaveJsonToFile(JsonDocument &amp;Json, const char *FileName)</div><div class="ttdoc">将JSON文件保存到SD卡</div><div class="ttdef"><b>Definition</b> MMSD.hpp:204</div></div>
+<div class="ttc" id="aclass_m_m_scr_html_a71aff872991f5964151f28ae292faabe"><div class="ttname"><a href="../../d3/d6d/class_m_m_scr.html#a71aff872991f5964151f28ae292faabe">MMScr::DrawRamBmp</a></div><div class="ttdeci">void DrawRamBmp(MMRamBmp &amp;rb)</div><div class="ttdoc">将RamBmp绘制到屏幕</div><div class="ttdef"><b>Definition</b> MMScr.hpp:72</div></div>
+<div class="ttc" id="aclass_m_m_scr_html_aaa0cc2b3c845462a66c865454051858c"><div class="ttname"><a href="../../d3/d6d/class_m_m_scr.html#aaa0cc2b3c845462a66c865454051858c">MMScr::Update</a></div><div class="ttdeci">void Update()</div><div class="ttdoc">更新矩阵重新绘制</div><div class="ttdef"><b>Definition</b> MMScr.hpp:44</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="../../dc/dc9/_m_m_debug_8hpp.html">MMDebug.hpp</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+  </ul>
+</div>
+</body>
+</html>

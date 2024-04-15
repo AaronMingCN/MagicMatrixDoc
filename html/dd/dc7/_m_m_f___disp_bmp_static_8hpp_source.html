@@ -1,0 +1,278 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MagicMatrix 魔法矩阵: MMF_DispBmpStatic.hpp 源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../clipboard.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../LOGO 64x64.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">MagicMatrix 魔法矩阵
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(1); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('dd/dc7/_m_m_f___disp_bmp_static_8hpp_source.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">MMF_DispBmpStatic.hpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="../../dd/dc7/_m_m_f___disp_bmp_static_8hpp.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/**</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment"> * @file MMF_DispBmpStatic.hpp</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"> * @date 2024/04/01 22:18:57</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment"> * @author</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"> * @version 1.0</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment"> * @brief 显示静态图片</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment"> * @details None</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#ifndef _MMF_DISPBMPSTATIC_HPP</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#define _MMF_DISPBMPSTATIC_HPP</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;<a class="code" href="../../d0/da4/_m_m_s_d_8hpp.html">../MMSD.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment"></span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment">/// @brief 静态显示BMP图片</span></div>
+<div class="foldopen" id="foldopen00016" data-start="{" data-end="};">
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="../../dc/d41/class_m_m_f___disp_bmp_static.html">   16</a></span><span class="comment"></span><span class="keyword">class </span><a class="code hl_class" href="../../dc/d41/class_m_m_f___disp_bmp_static.html">MMF_DispBmpStatic</a> : <span class="keyword">public</span> <a class="code hl_class" href="../../dc/d05/class_m_m_func.html">MMFunc</a> {</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">public</span>:<span class="comment"></span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">    /// @brief 当前显示的图片顺序</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="../../dc/d41/class_m_m_f___disp_bmp_static.html#a5b6b4feeab6e2ff726cec84b8b5b9780">   19</a></span><span class="comment"></span>    uint16_t <a class="code hl_variable" href="../../dc/d41/class_m_m_f___disp_bmp_static.html#a5b6b4feeab6e2ff726cec84b8b5b9780">CurrOrder</a> = 0;<span class="comment"></span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">    /// @brief 下一个需要显示的顺序</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="../../dc/d41/class_m_m_f___disp_bmp_static.html#aee2c77e0ecafa80480d61f54f012e188">   21</a></span><span class="comment"></span>    uint16_t <a class="code hl_variable" href="../../dc/d41/class_m_m_f___disp_bmp_static.html#aee2c77e0ecafa80480d61f54f012e188">NextOrder</a> = 0;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment"></span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment">    /// @brief 构造函数</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment">    /// @param fid 当前功能ID</span></div>
+<div class="foldopen" id="foldopen00025" data-start="{" data-end="}">
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="../../dc/d41/class_m_m_f___disp_bmp_static.html#a58ccf33416dbf92fc605735d86ff8b86">   25</a></span><span class="comment"></span>    <a class="code hl_function" href="../../dc/d41/class_m_m_f___disp_bmp_static.html#a58ccf33416dbf92fc605735d86ff8b86">MMF_DispBmpStatic</a>(uint16_t fid)</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        : <a class="code hl_class" href="../../dc/d05/class_m_m_func.html">MMFunc</a>(fid)</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    {</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    }</div>
+</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment"></span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="comment">    /// @brief 根据序号显示图片</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment">    /// @param Order 图片在路径中的序号</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment">    /// @return 是否绘制成功</span></div>
+<div class="foldopen" id="foldopen00033" data-start="{" data-end="}">
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="../../dc/d41/class_m_m_f___disp_bmp_static.html#a455cfebc136eadcf9b3ee6521f596d09">   33</a></span><span class="comment"></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="../../dc/d41/class_m_m_f___disp_bmp_static.html#a455cfebc136eadcf9b3ee6521f596d09">DrawBMPByOrder</a>(uint16_t Order)</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    {</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        <span class="keywordtype">bool</span> r = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        <a class="code hl_variable" href="../../d0/da4/_m_m_s_d_8hpp.html#a46d2d7959abbfafcbb3dbdbb9893373c">mmsd</a>.<a class="code hl_function" href="../../dd/ddc/class_m_m_s_d.html#a2783abbb66424f4c912308f754413d9e">GetLockSD</a>(); <span class="comment">// 获得SD锁</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        <span class="keywordflow">if</span> (!SD.begin(<a class="code hl_define" href="../../d6/d2b/_m_m_define_8hpp.html#a4194e137da9429104d8a3bc4ef0346f2">PIN_SD_SS</a>)) {</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>            <a class="code hl_define" href="../../d6/d16/_m_m_hardware_8hpp.html#a9757131cd175465e6220de58b57f6b78">UART_USB</a>.println(<span class="stringliteral">&quot;initialization failed!&quot;</span>);</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>            <a class="code hl_define" href="../../d6/d16/_m_m_hardware_8hpp.html#a9757131cd175465e6220de58b57f6b78">UART_USB</a>.println(<span class="stringliteral">&quot;initialization done.&quot;</span>);</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>            File dir = SD.open(<a class="code hl_define" href="../../d6/d2b/_m_m_define_8hpp.html#a67fa3be333f3071e8c126978e0de0af8">DIR_BMPSTATIC</a>); <span class="comment">// 打开SD卡中的bmp文件夹</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>            <span class="keywordflow">if</span> (dir) {</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>                <a class="code hl_variable" href="../../d0/da4/_m_m_s_d_8hpp.html#a46d2d7959abbfafcbb3dbdbb9893373c">mmsd</a>.<a class="code hl_function" href="../../dd/ddc/class_m_m_s_d.html#a44134a0e7d166fc8a0f57335691c4709">MoveToFileByOrder</a>(dir, Order); <span class="comment">// 跳转到文件位置</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>                File f = dir.openNextFile();</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>                <span class="keywordflow">if</span> (f) {</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>                    r = <a class="code hl_variable" href="../../d0/da4/_m_m_s_d_8hpp.html#a46d2d7959abbfafcbb3dbdbb9893373c">mmsd</a>.<a class="code hl_function" href="../../dd/ddc/class_m_m_s_d.html#a1d43fd7b5460ded545c9ea5308314bfd">DrawBitmapFile</a>(f); <span class="comment">// 则将文件绘制</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>                    f.close();</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>                }</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>            } <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>                <a class="code hl_define" href="../../d6/d16/_m_m_hardware_8hpp.html#a9757131cd175465e6220de58b57f6b78">UART_USB</a>.println(<span class="stringliteral">&quot;DIR_BMPSTATIC open failed!&quot;</span>);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        }</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        <a class="code hl_variable" href="../../d0/da4/_m_m_s_d_8hpp.html#a46d2d7959abbfafcbb3dbdbb9893373c">mmsd</a>.<a class="code hl_function" href="../../dd/ddc/class_m_m_s_d.html#a49b0f6b4a87b698f7b2537ecacc54ec3">ReleaseSD</a>(); <span class="comment">// 释放SD锁</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        <span class="keywordflow">return</span> r;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    }</div>
+</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="comment"></span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="comment">    /// @brief 获得文件数量</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="comment">    /// @return 文件的数量</span></div>
+<div class="foldopen" id="foldopen00058" data-start="{" data-end="}">
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="../../dc/d41/class_m_m_f___disp_bmp_static.html#a56ae05f904ff71d87ff4cb61bb19b964">   58</a></span><span class="comment"></span>    uint16_t <a class="code hl_function" href="../../dc/d41/class_m_m_f___disp_bmp_static.html#a56ae05f904ff71d87ff4cb61bb19b964">GetFileCount</a>()</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    {</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        uint16_t r = 0;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        <a class="code hl_variable" href="../../d0/da4/_m_m_s_d_8hpp.html#a46d2d7959abbfafcbb3dbdbb9893373c">mmsd</a>.<a class="code hl_function" href="../../dd/ddc/class_m_m_s_d.html#a2783abbb66424f4c912308f754413d9e">GetLockSD</a>(); <span class="comment">// 获得SD锁</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        <span class="keywordflow">if</span> (!SD.begin(<a class="code hl_define" href="../../d6/d2b/_m_m_define_8hpp.html#a4194e137da9429104d8a3bc4ef0346f2">PIN_SD_SS</a>)) {</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>            <a class="code hl_define" href="../../d6/d16/_m_m_hardware_8hpp.html#a9757131cd175465e6220de58b57f6b78">UART_USB</a>.println(<span class="stringliteral">&quot;initialization failed!&quot;</span>);</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>            <a class="code hl_define" href="../../d6/d16/_m_m_hardware_8hpp.html#a9757131cd175465e6220de58b57f6b78">UART_USB</a>.println(<span class="stringliteral">&quot;initialization done.&quot;</span>);</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>            File dir = SD.open(<a class="code hl_define" href="../../d6/d2b/_m_m_define_8hpp.html#a67fa3be333f3071e8c126978e0de0af8">DIR_BMPSTATIC</a>); <span class="comment">// 打开SD卡中的bmp文件夹</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>            <span class="keywordflow">if</span> (dir) {</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>                r = <a class="code hl_variable" href="../../d0/da4/_m_m_s_d_8hpp.html#a46d2d7959abbfafcbb3dbdbb9893373c">mmsd</a>.<a class="code hl_function" href="../../dd/ddc/class_m_m_s_d.html#a9e6ea9553cf64810b10711fc81505e83">FileCount</a>(dir);</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>            } <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>                <a class="code hl_define" href="../../d6/d16/_m_m_hardware_8hpp.html#a9757131cd175465e6220de58b57f6b78">UART_USB</a>.println(<span class="stringliteral">&quot;DIR_BMPSTATIC open failed!&quot;</span>);</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        }</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        <a class="code hl_variable" href="../../d0/da4/_m_m_s_d_8hpp.html#a46d2d7959abbfafcbb3dbdbb9893373c">mmsd</a>.<a class="code hl_function" href="../../dd/ddc/class_m_m_s_d.html#a49b0f6b4a87b698f7b2537ecacc54ec3">ReleaseSD</a>(); <span class="comment">// 释放SD锁</span></div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        <span class="keywordflow">return</span> r;</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    }</div>
+</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="comment"></span> </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span><span class="comment">    /// @brief 执行功能</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="comment">    /// @param IDelay 询问等待接口</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="comment">    /// @return 执行结果</span></div>
+<div class="foldopen" id="foldopen00079" data-start="{" data-end="}">
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="../../dc/d41/class_m_m_f___disp_bmp_static.html#ab7869a4c7a92cca07464fd92a1c31852">   79</a></span><span class="comment"></span>    <span class="keyword">virtual</span> <a class="code hl_typedef" href="../../dd/d7a/_m_m_func_8hpp.html#a9972882404fa9bc03a9b187727f4d028">MMFExecR_t</a> <a class="code hl_function" href="../../dc/d41/class_m_m_f___disp_bmp_static.html#ab7869a4c7a92cca07464fd92a1c31852">Exec</a>(<a class="code hl_class" href="../../d0/dae/class_inquire_delay.html">InquireDelay</a>* IDelay)</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    {</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        <a class="code hl_variable" href="../../d3/dd9/_m_m_config_8hpp.html#af4c069c80f66f64310d211091e77e394">mmconfig</a>.<a class="code hl_function" href="../../d3/dae/class_m_m_config.html#aeaa1aafccc59317c5b7c5b43aa210959">SaveIfNeeded</a>(); <span class="comment">// 避免显示时占用sd卡无法保存设置</span></div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        <a class="code hl_variable" href="../../d8/db3/_m_m_scr_8hpp.html#a9263f0075bce75561a1faef94ec32a20">mmscr</a>.<a class="code hl_function" href="../../d9/d12/class_m_m_canvas.html#a97879ab2f9ffa45af6b83471d889fb61">FillAll</a>(0xFF, 0xFF, 0xFF); <span class="comment">// 填充空白</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        <a class="code hl_variable" href="../../d8/db3/_m_m_scr_8hpp.html#a9263f0075bce75561a1faef94ec32a20">mmscr</a>.<a class="code hl_function" href="../../d3/d6d/class_m_m_scr.html#aaa0cc2b3c845462a66c865454051858c">Update</a>();</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        uint16_t FileCount = this-&gt;<a class="code hl_function" href="../../dc/d41/class_m_m_f___disp_bmp_static.html#a56ae05f904ff71d87ff4cb61bb19b964">GetFileCount</a>(); <span class="comment">// 统计文件的个数</span></div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        uint16_t IRRCode = <a class="code hl_define" href="../../d6/d2b/_m_m_define_8hpp.html#a094654ad63fa9df96cd6bcf953c5f246">IRK_NONE</a>; <span class="comment">// 如果读取到按键信息则</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        this-&gt;<a class="code hl_function" href="../../dc/d41/class_m_m_f___disp_bmp_static.html#a455cfebc136eadcf9b3ee6521f596d09">DrawBMPByOrder</a>(this-&gt;CurrOrder);</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        <span class="keywordflow">while</span> (IDelay-&gt;<a class="code hl_function" href="../../d0/dae/class_inquire_delay.html#a9afa3e4942c9fed2e0abe1541453cae2">Inquire</a>(IRRCode)) { <span class="comment">// 以此读取文件夹下的bmp文件</span></div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>            <span class="keywordflow">if</span> (this-&gt;CurrOrder != this-&gt;NextOrder) { <span class="comment">// 避免重复绘制</span></div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>                this-&gt;CurrOrder = this-&gt;<a class="code hl_variable" href="../../dc/d41/class_m_m_f___disp_bmp_static.html#aee2c77e0ecafa80480d61f54f012e188">NextOrder</a>;</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>                this-&gt;<a class="code hl_function" href="../../dc/d41/class_m_m_f___disp_bmp_static.html#a455cfebc136eadcf9b3ee6521f596d09">DrawBMPByOrder</a>(this-&gt;CurrOrder);</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>                <a class="code hl_variable" href="../../d3/dd9/_m_m_config_8hpp.html#af4c069c80f66f64310d211091e77e394">mmconfig</a>.<a class="code hl_variable" href="../../d3/dae/class_m_m_config.html#af86d59e13f1823d050bb682947d13e8f">Config</a>[<a class="code hl_define" href="../../d6/d2b/_m_m_define_8hpp.html#a8e891660ae94717771a6286c88b1da4d">CFG_DISPBMPIDX</a>] = this-&gt;<a class="code hl_variable" href="../../dc/d41/class_m_m_f___disp_bmp_static.html#a5b6b4feeab6e2ff726cec84b8b5b9780">CurrOrder</a>; <span class="comment">// 将当前序号写入配置</span></div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>                <a class="code hl_variable" href="../../d3/dd9/_m_m_config_8hpp.html#af4c069c80f66f64310d211091e77e394">mmconfig</a>.<a class="code hl_variable" href="../../d3/dae/class_m_m_config.html#aa7ae409becc06fd7c43c84e89a1ab158">NeedSave</a> = <span class="keyword">true</span>; <span class="comment">// 标记需要保存配置</span></div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>            }</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>            <span class="keywordflow">switch</span> (IRRCode) {</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>            <span class="keywordflow">case</span> <a class="code hl_define" href="../../d6/d2b/_m_m_define_8hpp.html#af8aea16fac8c06740e5ea12d1b502a0e">IRK_RIGHT</a>: <span class="comment">// 如果是右键增加等待增加序号</span></div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>                <span class="keywordflow">if</span> (this-&gt;NextOrder &lt; FileCount - 1)</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>                    ++(this-&gt;<a class="code hl_variable" href="../../dc/d41/class_m_m_f___disp_bmp_static.html#aee2c77e0ecafa80480d61f54f012e188">NextOrder</a>);</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>                <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>                    this-&gt;NextOrder = 0;</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>                IDelay-&gt;<a class="code hl_function" href="../../d0/dae/class_inquire_delay.html#a0868fc0af527ea2983130038e0aa6461">IDelay</a>(<a class="code hl_define" href="../../d6/d2b/_m_m_define_8hpp.html#a1b58eafee28645b1da98d84b7ecb0f0b">IRR_WAITKEYTUP</a>, IRRCode);</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>                <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>            <span class="keywordflow">case</span> <a class="code hl_define" href="../../d6/d2b/_m_m_define_8hpp.html#a61b3b16151bde755e29f584814013405">IRK_LEFT</a>: <span class="comment">// 如果是左键减少序号</span></div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>                <span class="keywordflow">if</span> (this-&gt;NextOrder &gt; 0)</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>                    --(this-&gt;<a class="code hl_variable" href="../../dc/d41/class_m_m_f___disp_bmp_static.html#aee2c77e0ecafa80480d61f54f012e188">NextOrder</a>);</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>                <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>                    this-&gt;NextOrder = FileCount - 1;</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>                IDelay-&gt;<a class="code hl_function" href="../../d0/dae/class_inquire_delay.html#a0868fc0af527ea2983130038e0aa6461">IDelay</a>(<a class="code hl_define" href="../../d6/d2b/_m_m_define_8hpp.html#a1b58eafee28645b1da98d84b7ecb0f0b">IRR_WAITKEYTUP</a>, IRRCode);</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>                <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>            }</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>            IRRCode = <a class="code hl_define" href="../../d6/d2b/_m_m_define_8hpp.html#a094654ad63fa9df96cd6bcf953c5f246">IRK_NONE</a>; <span class="comment">// 接受完毕后必须重置IRRCode</span></div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>        }</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>        <span class="keywordflow">return</span> <a class="code hl_define" href="../../dd/d7a/_m_m_func_8hpp.html#a82edcf2f045473e48a87ca55498824d9">EXECR_OK</a>;</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    }</div>
+</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>};</div>
+</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span> </div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="a_m_m_config_8hpp_html_af4c069c80f66f64310d211091e77e394"><div class="ttname"><a href="../../d3/dd9/_m_m_config_8hpp.html#af4c069c80f66f64310d211091e77e394">mmconfig</a></div><div class="ttdeci">class MMConfig mmconfig</div></div>
+<div class="ttc" id="a_m_m_define_8hpp_html_a094654ad63fa9df96cd6bcf953c5f246"><div class="ttname"><a href="../../d6/d2b/_m_m_define_8hpp.html#a094654ad63fa9df96cd6bcf953c5f246">IRK_NONE</a></div><div class="ttdeci">#define IRK_NONE</div><div class="ttdoc">空</div><div class="ttdef"><b>Definition</b> MMDefine.hpp:82</div></div>
+<div class="ttc" id="a_m_m_define_8hpp_html_a1b58eafee28645b1da98d84b7ecb0f0b"><div class="ttname"><a href="../../d6/d2b/_m_m_define_8hpp.html#a1b58eafee28645b1da98d84b7ecb0f0b">IRR_WAITKEYTUP</a></div><div class="ttdeci">#define IRR_WAITKEYTUP</div><div class="ttdoc">当按键识别后的等待抬起的时长，毫秒</div><div class="ttdef"><b>Definition</b> MMDefine.hpp:132</div></div>
+<div class="ttc" id="a_m_m_define_8hpp_html_a4194e137da9429104d8a3bc4ef0346f2"><div class="ttname"><a href="../../d6/d2b/_m_m_define_8hpp.html#a4194e137da9429104d8a3bc4ef0346f2">PIN_SD_SS</a></div><div class="ttdeci">#define PIN_SD_SS</div><div class="ttdef"><b>Definition</b> MMDefine.hpp:59</div></div>
+<div class="ttc" id="a_m_m_define_8hpp_html_a61b3b16151bde755e29f584814013405"><div class="ttname"><a href="../../d6/d2b/_m_m_define_8hpp.html#a61b3b16151bde755e29f584814013405">IRK_LEFT</a></div><div class="ttdeci">#define IRK_LEFT</div><div class="ttdoc">Left</div><div class="ttdef"><b>Definition</b> MMDefine.hpp:124</div></div>
+<div class="ttc" id="a_m_m_define_8hpp_html_a67fa3be333f3071e8c126978e0de0af8"><div class="ttname"><a href="../../d6/d2b/_m_m_define_8hpp.html#a67fa3be333f3071e8c126978e0de0af8">DIR_BMPSTATIC</a></div><div class="ttdeci">#define DIR_BMPSTATIC</div><div class="ttdoc">定义静态显示的BMP图片文件夹</div><div class="ttdef"><b>Definition</b> MMDefine.hpp:141</div></div>
+<div class="ttc" id="a_m_m_define_8hpp_html_a8e891660ae94717771a6286c88b1da4d"><div class="ttname"><a href="../../d6/d2b/_m_m_define_8hpp.html#a8e891660ae94717771a6286c88b1da4d">CFG_DISPBMPIDX</a></div><div class="ttdeci">#define CFG_DISPBMPIDX</div><div class="ttdoc">BMP静态显示当前的序号</div><div class="ttdef"><b>Definition</b> MMDefine.hpp:146</div></div>
+<div class="ttc" id="a_m_m_define_8hpp_html_af8aea16fac8c06740e5ea12d1b502a0e"><div class="ttname"><a href="../../d6/d2b/_m_m_define_8hpp.html#af8aea16fac8c06740e5ea12d1b502a0e">IRK_RIGHT</a></div><div class="ttdeci">#define IRK_RIGHT</div><div class="ttdoc">Right</div><div class="ttdef"><b>Definition</b> MMDefine.hpp:126</div></div>
+<div class="ttc" id="a_m_m_func_8hpp_html_a82edcf2f045473e48a87ca55498824d9"><div class="ttname"><a href="../../dd/d7a/_m_m_func_8hpp.html#a82edcf2f045473e48a87ca55498824d9">EXECR_OK</a></div><div class="ttdeci">#define EXECR_OK</div><div class="ttdoc">执行结果 OK</div><div class="ttdef"><b>Definition</b> MMFunc.hpp:19</div></div>
+<div class="ttc" id="a_m_m_func_8hpp_html_a9972882404fa9bc03a9b187727f4d028"><div class="ttname"><a href="../../dd/d7a/_m_m_func_8hpp.html#a9972882404fa9bc03a9b187727f4d028">MMFExecR_t</a></div><div class="ttdeci">uint16_t MMFExecR_t</div><div class="ttdoc">定义功能执行结果类型</div><div class="ttdef"><b>Definition</b> MMFunc.hpp:30</div></div>
+<div class="ttc" id="a_m_m_hardware_8hpp_html_a9757131cd175465e6220de58b57f6b78"><div class="ttname"><a href="../../d6/d16/_m_m_hardware_8hpp.html#a9757131cd175465e6220de58b57f6b78">UART_USB</a></div><div class="ttdeci">#define UART_USB</div><div class="ttdoc">定义USB串口</div><div class="ttdef"><b>Definition</b> MMHardware.hpp:36</div></div>
+<div class="ttc" id="a_m_m_s_d_8hpp_html"><div class="ttname"><a href="../../d0/da4/_m_m_s_d_8hpp.html">MMSD.hpp</a></div><div class="ttdoc">SD卡访问相关的封装</div></div>
+<div class="ttc" id="a_m_m_s_d_8hpp_html_a46d2d7959abbfafcbb3dbdbb9893373c"><div class="ttname"><a href="../../d0/da4/_m_m_s_d_8hpp.html#a46d2d7959abbfafcbb3dbdbb9893373c">mmsd</a></div><div class="ttdeci">class MMSD mmsd</div></div>
+<div class="ttc" id="a_m_m_scr_8hpp_html_a9263f0075bce75561a1faef94ec32a20"><div class="ttname"><a href="../../d8/db3/_m_m_scr_8hpp.html#a9263f0075bce75561a1faef94ec32a20">mmscr</a></div><div class="ttdeci">MMScr mmscr</div></div>
+<div class="ttc" id="aclass_inquire_delay_html"><div class="ttname"><a href="../../d0/dae/class_inquire_delay.html">InquireDelay</a></div><div class="ttdoc">查询等待类型(接口)</div><div class="ttdef"><b>Definition</b> MMFunc.hpp:39</div></div>
+<div class="ttc" id="aclass_inquire_delay_html_a0868fc0af527ea2983130038e0aa6461"><div class="ttname"><a href="../../d0/dae/class_inquire_delay.html#a0868fc0af527ea2983130038e0aa6461">InquireDelay::IDelay</a></div><div class="ttdeci">virtual bool IDelay(unsigned long ms)</div><div class="ttdoc">询问并等待</div><div class="ttdef"><b>Definition</b> MMFunc.hpp:54</div></div>
+<div class="ttc" id="aclass_inquire_delay_html_a9afa3e4942c9fed2e0abe1541453cae2"><div class="ttname"><a href="../../d0/dae/class_inquire_delay.html#a9afa3e4942c9fed2e0abe1541453cae2">InquireDelay::Inquire</a></div><div class="ttdeci">virtual bool Inquire()=0</div><div class="ttdoc">询问是否继续执行</div></div>
+<div class="ttc" id="aclass_m_m_canvas_html_a97879ab2f9ffa45af6b83471d889fb61"><div class="ttname"><a href="../../d9/d12/class_m_m_canvas.html#a97879ab2f9ffa45af6b83471d889fb61">MMCanvas::FillAll</a></div><div class="ttdeci">void FillAll(uint8_t R, uint8_t G, uint8_t B)</div><div class="ttdoc">填充所有</div><div class="ttdef"><b>Definition</b> MMCanvas.hpp:40</div></div>
+<div class="ttc" id="aclass_m_m_config_html_aa7ae409becc06fd7c43c84e89a1ab158"><div class="ttname"><a href="../../d3/dae/class_m_m_config.html#aa7ae409becc06fd7c43c84e89a1ab158">MMConfig::NeedSave</a></div><div class="ttdeci">bool NeedSave</div><div class="ttdoc">是否需要保存</div><div class="ttdef"><b>Definition</b> MMConfig.hpp:25</div></div>
+<div class="ttc" id="aclass_m_m_config_html_aeaa1aafccc59317c5b7c5b43aa210959"><div class="ttname"><a href="../../d3/dae/class_m_m_config.html#aeaa1aafccc59317c5b7c5b43aa210959">MMConfig::SaveIfNeeded</a></div><div class="ttdeci">void SaveIfNeeded()</div><div class="ttdoc">如果需要保存则进行保存</div><div class="ttdef"><b>Definition</b> MMConfig.hpp:50</div></div>
+<div class="ttc" id="aclass_m_m_config_html_af86d59e13f1823d050bb682947d13e8f"><div class="ttname"><a href="../../d3/dae/class_m_m_config.html#af86d59e13f1823d050bb682947d13e8f">MMConfig::Config</a></div><div class="ttdeci">JsonDocument Config</div><div class="ttdoc">定义配置json</div><div class="ttdef"><b>Definition</b> MMConfig.hpp:21</div></div>
+<div class="ttc" id="aclass_m_m_f___disp_bmp_static_html"><div class="ttname"><a href="../../dc/d41/class_m_m_f___disp_bmp_static.html">MMF_DispBmpStatic</a></div><div class="ttdoc">静态显示BMP图片</div><div class="ttdef"><b>Definition</b> MMF_DispBmpStatic.hpp:16</div></div>
+<div class="ttc" id="aclass_m_m_f___disp_bmp_static_html_a455cfebc136eadcf9b3ee6521f596d09"><div class="ttname"><a href="../../dc/d41/class_m_m_f___disp_bmp_static.html#a455cfebc136eadcf9b3ee6521f596d09">MMF_DispBmpStatic::DrawBMPByOrder</a></div><div class="ttdeci">bool DrawBMPByOrder(uint16_t Order)</div><div class="ttdoc">根据序号显示图片</div><div class="ttdef"><b>Definition</b> MMF_DispBmpStatic.hpp:33</div></div>
+<div class="ttc" id="aclass_m_m_f___disp_bmp_static_html_a56ae05f904ff71d87ff4cb61bb19b964"><div class="ttname"><a href="../../dc/d41/class_m_m_f___disp_bmp_static.html#a56ae05f904ff71d87ff4cb61bb19b964">MMF_DispBmpStatic::GetFileCount</a></div><div class="ttdeci">uint16_t GetFileCount()</div><div class="ttdoc">获得文件数量</div><div class="ttdef"><b>Definition</b> MMF_DispBmpStatic.hpp:58</div></div>
+<div class="ttc" id="aclass_m_m_f___disp_bmp_static_html_a58ccf33416dbf92fc605735d86ff8b86"><div class="ttname"><a href="../../dc/d41/class_m_m_f___disp_bmp_static.html#a58ccf33416dbf92fc605735d86ff8b86">MMF_DispBmpStatic::MMF_DispBmpStatic</a></div><div class="ttdeci">MMF_DispBmpStatic(uint16_t fid)</div><div class="ttdoc">构造函数</div><div class="ttdef"><b>Definition</b> MMF_DispBmpStatic.hpp:25</div></div>
+<div class="ttc" id="aclass_m_m_f___disp_bmp_static_html_a5b6b4feeab6e2ff726cec84b8b5b9780"><div class="ttname"><a href="../../dc/d41/class_m_m_f___disp_bmp_static.html#a5b6b4feeab6e2ff726cec84b8b5b9780">MMF_DispBmpStatic::CurrOrder</a></div><div class="ttdeci">uint16_t CurrOrder</div><div class="ttdoc">当前显示的图片顺序</div><div class="ttdef"><b>Definition</b> MMF_DispBmpStatic.hpp:19</div></div>
+<div class="ttc" id="aclass_m_m_f___disp_bmp_static_html_ab7869a4c7a92cca07464fd92a1c31852"><div class="ttname"><a href="../../dc/d41/class_m_m_f___disp_bmp_static.html#ab7869a4c7a92cca07464fd92a1c31852">MMF_DispBmpStatic::Exec</a></div><div class="ttdeci">virtual MMFExecR_t Exec(InquireDelay *IDelay)</div><div class="ttdoc">执行功能</div><div class="ttdef"><b>Definition</b> MMF_DispBmpStatic.hpp:79</div></div>
+<div class="ttc" id="aclass_m_m_f___disp_bmp_static_html_aee2c77e0ecafa80480d61f54f012e188"><div class="ttname"><a href="../../dc/d41/class_m_m_f___disp_bmp_static.html#aee2c77e0ecafa80480d61f54f012e188">MMF_DispBmpStatic::NextOrder</a></div><div class="ttdeci">uint16_t NextOrder</div><div class="ttdoc">下一个需要显示的顺序</div><div class="ttdef"><b>Definition</b> MMF_DispBmpStatic.hpp:21</div></div>
+<div class="ttc" id="aclass_m_m_func_html"><div class="ttname"><a href="../../dc/d05/class_m_m_func.html">MMFunc</a></div><div class="ttdoc">功能基础类</div><div class="ttdef"><b>Definition</b> MMFunc.hpp:80</div></div>
+<div class="ttc" id="aclass_m_m_s_d_html_a1d43fd7b5460ded545c9ea5308314bfd"><div class="ttname"><a href="../../dd/ddc/class_m_m_s_d.html#a1d43fd7b5460ded545c9ea5308314bfd">MMSD::DrawBitmapFile</a></div><div class="ttdeci">bool DrawBitmapFile(File &amp;F, bool AutoShow=true)</div><div class="ttdoc">绘制位图</div><div class="ttdef"><b>Definition</b> MMSD.hpp:68</div></div>
+<div class="ttc" id="aclass_m_m_s_d_html_a2783abbb66424f4c912308f754413d9e"><div class="ttname"><a href="../../dd/ddc/class_m_m_s_d.html#a2783abbb66424f4c912308f754413d9e">MMSD::GetLockSD</a></div><div class="ttdeci">void GetLockSD()</div><div class="ttdoc">获得SD访问锁</div><div class="ttdef"><b>Definition</b> MMSD.hpp:51</div></div>
+<div class="ttc" id="aclass_m_m_s_d_html_a44134a0e7d166fc8a0f57335691c4709"><div class="ttname"><a href="../../dd/ddc/class_m_m_s_d.html#a44134a0e7d166fc8a0f57335691c4709">MMSD::MoveToFileByOrder</a></div><div class="ttdeci">bool MoveToFileByOrder(File &amp;dir, uint16_t Order)</div><div class="ttdoc">根据文件顺序打开文件夹下的文件,下标从0开始</div><div class="ttdef"><b>Definition</b> MMSD.hpp:131</div></div>
+<div class="ttc" id="aclass_m_m_s_d_html_a49b0f6b4a87b698f7b2537ecacc54ec3"><div class="ttname"><a href="../../dd/ddc/class_m_m_s_d.html#a49b0f6b4a87b698f7b2537ecacc54ec3">MMSD::ReleaseSD</a></div><div class="ttdeci">void ReleaseSD()</div><div class="ttdoc">释放SD访问锁</div><div class="ttdef"><b>Definition</b> MMSD.hpp:59</div></div>
+<div class="ttc" id="aclass_m_m_s_d_html_a9e6ea9553cf64810b10711fc81505e83"><div class="ttname"><a href="../../dd/ddc/class_m_m_s_d.html#a9e6ea9553cf64810b10711fc81505e83">MMSD::FileCount</a></div><div class="ttdeci">uint16_t FileCount(File &amp;dir, bool IncludeFolders=false)</div><div class="ttdoc">统计文件夹下的文件数量, IncludeFolders是否包含文件夹</div><div class="ttdef"><b>Definition</b> MMSD.hpp:153</div></div>
+<div class="ttc" id="aclass_m_m_scr_html_aaa0cc2b3c845462a66c865454051858c"><div class="ttname"><a href="../../d3/d6d/class_m_m_scr.html#aaa0cc2b3c845462a66c865454051858c">MMScr::Update</a></div><div class="ttdeci">void Update()</div><div class="ttdoc">更新矩阵重新绘制</div><div class="ttdef"><b>Definition</b> MMScr.hpp:44</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="../../dir_1c49e53fcfd3949c530dabe651cf32b3.html">MMFunc</a></li><li class="navelem"><a class="el" href="../../dd/dc7/_m_m_f___disp_bmp_static_8hpp.html">MMF_DispBmpStatic.hpp</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+  </ul>
+</div>
+</body>
+</html>

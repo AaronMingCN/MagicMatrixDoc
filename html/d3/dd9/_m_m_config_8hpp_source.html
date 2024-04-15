@@ -1,0 +1,196 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MagicMatrix 魔法矩阵: MMConfig.hpp 源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../clipboard.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../LOGO 64x64.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">MagicMatrix 魔法矩阵
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(1); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('d3/dd9/_m_m_config_8hpp_source.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">MMConfig.hpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="../../d3/dd9/_m_m_config_8hpp.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/**</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment"> * @file MMConfig.hpp</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"> * @date 2024/03/08 13:10:15</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment"> * @author  </span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"> * @version 1.0</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment"> * @brief 设置类</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment"> * @details 统一管理设置项，包括保存和载入</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#ifndef _MMCONFIG_HPP</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#define _MMCONFIG_HPP</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;<a class="code" href="../../d0/da4/_m_m_s_d_8hpp.html">MMSD.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &lt;ArduinoJson.h&gt;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment"></span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment">/// @brief 设置类</span></div>
+<div class="foldopen" id="foldopen00017" data-start="{" data-end="};">
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="../../d3/dae/class_m_m_config.html">   17</a></span><span class="comment"></span><span class="keyword">class </span><a class="code hl_class" href="../../d3/dae/class_m_m_config.html">MMConfig</a> {</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">public</span>:<span class="comment"></span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">    /// @brief 定义配置json</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="../../d3/dae/class_m_m_config.html#af86d59e13f1823d050bb682947d13e8f">   21</a></span><span class="comment"></span>    JsonDocument <a class="code hl_variable" href="../../d3/dae/class_m_m_config.html#af86d59e13f1823d050bb682947d13e8f">Config</a>;<span class="comment"></span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">    /// @brief 是否已经载入</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="../../d3/dae/class_m_m_config.html#a39b41196c8fe161164b1a016b025490a">   23</a></span><span class="comment"></span>    <span class="keywordtype">bool</span> <a class="code hl_variable" href="../../d3/dae/class_m_m_config.html#a39b41196c8fe161164b1a016b025490a">Loaded</a> = <span class="keyword">false</span>;<span class="comment"></span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment">    /// @brief 是否需要保存</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="../../d3/dae/class_m_m_config.html#aa7ae409becc06fd7c43c84e89a1ab158">   25</a></span><span class="comment"></span>    <span class="keywordtype">bool</span> <a class="code hl_variable" href="../../d3/dae/class_m_m_config.html#aa7ae409becc06fd7c43c84e89a1ab158">NeedSave</a> = <span class="keyword">false</span>; <span class="comment">// 是否需要保存，</span><span class="comment"></span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment">    /// @brief 构造</span></div>
+<div class="foldopen" id="foldopen00027" data-start="{" data-end="}">
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="../../d3/dae/class_m_m_config.html#a645e9735ed9a486b7238cdf235c008c6">   27</a></span><span class="comment"></span>    <a class="code hl_function" href="../../d3/dae/class_m_m_config.html#a645e9735ed9a486b7238cdf235c008c6">MMConfig</a>()</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        : <a class="code hl_variable" href="../../d3/dae/class_m_m_config.html#af86d59e13f1823d050bb682947d13e8f">Config</a>() {};<span class="comment"></span></div>
+</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment">    /// @brief 析构</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="../../d3/dae/class_m_m_config.html#a686c6241aa6ae4926652ab4822bffbf7">   30</a></span><span class="comment"></span>    <a class="code hl_function" href="../../d3/dae/class_m_m_config.html#a686c6241aa6ae4926652ab4822bffbf7">~MMConfig</a>() {};</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="comment"></span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="comment">    /// @brief 将设置保存</span></div>
+<div class="foldopen" id="foldopen00033" data-start="{" data-end="}">
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="../../d3/dae/class_m_m_config.html#af9b6400a1f85ac0aad4b91b5efcc5b96">   33</a></span><span class="comment"></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="../../d3/dae/class_m_m_config.html#af9b6400a1f85ac0aad4b91b5efcc5b96">Save</a>()</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    {</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        <span class="keywordtype">bool</span> r = <span class="keyword">false</span>; <span class="comment">// 定义结果</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="../../d0/da4/_m_m_s_d_8hpp.html#a46d2d7959abbfafcbb3dbdbb9893373c">mmsd</a>.<a class="code hl_function" href="../../dd/ddc/class_m_m_s_d.html#a463fc7742fd9b4043b95079e8ab4d022">SaveJsonToFile</a>(<a class="code hl_variable" href="../../d3/dae/class_m_m_config.html#af86d59e13f1823d050bb682947d13e8f">Config</a>, <a class="code hl_define" href="../../d6/d2b/_m_m_define_8hpp.html#a248f19b3069fa436b8bb34eb3dc0b869">FILENAME_CFG</a>)) {</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>            <a class="code hl_variable" href="../../d3/dae/class_m_m_config.html#aa7ae409becc06fd7c43c84e89a1ab158">NeedSave</a> = <span class="keyword">false</span>; <span class="comment">// 如果保存成功则将需要保存设置为false</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        }</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        <span class="keywordflow">return</span> r;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    }</div>
+</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment"></span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment">    /// @brief 载入配置</span></div>
+<div class="foldopen" id="foldopen00043" data-start="{" data-end="}">
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="../../d3/dae/class_m_m_config.html#a42bb4ad11cb1728f42f123215899bae0">   43</a></span><span class="comment"></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="../../d3/dae/class_m_m_config.html#a42bb4ad11cb1728f42f123215899bae0">Load</a>()</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    {</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        this-&gt;Loaded = <a class="code hl_variable" href="../../d0/da4/_m_m_s_d_8hpp.html#a46d2d7959abbfafcbb3dbdbb9893373c">mmsd</a>.<a class="code hl_function" href="../../dd/ddc/class_m_m_s_d.html#ada6e4aace53af02fa7ab0ec948e65458">LoadJsonFromFile</a>(<a class="code hl_variable" href="../../d3/dae/class_m_m_config.html#af86d59e13f1823d050bb682947d13e8f">Config</a>, <a class="code hl_define" href="../../d6/d2b/_m_m_define_8hpp.html#a248f19b3069fa436b8bb34eb3dc0b869">FILENAME_CFG</a>);</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        <span class="keywordflow">return</span> this-&gt;<a class="code hl_variable" href="../../d3/dae/class_m_m_config.html#a39b41196c8fe161164b1a016b025490a">Loaded</a>;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    }</div>
+</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="comment"></span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="comment">    /// @brief 如果需要保存则进行保存</span></div>
+<div class="foldopen" id="foldopen00050" data-start="{" data-end="}">
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="../../d3/dae/class_m_m_config.html#aeaa1aafccc59317c5b7c5b43aa210959">   50</a></span><span class="comment"></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="../../d3/dae/class_m_m_config.html#aeaa1aafccc59317c5b7c5b43aa210959">SaveIfNeeded</a>()</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    {</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        <span class="keywordflow">if</span> (this-&gt;NeedSave)</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>            this-&gt;<a class="code hl_function" href="../../d3/dae/class_m_m_config.html#af9b6400a1f85ac0aad4b91b5efcc5b96">Save</a>();</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    }</div>
+</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="../../d3/dd9/_m_m_config_8hpp.html#af4c069c80f66f64310d211091e77e394">   56</a></span>} <a class="code hl_variable" href="../../d3/dd9/_m_m_config_8hpp.html#af4c069c80f66f64310d211091e77e394">mmconfig</a>;</div>
+</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="a_m_m_config_8hpp_html_af4c069c80f66f64310d211091e77e394"><div class="ttname"><a href="../../d3/dd9/_m_m_config_8hpp.html#af4c069c80f66f64310d211091e77e394">mmconfig</a></div><div class="ttdeci">class MMConfig mmconfig</div></div>
+<div class="ttc" id="a_m_m_define_8hpp_html_a248f19b3069fa436b8bb34eb3dc0b869"><div class="ttname"><a href="../../d6/d2b/_m_m_define_8hpp.html#a248f19b3069fa436b8bb34eb3dc0b869">FILENAME_CFG</a></div><div class="ttdeci">#define FILENAME_CFG</div><div class="ttdoc">配置文件名称</div><div class="ttdef"><b>Definition</b> MMDefine.hpp:137</div></div>
+<div class="ttc" id="a_m_m_s_d_8hpp_html"><div class="ttname"><a href="../../d0/da4/_m_m_s_d_8hpp.html">MMSD.hpp</a></div><div class="ttdoc">SD卡访问相关的封装</div></div>
+<div class="ttc" id="a_m_m_s_d_8hpp_html_a46d2d7959abbfafcbb3dbdbb9893373c"><div class="ttname"><a href="../../d0/da4/_m_m_s_d_8hpp.html#a46d2d7959abbfafcbb3dbdbb9893373c">mmsd</a></div><div class="ttdeci">class MMSD mmsd</div></div>
+<div class="ttc" id="aclass_m_m_config_html"><div class="ttname"><a href="../../d3/dae/class_m_m_config.html">MMConfig</a></div><div class="ttdoc">设置类</div><div class="ttdef"><b>Definition</b> MMConfig.hpp:17</div></div>
+<div class="ttc" id="aclass_m_m_config_html_a39b41196c8fe161164b1a016b025490a"><div class="ttname"><a href="../../d3/dae/class_m_m_config.html#a39b41196c8fe161164b1a016b025490a">MMConfig::Loaded</a></div><div class="ttdeci">bool Loaded</div><div class="ttdoc">是否已经载入</div><div class="ttdef"><b>Definition</b> MMConfig.hpp:23</div></div>
+<div class="ttc" id="aclass_m_m_config_html_a42bb4ad11cb1728f42f123215899bae0"><div class="ttname"><a href="../../d3/dae/class_m_m_config.html#a42bb4ad11cb1728f42f123215899bae0">MMConfig::Load</a></div><div class="ttdeci">bool Load()</div><div class="ttdoc">载入配置</div><div class="ttdef"><b>Definition</b> MMConfig.hpp:43</div></div>
+<div class="ttc" id="aclass_m_m_config_html_a645e9735ed9a486b7238cdf235c008c6"><div class="ttname"><a href="../../d3/dae/class_m_m_config.html#a645e9735ed9a486b7238cdf235c008c6">MMConfig::MMConfig</a></div><div class="ttdeci">MMConfig()</div><div class="ttdoc">构造</div><div class="ttdef"><b>Definition</b> MMConfig.hpp:27</div></div>
+<div class="ttc" id="aclass_m_m_config_html_a686c6241aa6ae4926652ab4822bffbf7"><div class="ttname"><a href="../../d3/dae/class_m_m_config.html#a686c6241aa6ae4926652ab4822bffbf7">MMConfig::~MMConfig</a></div><div class="ttdeci">~MMConfig()</div><div class="ttdoc">析构</div><div class="ttdef"><b>Definition</b> MMConfig.hpp:30</div></div>
+<div class="ttc" id="aclass_m_m_config_html_aa7ae409becc06fd7c43c84e89a1ab158"><div class="ttname"><a href="../../d3/dae/class_m_m_config.html#aa7ae409becc06fd7c43c84e89a1ab158">MMConfig::NeedSave</a></div><div class="ttdeci">bool NeedSave</div><div class="ttdoc">是否需要保存</div><div class="ttdef"><b>Definition</b> MMConfig.hpp:25</div></div>
+<div class="ttc" id="aclass_m_m_config_html_aeaa1aafccc59317c5b7c5b43aa210959"><div class="ttname"><a href="../../d3/dae/class_m_m_config.html#aeaa1aafccc59317c5b7c5b43aa210959">MMConfig::SaveIfNeeded</a></div><div class="ttdeci">void SaveIfNeeded()</div><div class="ttdoc">如果需要保存则进行保存</div><div class="ttdef"><b>Definition</b> MMConfig.hpp:50</div></div>
+<div class="ttc" id="aclass_m_m_config_html_af86d59e13f1823d050bb682947d13e8f"><div class="ttname"><a href="../../d3/dae/class_m_m_config.html#af86d59e13f1823d050bb682947d13e8f">MMConfig::Config</a></div><div class="ttdeci">JsonDocument Config</div><div class="ttdoc">定义配置json</div><div class="ttdef"><b>Definition</b> MMConfig.hpp:21</div></div>
+<div class="ttc" id="aclass_m_m_config_html_af9b6400a1f85ac0aad4b91b5efcc5b96"><div class="ttname"><a href="../../d3/dae/class_m_m_config.html#af9b6400a1f85ac0aad4b91b5efcc5b96">MMConfig::Save</a></div><div class="ttdeci">bool Save()</div><div class="ttdoc">将设置保存</div><div class="ttdef"><b>Definition</b> MMConfig.hpp:33</div></div>
+<div class="ttc" id="aclass_m_m_s_d_html_a463fc7742fd9b4043b95079e8ab4d022"><div class="ttname"><a href="../../dd/ddc/class_m_m_s_d.html#a463fc7742fd9b4043b95079e8ab4d022">MMSD::SaveJsonToFile</a></div><div class="ttdeci">bool SaveJsonToFile(JsonDocument &amp;Json, const char *FileName)</div><div class="ttdoc">将JSON文件保存到SD卡</div><div class="ttdef"><b>Definition</b> MMSD.hpp:204</div></div>
+<div class="ttc" id="aclass_m_m_s_d_html_ada6e4aace53af02fa7ab0ec948e65458"><div class="ttname"><a href="../../dd/ddc/class_m_m_s_d.html#ada6e4aace53af02fa7ab0ec948e65458">MMSD::LoadJsonFromFile</a></div><div class="ttdeci">bool LoadJsonFromFile(JsonDocument &amp;Json, const char *FileName)</div><div class="ttdoc">从SD卡载入JSON</div><div class="ttdef"><b>Definition</b> MMSD.hpp:235</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="../../d3/dd9/_m_m_config_8hpp.html">MMConfig.hpp</a></li>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+  </ul>
+</div>
+</body>
+</html>

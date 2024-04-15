@@ -1,0 +1,445 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MagicMatrix 魔法矩阵: MagicMatrix 软件结构说明</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<script type="text/javascript" src="../../clipboard.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript" src="../../cookie.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../LOGO 64x64.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">MagicMatrix 魔法矩阵
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('d7/d76/md__m_m_architecture.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div><div class="header">
+  <div class="headertitle"><div class="title">MagicMatrix 软件结构说明</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p><a class="anchor" id="magicmatrix-软件结构说明"></a></p><ol type="1">
+<li><a class="el" href="#硬件访问类-mmhardware-magic-matrix-hardware">硬件访问类 MMHardware (Magic Matrix Hardware)</a></li>
+<li><a class="el" href="#屏幕使用类-mmscr-magic-matrix-screen">屏幕使用类 MMScr (Magic Matrix Screen)</a></li>
+<li><a class="el" href="#功能池-mmfuncpool-magic-matrix-function-pool">功能池 MMFuncPool (Magic Matrix Function Pool)</a></li>
+<li><a class="el" href="#功能块基础类-mmfunc-magic-magic">功能块基础类 MMFunc (Magic Magic)</a></li>
+<li><a class="el" href="#inquiredelay-询问等待类事件回调机制">InquireDelay 询问等待类，事件回调机制</a></li>
+</ol>
+<hr  />
+<h1><a class="anchor" id="硬件访问类-mmhardware-magic-matrix-hardware"></a>
+硬件访问类 MMHardware (Magic Matrix Hardware)</h1>
+<ul>
+<li><p class="startli"><a class="el" href="../../dd/d90/class_m_m_hardware.html" title="硬件类">MMHardware</a> 说明</p>
+<p class="startli">将所有与硬件相关的操作封装，便于集中管理与使用</p>
+</li>
+<li><p class="startli"><a class="el" href="../../dd/d90/class_m_m_hardware.html" title="硬件类">MMHardware</a> 实现代码</p>
+<div class="fragment"><div class="line"><span class="keyword">class </span><a class="code hl_class" href="../../dd/d90/class_m_m_hardware.html">MMHardware</a> {</div>
+<div class="line"><span class="keyword">private</span>:</div>
+<div class="line">    <span class="comment">/* data */</span></div>
+<div class="line"><span class="keyword">public</span>:</div>
+<div class="line">    IRrecv <a class="code hl_variable" href="../../dd/d90/class_m_m_hardware.html#a22254e4f9510d19c70b986d8e95ee281">irrecv</a>; <span class="comment">// 定义红外接收对象</span></div>
+<div class="line">    ThreeWire <a class="code hl_variable" href="../../dd/d90/class_m_m_hardware.html#a97d1cb3be6abe986ea4f6d57443b4715">myWire</a>; <span class="comment">// 定义i2c通信模块</span></div>
+<div class="line">    RtcDS1302&lt;ThreeWire&gt; <a class="code hl_variable" href="../../dd/d90/class_m_m_hardware.html#a49cfa403e9a32d1dfc8f2e390201a52f">Rtc</a>; <span class="comment">// 定义rtc时钟模块</span></div>
+<div class="line">    DHT_Unified <a class="code hl_variable" href="../../dd/d90/class_m_m_hardware.html#a1fafc2cbccdc5500c78b342bdd7f8de3">dht</a>; <span class="comment">// 定义dht温湿度模块</span></div>
+<div class="line">    <span class="comment">// 构造函数</span></div>
+<div class="line">    <a class="code hl_function" href="../../dd/d90/class_m_m_hardware.html#a9ef9c8b3460fea4c9ab6f413ca197597">MMHardware</a>()</div>
+<div class="line">        : <a class="code hl_variable" href="../../dd/d90/class_m_m_hardware.html#a22254e4f9510d19c70b986d8e95ee281">irrecv</a>(<a class="code hl_define" href="../../d6/d2b/_m_m_define_8hpp.html#a321a21dfec72b4478e65892953628f26">PIN_IRR</a>) <span class="comment">// 构造irrecv</span></div>
+<div class="line">        , <a class="code hl_variable" href="../../dd/d90/class_m_m_hardware.html#a97d1cb3be6abe986ea4f6d57443b4715">myWire</a>(<a class="code hl_define" href="../../d6/d2b/_m_m_define_8hpp.html#a49edbf26f72ccb8175fd2a896ee7d71f">PIN_I2C_DAT</a>, <a class="code hl_define" href="../../d6/d2b/_m_m_define_8hpp.html#a169ff6e615c8620dd6c20e128d29f521">PIN_I2C_CLK</a>, <a class="code hl_define" href="../../d6/d2b/_m_m_define_8hpp.html#ae40a7830411bcd1f870ae4e4a4b30e7b">PIN_DS1302_CS</a>) <span class="comment">// 构造i2c通信</span></div>
+<div class="line">        , <a class="code hl_variable" href="../../dd/d90/class_m_m_hardware.html#a49cfa403e9a32d1dfc8f2e390201a52f">Rtc</a>(<a class="code hl_variable" href="../../dd/d90/class_m_m_hardware.html#a97d1cb3be6abe986ea4f6d57443b4715">myWire</a>) <span class="comment">// 构造rtc时钟模块</span></div>
+<div class="line">        , <a class="code hl_variable" href="../../dd/d90/class_m_m_hardware.html#a1fafc2cbccdc5500c78b342bdd7f8de3">dht</a>(<a class="code hl_define" href="../../d6/d2b/_m_m_define_8hpp.html#ae31e73ed29a89d681154d60c736d8892">PIN_DHT</a>, DHT11) <span class="comment">// 构造dht温湿度模块</span></div>
+<div class="line">    {</div>
+<div class="line">        <a class="code hl_variable" href="../../dd/d90/class_m_m_hardware.html#a22254e4f9510d19c70b986d8e95ee281">irrecv</a>.enableIRIn(); <span class="comment">// 打开红外接收</span></div>
+<div class="line">        <a class="code hl_variable" href="../../dd/d90/class_m_m_hardware.html#a1fafc2cbccdc5500c78b342bdd7f8de3">dht</a>.begin(); <span class="comment">// 打开dht温湿度传感器</span></div>
+<div class="line">    };</div>
+<div class="line">    <span class="comment">// ~MMHardware();</span></div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// IRRCode红外线读取到的结果代码</span></div>
+<div class="line">    uint16_t <a class="code hl_function" href="../../dd/d90/class_m_m_hardware.html#a7c059b3660b5841519d14489d9856f83">IRRCode</a>()</div>
+<div class="line">    {</div>
+<div class="line">        uint16_t r = <a class="code hl_define" href="../../d6/d2b/_m_m_define_8hpp.html#a094654ad63fa9df96cd6bcf953c5f246">IRK_NONE</a>;</div>
+<div class="line">        <span class="keywordflow">if</span> (this-&gt;irrecv.decode()) { <span class="comment">// 如果红外线读取到数据</span></div>
+<div class="line">            r = this-&gt;irrecv.decodedIRData.command;</div>
+<div class="line">            this-&gt;irrecv.resume();</div>
+<div class="line">        }</div>
+<div class="line">        <span class="keywordflow">return</span> r;</div>
+<div class="line">    }</div>
+<div class="line"> </div>
+<div class="line">} <a class="code hl_variable" href="../../d6/d16/_m_m_hardware_8hpp.html#a13e9b093d353efd2754d5b9cc4c90280">mmhardware</a>;</div>
+<div class="ttc" id="a_m_m_define_8hpp_html_a094654ad63fa9df96cd6bcf953c5f246"><div class="ttname"><a href="../../d6/d2b/_m_m_define_8hpp.html#a094654ad63fa9df96cd6bcf953c5f246">IRK_NONE</a></div><div class="ttdeci">#define IRK_NONE</div><div class="ttdoc">空</div><div class="ttdef"><b>Definition</b> MMDefine.hpp:82</div></div>
+<div class="ttc" id="a_m_m_define_8hpp_html_a169ff6e615c8620dd6c20e128d29f521"><div class="ttname"><a href="../../d6/d2b/_m_m_define_8hpp.html#a169ff6e615c8620dd6c20e128d29f521">PIN_I2C_CLK</a></div><div class="ttdeci">#define PIN_I2C_CLK</div><div class="ttdoc">I2C时钟引脚, 5</div><div class="ttdef"><b>Definition</b> MMDefine.hpp:30</div></div>
+<div class="ttc" id="a_m_m_define_8hpp_html_a321a21dfec72b4478e65892953628f26"><div class="ttname"><a href="../../d6/d2b/_m_m_define_8hpp.html#a321a21dfec72b4478e65892953628f26">PIN_IRR</a></div><div class="ttdeci">#define PIN_IRR</div><div class="ttdoc">定义红外线接收引脚</div><div class="ttdef"><b>Definition</b> MMDefine.hpp:26</div></div>
+<div class="ttc" id="a_m_m_define_8hpp_html_a49edbf26f72ccb8175fd2a896ee7d71f"><div class="ttname"><a href="../../d6/d2b/_m_m_define_8hpp.html#a49edbf26f72ccb8175fd2a896ee7d71f">PIN_I2C_DAT</a></div><div class="ttdeci">#define PIN_I2C_DAT</div><div class="ttdoc">I2C数据引脚, 4</div><div class="ttdef"><b>Definition</b> MMDefine.hpp:29</div></div>
+<div class="ttc" id="a_m_m_define_8hpp_html_ae31e73ed29a89d681154d60c736d8892"><div class="ttname"><a href="../../d6/d2b/_m_m_define_8hpp.html#ae31e73ed29a89d681154d60c736d8892">PIN_DHT</a></div><div class="ttdeci">#define PIN_DHT</div><div class="ttdoc">定义DHT温湿度传感器引脚</div><div class="ttdef"><b>Definition</b> MMDefine.hpp:34</div></div>
+<div class="ttc" id="a_m_m_define_8hpp_html_ae40a7830411bcd1f870ae4e4a4b30e7b"><div class="ttname"><a href="../../d6/d2b/_m_m_define_8hpp.html#ae40a7830411bcd1f870ae4e4a4b30e7b">PIN_DS1302_CS</a></div><div class="ttdeci">#define PIN_DS1302_CS</div><div class="ttdoc">DS1302选择引脚</div><div class="ttdef"><b>Definition</b> MMDefine.hpp:32</div></div>
+<div class="ttc" id="a_m_m_hardware_8hpp_html_a13e9b093d353efd2754d5b9cc4c90280"><div class="ttname"><a href="../../d6/d16/_m_m_hardware_8hpp.html#a13e9b093d353efd2754d5b9cc4c90280">mmhardware</a></div><div class="ttdeci">class MMHardware mmhardware</div></div>
+<div class="ttc" id="aclass_m_m_hardware_html"><div class="ttname"><a href="../../dd/d90/class_m_m_hardware.html">MMHardware</a></div><div class="ttdoc">硬件类</div><div class="ttdef"><b>Definition</b> MMHardware.hpp:41</div></div>
+<div class="ttc" id="aclass_m_m_hardware_html_a1fafc2cbccdc5500c78b342bdd7f8de3"><div class="ttname"><a href="../../dd/d90/class_m_m_hardware.html#a1fafc2cbccdc5500c78b342bdd7f8de3">MMHardware::dht</a></div><div class="ttdeci">DHT_Unified dht</div><div class="ttdoc">定义dht温湿度模块</div><div class="ttdef"><b>Definition</b> MMHardware.hpp:45</div></div>
+<div class="ttc" id="aclass_m_m_hardware_html_a22254e4f9510d19c70b986d8e95ee281"><div class="ttname"><a href="../../dd/d90/class_m_m_hardware.html#a22254e4f9510d19c70b986d8e95ee281">MMHardware::irrecv</a></div><div class="ttdeci">IRrecv irrecv</div><div class="ttdoc">定义红外接收对象</div><div class="ttdef"><b>Definition</b> MMHardware.hpp:44</div></div>
+<div class="ttc" id="aclass_m_m_hardware_html_a49cfa403e9a32d1dfc8f2e390201a52f"><div class="ttname"><a href="../../dd/d90/class_m_m_hardware.html#a49cfa403e9a32d1dfc8f2e390201a52f">MMHardware::Rtc</a></div><div class="ttdeci">RtcDS1302&lt; ThreeWire &gt; Rtc</div><div class="ttdoc">定义rtc时钟模块</div><div class="ttdef"><b>Definition</b> MMHardware.hpp:48</div></div>
+<div class="ttc" id="aclass_m_m_hardware_html_a7c059b3660b5841519d14489d9856f83"><div class="ttname"><a href="../../dd/d90/class_m_m_hardware.html#a7c059b3660b5841519d14489d9856f83">MMHardware::IRRCode</a></div><div class="ttdeci">bool IRRCode(uint16_t &amp;Code, bool WaitData=false)</div><div class="ttdoc">读取红外遥控编码</div><div class="ttdef"><b>Definition</b> MMHardware.hpp:105</div></div>
+<div class="ttc" id="aclass_m_m_hardware_html_a97d1cb3be6abe986ea4f6d57443b4715"><div class="ttname"><a href="../../dd/d90/class_m_m_hardware.html#a97d1cb3be6abe986ea4f6d57443b4715">MMHardware::myWire</a></div><div class="ttdeci">ThreeWire myWire</div><div class="ttdoc">定义i2c通信模块</div><div class="ttdef"><b>Definition</b> MMHardware.hpp:47</div></div>
+<div class="ttc" id="aclass_m_m_hardware_html_a9ef9c8b3460fea4c9ab6f413ca197597"><div class="ttname"><a href="../../dd/d90/class_m_m_hardware.html#a9ef9c8b3460fea4c9ab6f413ca197597">MMHardware::MMHardware</a></div><div class="ttdeci">MMHardware()</div><div class="ttdoc">构造函数</div><div class="ttdef"><b>Definition</b> MMHardware.hpp:56</div></div>
+</div><!-- fragment --></li>
+</ul>
+<h1><a class="anchor" id="屏幕使用类-mmscr-magic-matrix-screen"></a>
+屏幕使用类 MMScr (Magic Matrix Screen)</h1>
+<ul>
+<li><p class="startli"><a class="el" href="../../d3/d6d/class_m_m_scr.html" title="矩阵屏幕类">MMScr</a> 说明</p>
+<p class="startli">在矩阵屏幕的基础上将相关的操作进行封装，如：绘制像素颜色，刷新矩阵显示等</p>
+</li>
+<li><p class="startli"><a class="el" href="../../d3/d6d/class_m_m_scr.html" title="矩阵屏幕类">MMScr</a> 实现代码</p>
+<div class="fragment"><div class="line"><span class="keyword">class </span><a class="code hl_class" href="../../d3/d6d/class_m_m_scr.html">MMScr</a> {</div>
+<div class="line"><span class="keyword">public</span>:</div>
+<div class="line">    <span class="comment">// 清空但是不刷新</span></div>
+<div class="line">    <span class="keywordtype">void</span> <a class="code hl_function" href="../../d9/d12/class_m_m_canvas.html#a091d771fe8f0f66f6d71f3b6243d43b1">SetEmpty</a>()</div>
+<div class="line">    {</div>
+<div class="line">        matrix.clear();</div>
+<div class="line">    }</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// 更新矩阵</span></div>
+<div class="line">    <span class="keywordtype">void</span> <a class="code hl_function" href="../../d3/d6d/class_m_m_scr.html#aaa0cc2b3c845462a66c865454051858c">Update</a>()</div>
+<div class="line">    {</div>
+<div class="line">        matrix.show();</div>
+<div class="line">    }</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// 清空矩阵，并立刻显示</span></div>
+<div class="line">    <span class="keywordtype">void</span> <a class="code hl_function" href="../../d3/d6d/class_m_m_scr.html#a4c24fb1b0ff38ea04ee9a737e47e4ca3">Clear</a>()</div>
+<div class="line">    {</div>
+<div class="line">        <a class="code hl_function" href="../../d9/d12/class_m_m_canvas.html#a091d771fe8f0f66f6d71f3b6243d43b1">SetEmpty</a>();</div>
+<div class="line">        <a class="code hl_function" href="../../d3/d6d/class_m_m_scr.html#aaa0cc2b3c845462a66c865454051858c">Update</a>();</div>
+<div class="line">    }</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// 设置一个像素的颜色</span></div>
+<div class="line">    <span class="keywordtype">void</span> <a class="code hl_function" href="../../d3/d6d/class_m_m_scr.html#a7eda1be25d2bc27aa9293e7c3aa7d0ec">SetPixel</a>(uint16_t x, uint16_t y, uint8_t R, uint8_t G, uint8_t B)</div>
+<div class="line">    {</div>
+<div class="line">        matrix.drawPixel(x, y, matrix.Color(R, G, B));</div>
+<div class="line">    }</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// 填充整个屏幕</span></div>
+<div class="line">    <span class="keywordtype">void</span> Fill(uint8_t R, uint8_t G, uint8_t B)</div>
+<div class="line">    {</div>
+<div class="line">        <span class="keywordflow">for</span> (uint8_t r = 0; r &lt; <a class="code hl_define" href="../../d6/d2b/_m_m_define_8hpp.html#a33fdd808e6d49f14e5d6e679e6a6dbea">M_HEIGHT</a>; ++r) { <span class="comment">// 将所有颜色清空</span></div>
+<div class="line">            <span class="keywordflow">for</span> (uint8_t c = 0; c &lt; <a class="code hl_define" href="../../d6/d2b/_m_m_define_8hpp.html#a3be0529049ae7cb377b60ef8ee4970b0">M_WIDTH</a>; ++c) {</div>
+<div class="line">                matrix.drawPixel(c, r, matrix.Color(R, G, B));</div>
+<div class="line">            }</div>
+<div class="line">        }</div>
+<div class="line">    }</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// 将RamBmp绘制到屏幕</span></div>
+<div class="line">    <span class="keywordtype">void</span> <a class="code hl_function" href="../../d3/d6d/class_m_m_scr.html#a71aff872991f5964151f28ae292faabe">DrawRamBmp</a>(<a class="code hl_class" href="../../d3/df9/class_m_m_ram_bmp.html">MMRamBmp</a>&amp; rb)</div>
+<div class="line">    {</div>
+<div class="line">        <span class="keywordflow">for</span> (uint8_t r = 0; r &lt; <a class="code hl_define" href="../../d6/d2b/_m_m_define_8hpp.html#a33fdd808e6d49f14e5d6e679e6a6dbea">M_HEIGHT</a>; ++r) { <span class="comment">// 将所有颜色清空</span></div>
+<div class="line">            <span class="keywordflow">for</span> (uint8_t c = 0; c &lt; <a class="code hl_define" href="../../d6/d2b/_m_m_define_8hpp.html#a3be0529049ae7cb377b60ef8ee4970b0">M_WIDTH</a>; ++c) {</div>
+<div class="line">                <a class="code hl_struct" href="../../d3/d2e/struct_r_g_b.html">RGB</a> t;</div>
+<div class="line">                rb.GetPixcel(c, r, t); <span class="comment">// 定义临时像素并从RamBmp读取</span></div>
+<div class="line">                matrix.drawPixel(c, r, t.Color()); <span class="comment">// 将像素绘制到矩阵屏幕</span></div>
+<div class="line">            }</div>
+<div class="line">        }</div>
+<div class="line">    }</div>
+<div class="line"> </div>
+<div class="line">} <a class="code hl_variable" href="../../d8/db3/_m_m_scr_8hpp.html#a9263f0075bce75561a1faef94ec32a20">mmscr</a>;</div>
+<div class="ttc" id="a_m_m_define_8hpp_html_a33fdd808e6d49f14e5d6e679e6a6dbea"><div class="ttname"><a href="../../d6/d2b/_m_m_define_8hpp.html#a33fdd808e6d49f14e5d6e679e6a6dbea">M_HEIGHT</a></div><div class="ttdeci">#define M_HEIGHT</div><div class="ttdoc">定义矩阵屏幕行数</div><div class="ttdef"><b>Definition</b> MMDefine.hpp:68</div></div>
+<div class="ttc" id="a_m_m_define_8hpp_html_a3be0529049ae7cb377b60ef8ee4970b0"><div class="ttname"><a href="../../d6/d2b/_m_m_define_8hpp.html#a3be0529049ae7cb377b60ef8ee4970b0">M_WIDTH</a></div><div class="ttdeci">#define M_WIDTH</div><div class="ttdef"><b>Definition</b> MMDefine.hpp:69</div></div>
+<div class="ttc" id="a_m_m_scr_8hpp_html_a9263f0075bce75561a1faef94ec32a20"><div class="ttname"><a href="../../d8/db3/_m_m_scr_8hpp.html#a9263f0075bce75561a1faef94ec32a20">mmscr</a></div><div class="ttdeci">MMScr mmscr</div></div>
+<div class="ttc" id="aclass_m_m_canvas_html_a091d771fe8f0f66f6d71f3b6243d43b1"><div class="ttname"><a href="../../d9/d12/class_m_m_canvas.html#a091d771fe8f0f66f6d71f3b6243d43b1">MMCanvas::SetEmpty</a></div><div class="ttdeci">virtual void SetEmpty()</div><div class="ttdoc">清空屏幕</div><div class="ttdef"><b>Definition</b> MMCanvas.hpp:51</div></div>
+<div class="ttc" id="aclass_m_m_ram_bmp_html"><div class="ttname"><a href="../../d3/df9/class_m_m_ram_bmp.html">MMRamBmp</a></div><div class="ttdoc">内存图片类</div><div class="ttdef"><b>Definition</b> MMRamBmp.hpp:16</div></div>
+<div class="ttc" id="aclass_m_m_scr_html"><div class="ttname"><a href="../../d3/d6d/class_m_m_scr.html">MMScr</a></div><div class="ttdoc">矩阵屏幕类</div><div class="ttdef"><b>Definition</b> MMScr.hpp:19</div></div>
+<div class="ttc" id="aclass_m_m_scr_html_a4c24fb1b0ff38ea04ee9a737e47e4ca3"><div class="ttname"><a href="../../d3/d6d/class_m_m_scr.html#a4c24fb1b0ff38ea04ee9a737e47e4ca3">MMScr::Clear</a></div><div class="ttdeci">void Clear()</div><div class="ttdoc">清空矩阵，并立刻显示</div><div class="ttdef"><b>Definition</b> MMScr.hpp:52</div></div>
+<div class="ttc" id="aclass_m_m_scr_html_a71aff872991f5964151f28ae292faabe"><div class="ttname"><a href="../../d3/d6d/class_m_m_scr.html#a71aff872991f5964151f28ae292faabe">MMScr::DrawRamBmp</a></div><div class="ttdeci">void DrawRamBmp(MMRamBmp &amp;rb)</div><div class="ttdoc">将RamBmp绘制到屏幕</div><div class="ttdef"><b>Definition</b> MMScr.hpp:72</div></div>
+<div class="ttc" id="aclass_m_m_scr_html_a7eda1be25d2bc27aa9293e7c3aa7d0ec"><div class="ttname"><a href="../../d3/d6d/class_m_m_scr.html#a7eda1be25d2bc27aa9293e7c3aa7d0ec">MMScr::SetPixel</a></div><div class="ttdeci">virtual void SetPixel(int16_t x, int16_t y, uint8_t R, uint8_t G, uint8_t B)</div><div class="ttdoc">设置一个像素点</div><div class="ttdef"><b>Definition</b> MMScr.hpp:65</div></div>
+<div class="ttc" id="aclass_m_m_scr_html_aaa0cc2b3c845462a66c865454051858c"><div class="ttname"><a href="../../d3/d6d/class_m_m_scr.html#aaa0cc2b3c845462a66c865454051858c">MMScr::Update</a></div><div class="ttdeci">void Update()</div><div class="ttdoc">更新矩阵重新绘制</div><div class="ttdef"><b>Definition</b> MMScr.hpp:44</div></div>
+<div class="ttc" id="astruct_r_g_b_html"><div class="ttname"><a href="../../d3/d2e/struct_r_g_b.html">RGB</a></div><div class="ttdoc">定义时钟计数的类型</div><div class="ttdef"><b>Definition</b> MMDefine.hpp:153</div></div>
+</div><!-- fragment --></li>
+</ul>
+<h1><a class="anchor" id="功能池-mmfuncpool-magic-matrix-function-pool"></a>
+功能池 MMFuncPool (Magic Matrix Function Pool)</h1>
+<ul>
+<li><p class="startli"><a class="el" href="../../d9/d1a/class_m_m_func_pool.html" title="功能池类">MMFuncPool</a> 说明</p>
+<p class="startli">将系统的功能以对象的方式存贮在一个功能池中,使用功能ID进行调用,目的是为了统一调用接口方便扩展。同时在系统运行过程中可以对功能池进行动态维护</p>
+</li>
+<li><p class="startli"><a class="el" href="../../d9/d1a/class_m_m_func_pool.html" title="功能池类">MMFuncPool</a> 实现代码</p>
+<div class="fragment"><div class="line"><span class="keyword">class </span><a class="code hl_class" href="../../d9/d1a/class_m_m_func_pool.html">MMFuncPool</a> {</div>
+<div class="line"><span class="keyword">private</span>:</div>
+<div class="line">    <span class="comment">// 功能块列表</span></div>
+<div class="line">    std::vector&lt;MMFunc*&gt; items;</div>
+<div class="line"><span class="keyword">public</span>:</div>
+<div class="line">    <span class="comment">// MMFuncPool();</span></div>
+<div class="line">    <span class="comment">// 析构,释放功能列表</span></div>
+<div class="line">    <a class="code hl_function" href="../../d9/d1a/class_m_m_func_pool.html#a51f3b3454eca49db294683e9500f4997">~MMFuncPool</a>() {</div>
+<div class="line">        this-&gt;items.clear();</div>
+<div class="line">    };</div>
+<div class="line">    <span class="comment">// 将功能块加入到池中</span></div>
+<div class="line">    <span class="keywordtype">void</span> <a class="code hl_function" href="../../d9/d1a/class_m_m_func_pool.html#afcde4d8440a5cc28e4d58fee6e87c6fa">Append</a>(<a class="code hl_class" href="../../dc/d05/class_m_m_func.html">MMFunc</a>* mmf)</div>
+<div class="line">    {</div>
+<div class="line">        mmf-&gt;<a class="code hl_variable" href="../../dc/d05/class_m_m_func.html#a7b81522c8dccecfb566b50d1a6caf7e1">FPool</a> = <span class="keyword">this</span>;</div>
+<div class="line">        this-&gt;items.push_back(mmf);</div>
+<div class="line">    }</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// 根据功能块FID执行对应的功能</span></div>
+<div class="line">    uint16_t Exec(uint16_t fid)</div>
+<div class="line">    {</div>
+<div class="line">        uint16_t r = <a class="code hl_define" href="../../dd/d7a/_m_m_func_8hpp.html#a4708e39a3760f889b9079454df085ba4">EXECR_ERROR</a>; <span class="comment">// 定义返回结果,默认为错误</span></div>
+<div class="line">        <span class="keywordflow">for</span> (<span class="keyword">auto</span> i : items) {</div>
+<div class="line">            <span class="keywordflow">if</span> (i-&gt;FID == fid) {</div>
+<div class="line">                r = i-&gt;Exec();</div>
+<div class="line">                <span class="keywordflow">break</span>;</div>
+<div class="line">            }</div>
+<div class="line">        }</div>
+<div class="line">        <span class="keywordflow">return</span> r;</div>
+<div class="line">    }</div>
+<div class="line">};</div>
+<div class="ttc" id="a_m_m_func_8hpp_html_a4708e39a3760f889b9079454df085ba4"><div class="ttname"><a href="../../dd/d7a/_m_m_func_8hpp.html#a4708e39a3760f889b9079454df085ba4">EXECR_ERROR</a></div><div class="ttdeci">#define EXECR_ERROR</div><div class="ttdoc">执行结果 ERROR</div><div class="ttdef"><b>Definition</b> MMFunc.hpp:21</div></div>
+<div class="ttc" id="aclass_m_m_func_html"><div class="ttname"><a href="../../dc/d05/class_m_m_func.html">MMFunc</a></div><div class="ttdoc">功能基础类</div><div class="ttdef"><b>Definition</b> MMFunc.hpp:80</div></div>
+<div class="ttc" id="aclass_m_m_func_html_a7b81522c8dccecfb566b50d1a6caf7e1"><div class="ttname"><a href="../../dc/d05/class_m_m_func.html#a7b81522c8dccecfb566b50d1a6caf7e1">MMFunc::FPool</a></div><div class="ttdeci">void * FPool</div><div class="ttdef"><b>Definition</b> MMFunc.hpp:85</div></div>
+<div class="ttc" id="aclass_m_m_func_pool_html"><div class="ttname"><a href="../../d9/d1a/class_m_m_func_pool.html">MMFuncPool</a></div><div class="ttdoc">功能池类</div><div class="ttdef"><b>Definition</b> MMFuncPool.hpp:20</div></div>
+<div class="ttc" id="aclass_m_m_func_pool_html_a51f3b3454eca49db294683e9500f4997"><div class="ttname"><a href="../../d9/d1a/class_m_m_func_pool.html#a51f3b3454eca49db294683e9500f4997">MMFuncPool::~MMFuncPool</a></div><div class="ttdeci">~MMFuncPool()</div><div class="ttdoc">析构</div><div class="ttdef"><b>Definition</b> MMFuncPool.hpp:31</div></div>
+<div class="ttc" id="aclass_m_m_func_pool_html_afcde4d8440a5cc28e4d58fee6e87c6fa"><div class="ttname"><a href="../../d9/d1a/class_m_m_func_pool.html#afcde4d8440a5cc28e4d58fee6e87c6fa">MMFuncPool::Append</a></div><div class="ttdeci">void Append(MMFunc *mmf)</div><div class="ttdoc">将功能块加入功能池</div><div class="ttdef"><b>Definition</b> MMFuncPool.hpp:44</div></div>
+</div><!-- fragment --></li>
+</ul>
+<h1><a class="anchor" id="功能块基础类-mmfunc-magic-magic"></a>
+功能块基础类 MMFunc (Magic Magic)</h1>
+<ul>
+<li><p class="startli"><a class="el" href="../../dc/d05/class_m_m_func.html" title="功能基础类">MMFunc</a> 说明</p>
+<p class="startli">实现了功能块的基础功能，使用时需要从基础类派生出自定义功能类</p>
+</li>
+<li><p class="startli"><a class="el" href="../../dc/d05/class_m_m_func.html" title="功能基础类">MMFunc</a> 实现代码</p>
+<div class="fragment"><div class="line"><span class="keyword">class </span><a class="code hl_class" href="../../dc/d05/class_m_m_func.html">MMFunc</a> {</div>
+<div class="line"><span class="keyword">public</span>:</div>
+<div class="line">    uint16_t <a class="code hl_variable" href="../../dc/d05/class_m_m_func.html#aa06d1da551c36db917835f2ee5b549d0">FID</a> = 0; <span class="comment">// 功能块ID</span></div>
+<div class="line">    uint8_t <a class="code hl_variable" href="../../dc/d05/class_m_m_func.html#a5ff2d851e12a33d8040fb8dae2329c7b">FType</a> = 0; <span class="comment">// 类型，共后期扩展使用</span></div>
+<div class="line">    <span class="comment">// 所在功能池，使用方法：((MMFuncPool *)(this-&gt;FPool))-&gt;Exec(0);</span></div>
+<div class="line">    <span class="keywordtype">void</span>* <a class="code hl_variable" href="../../dc/d05/class_m_m_func.html#a7b81522c8dccecfb566b50d1a6caf7e1">FPool</a> = NULL;</div>
+<div class="line">    <span class="comment">// 构造函数</span></div>
+<div class="line">    <a class="code hl_function" href="../../dc/d05/class_m_m_func.html#aea128f78f88c02d4bd9d1eb06cb91691">MMFunc</a>() {};</div>
+<div class="line">    <a class="code hl_function" href="../../dc/d05/class_m_m_func.html#aea128f78f88c02d4bd9d1eb06cb91691">MMFunc</a>(uint16_t fid)</div>
+<div class="line">    {</div>
+<div class="line">        this-&gt;FID = fid;</div>
+<div class="line">    }</div>
+<div class="line">    <a class="code hl_function" href="../../dc/d05/class_m_m_func.html#aea128f78f88c02d4bd9d1eb06cb91691">MMFunc</a>(uint16_t fid, uint16_t ftype)</div>
+<div class="line">    {</div>
+<div class="line">        this-&gt;FID = fid;</div>
+<div class="line">        this-&gt;FType = ftype;</div>
+<div class="line">    }</div>
+<div class="line">    <span class="comment">// virtual ~MMFunc(){};</span></div>
+<div class="line">    <span class="keyword">virtual</span> uint16_t <a class="code hl_function" href="../../dc/d05/class_m_m_func.html#a637b63db1d4ea80a61e634998226da3e">Exec</a>() { <span class="keywordflow">return</span> <a class="code hl_define" href="../../dd/d7a/_m_m_func_8hpp.html#a4708e39a3760f889b9079454df085ba4">EXECR_ERROR</a>; }; <span class="comment">// 虚函数需要子类实现</span></div>
+<div class="line">};</div>
+<div class="ttc" id="aclass_m_m_func_html_a5ff2d851e12a33d8040fb8dae2329c7b"><div class="ttname"><a href="../../dc/d05/class_m_m_func.html#a5ff2d851e12a33d8040fb8dae2329c7b">MMFunc::FType</a></div><div class="ttdeci">MMFType_t FType</div><div class="ttdef"><b>Definition</b> MMFunc.hpp:83</div></div>
+<div class="ttc" id="aclass_m_m_func_html_a637b63db1d4ea80a61e634998226da3e"><div class="ttname"><a href="../../dc/d05/class_m_m_func.html#a637b63db1d4ea80a61e634998226da3e">MMFunc::Exec</a></div><div class="ttdeci">virtual MMFExecR_t Exec(InquireDelay *IDelay)</div><div class="ttdoc">执行功能模块</div><div class="ttdef"><b>Definition</b> MMFunc.hpp:107</div></div>
+<div class="ttc" id="aclass_m_m_func_html_aa06d1da551c36db917835f2ee5b549d0"><div class="ttname"><a href="../../dc/d05/class_m_m_func.html#aa06d1da551c36db917835f2ee5b549d0">MMFunc::FID</a></div><div class="ttdeci">MMFID_t FID</div><div class="ttdef"><b>Definition</b> MMFunc.hpp:82</div></div>
+<div class="ttc" id="aclass_m_m_func_html_aea128f78f88c02d4bd9d1eb06cb91691"><div class="ttname"><a href="../../dc/d05/class_m_m_func.html#aea128f78f88c02d4bd9d1eb06cb91691">MMFunc::MMFunc</a></div><div class="ttdeci">MMFunc()</div><div class="ttdef"><b>Definition</b> MMFunc.hpp:87</div></div>
+</div><!-- fragment --></li>
+<li><p class="startli"><a class="el" href="../../dc/d05/class_m_m_func.html" title="功能基础类">MMFunc</a> 基础类的使用方法</p>
+<p class="startli">首先需要从MMFunc派生出自定义功能类</p>
+<p class="startli">注意：继承后必须实现虚方法Exec()，此方法是提供给功能池统一调用的接口</p>
+<div class="fragment"><div class="line"><span class="comment">// 矩阵屏幕测试类，测试RGB显示</span></div>
+<div class="line"><span class="keyword">class </span><a class="code hl_class" href="../../da/d7b/class_m_m_f___matrix_test.html">MMF_MatrixTest</a>: <span class="keyword">public</span> <a class="code hl_class" href="../../dc/d05/class_m_m_func.html">MMFunc</a> {</div>
+<div class="line"><span class="keyword">public</span>:</div>
+<div class="line">    <span class="comment">// 实现父类的虚方法</span></div>
+<div class="line">    <a class="code hl_function" href="../../da/d7b/class_m_m_f___matrix_test.html#ab42f918f309b81a5bcd04296e298b893">MMF_MatrixTest</a>(uint16_t fid): <a class="code hl_class" href="../../dc/d05/class_m_m_func.html">MMFunc</a>(fid) {}</div>
+<div class="line">    <span class="keyword">virtual</span> uint16_t <a class="code hl_function" href="../../da/d7b/class_m_m_f___matrix_test.html#a420f5b45e78af8437ce62ea7b4b053cd">Exec</a>() {</div>
+<div class="line">        <a class="code hl_variable" href="../../d4/dea/_m_m_fill_8hpp.html#a639b52bbf2924b4ede46989c196c7aaf">mmfill</a>.<a class="code hl_function" href="../../d7/d40/class_m_m_fill.html#ac42a848a4a58828067624eb2f23580fe">MatrixTest</a>();</div>
+<div class="line">        <span class="keywordflow">return</span> <a class="code hl_define" href="../../dd/d7a/_m_m_func_8hpp.html#a82edcf2f045473e48a87ca55498824d9">EXECR_OK</a>;</div>
+<div class="line">    }</div>
+<div class="line">};</div>
+<div class="ttc" id="a_m_m_fill_8hpp_html_a639b52bbf2924b4ede46989c196c7aaf"><div class="ttname"><a href="../../d4/dea/_m_m_fill_8hpp.html#a639b52bbf2924b4ede46989c196c7aaf">mmfill</a></div><div class="ttdeci">class MMFill mmfill</div></div>
+<div class="ttc" id="a_m_m_func_8hpp_html_a82edcf2f045473e48a87ca55498824d9"><div class="ttname"><a href="../../dd/d7a/_m_m_func_8hpp.html#a82edcf2f045473e48a87ca55498824d9">EXECR_OK</a></div><div class="ttdeci">#define EXECR_OK</div><div class="ttdoc">执行结果 OK</div><div class="ttdef"><b>Definition</b> MMFunc.hpp:19</div></div>
+<div class="ttc" id="aclass_m_m_f___matrix_test_html"><div class="ttname"><a href="../../da/d7b/class_m_m_f___matrix_test.html">MMF_MatrixTest</a></div><div class="ttdoc">矩阵屏幕测试类，测试RGB显示</div><div class="ttdef"><b>Definition</b> MMF_MatrixTest.hpp:18</div></div>
+<div class="ttc" id="aclass_m_m_f___matrix_test_html_a420f5b45e78af8437ce62ea7b4b053cd"><div class="ttname"><a href="../../da/d7b/class_m_m_f___matrix_test.html#a420f5b45e78af8437ce62ea7b4b053cd">MMF_MatrixTest::Exec</a></div><div class="ttdeci">virtual MMFExecR_t Exec(InquireDelay *IDelay)</div><div class="ttdoc">执行功能</div><div class="ttdef"><b>Definition</b> MMF_MatrixTest.hpp:31</div></div>
+<div class="ttc" id="aclass_m_m_f___matrix_test_html_ab42f918f309b81a5bcd04296e298b893"><div class="ttname"><a href="../../da/d7b/class_m_m_f___matrix_test.html#ab42f918f309b81a5bcd04296e298b893">MMF_MatrixTest::MMF_MatrixTest</a></div><div class="ttdeci">MMF_MatrixTest(uint16_t fid)</div><div class="ttdoc">构造函数</div><div class="ttdef"><b>Definition</b> MMF_MatrixTest.hpp:22</div></div>
+<div class="ttc" id="aclass_m_m_fill_html_ac42a848a4a58828067624eb2f23580fe"><div class="ttname"><a href="../../d7/d40/class_m_m_fill.html#ac42a848a4a58828067624eb2f23580fe">MMFill::MatrixTest</a></div><div class="ttdeci">void MatrixTest()</div><div class="ttdoc">测试矩阵</div><div class="ttdef"><b>Definition</b> MMFill.hpp:164</div></div>
+</div><!-- fragment --></li>
+<li><p class="startli">定义功能块访问MMF_ID(Magic Matrix Function ID)并实例化功能块</p>
+<p class="startli">MMF_ID作为调用功能池中功能的索引不应重复</p>
+<p class="startli">如果功能池中出现重复MMF_ID的功能块则只会调用池中第一个功能块</p>
+<p class="startli">注：此处的MMF_TYPE(Magic Matrix Function Type)是功能块分类标志，为今后扩展多种功能块调用预留</p>
+<div class="fragment"><div class="line"><span class="comment">// 定义功能类型,为后期扩展作准备,目前默认只有0</span></div>
+<div class="line"><span class="preprocessor">#define MMF_TYPE_0 (0x00)</span></div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// 定义矩阵测试功能</span></div>
+<div class="line"><span class="preprocessor">#define MMF_ID_MATRIXTEST (0x0001)</span></div>
+<div class="line"><a class="code hl_class" href="../../da/d7b/class_m_m_f___matrix_test.html">MMF_MatrixTest</a> <a class="code hl_variable" href="../../d9/de2/_m_m_f_p_setup_8hpp.html#afc2e90d65497d9a619a7a01de8887afb">mmf_matrixtest</a>(<a class="code hl_define" href="../../d9/de2/_m_m_f_p_setup_8hpp.html#a06417a8e1976ba4a5fa4691e682d77ab">MMF_ID_MATRIXTEST</a>);</div>
+<div class="ttc" id="a_m_m_f_p_setup_8hpp_html_a06417a8e1976ba4a5fa4691e682d77ab"><div class="ttname"><a href="../../d9/de2/_m_m_f_p_setup_8hpp.html#a06417a8e1976ba4a5fa4691e682d77ab">MMF_ID_MATRIXTEST</a></div><div class="ttdeci">#define MMF_ID_MATRIXTEST</div><div class="ttdoc">矩阵测试功能块ID</div><div class="ttdef"><b>Definition</b> MMFPSetup.hpp:33</div></div>
+<div class="ttc" id="a_m_m_f_p_setup_8hpp_html_afc2e90d65497d9a619a7a01de8887afb"><div class="ttname"><a href="../../d9/de2/_m_m_f_p_setup_8hpp.html#afc2e90d65497d9a619a7a01de8887afb">mmf_matrixtest</a></div><div class="ttdeci">MMF_MatrixTest mmf_matrixtest(MMF_ID_MATRIXTEST)</div><div class="ttdoc">矩阵功能块实例</div></div>
+</div><!-- fragment --></li>
+<li><p class="startli">将自定义功能块实例加入功能池</p>
+<p class="startli">通过调用MMFPool的Append方法可将自定义功能块加入功能池</p>
+<p class="startli">系统在MMFPSetup函数中将所有自定义功能块统一加入功能池</p>
+<div class="fragment"><div class="line"><span class="comment">// 将功能模块加入功能池</span></div>
+<div class="line"><span class="keywordtype">void</span> <a class="code hl_function" href="../../d9/de2/_m_m_f_p_setup_8hpp.html#a0347e4a83067f757d0f774afc26c6a4f">MMFPSetup</a>()</div>
+<div class="line">{</div>
+<div class="line">    <a class="code hl_variable" href="../../d1/db6/_m_m_menu_8hpp.html#a7ea035e98cefa074d1ae94d001475579">FPool</a>.<a class="code hl_function" href="../../d9/d1a/class_m_m_func_pool.html#afcde4d8440a5cc28e4d58fee6e87c6fa">Append</a>(&amp;<a class="code hl_variable" href="../../d9/de2/_m_m_f_p_setup_8hpp.html#afc2e90d65497d9a619a7a01de8887afb">mmf_matrixtest</a>);</div>
+<div class="line">    <a class="code hl_variable" href="../../d1/db6/_m_m_menu_8hpp.html#a7ea035e98cefa074d1ae94d001475579">FPool</a>.<a class="code hl_function" href="../../d9/d1a/class_m_m_func_pool.html#afcde4d8440a5cc28e4d58fee6e87c6fa">Append</a>(&amp;<a class="code hl_variable" href="../../d9/de2/_m_m_f_p_setup_8hpp.html#ac4d2395ec8c95ca8f072fbf90f3ef2de">mmf_disptime_1</a>);</div>
+<div class="line">}</div>
+<div class="ttc" id="a_m_m_f_p_setup_8hpp_html_a0347e4a83067f757d0f774afc26c6a4f"><div class="ttname"><a href="../../d9/de2/_m_m_f_p_setup_8hpp.html#a0347e4a83067f757d0f774afc26c6a4f">MMFPSetup</a></div><div class="ttdeci">void MMFPSetup()</div><div class="ttdoc">将功能模块加入功能池</div><div class="ttdef"><b>Definition</b> MMFPSetup.hpp:74</div></div>
+<div class="ttc" id="a_m_m_f_p_setup_8hpp_html_ac4d2395ec8c95ca8f072fbf90f3ef2de"><div class="ttname"><a href="../../d9/de2/_m_m_f_p_setup_8hpp.html#ac4d2395ec8c95ca8f072fbf90f3ef2de">mmf_disptime_1</a></div><div class="ttdeci">MMF_DispTime_1 mmf_disptime_1(MMF_ID_DISPTIME_1)</div><div class="ttdoc">显示时间功能块实例</div></div>
+<div class="ttc" id="a_m_m_menu_8hpp_html_a7ea035e98cefa074d1ae94d001475579"><div class="ttname"><a href="../../d1/db6/_m_m_menu_8hpp.html#a7ea035e98cefa074d1ae94d001475579">FPool</a></div><div class="ttdeci">MMFuncPool * FPool</div><div class="ttdef"><b>Definition</b> MMMenu.hpp:161</div></div>
+</div><!-- fragment --></li>
+<li><p class="startli">调用方法</p>
+<p class="startli">使用功能池中的功能需要根据MMF_ID来调用功能池的ExecFunc方法</p>
+<div class="fragment"><div class="line"><span class="comment">// 执行功能池中的矩阵测试功能</span></div>
+<div class="line"><a class="code hl_variable" href="../../d1/db6/_m_m_menu_8hpp.html#a7ea035e98cefa074d1ae94d001475579">FPool</a>.<a class="code hl_function" href="../../d9/d1a/class_m_m_func_pool.html#a0ad552102e8f2ce9053747a1a306dbe9">ExecFunc</a>(<a class="code hl_define" href="../../d9/de2/_m_m_f_p_setup_8hpp.html#a06417a8e1976ba4a5fa4691e682d77ab">MMF_ID_MATRIXTEST</a>);    </div>
+<div class="ttc" id="aclass_m_m_func_pool_html_a0ad552102e8f2ce9053747a1a306dbe9"><div class="ttname"><a href="../../d9/d1a/class_m_m_func_pool.html#a0ad552102e8f2ce9053747a1a306dbe9">MMFuncPool::ExecFunc</a></div><div class="ttdeci">uint16_t ExecFunc(uint16_t fid, InquireDelay *IDelay)</div><div class="ttdoc">根据功能块ID执行对应功能</div><div class="ttdef"><b>Definition</b> MMFuncPool.hpp:54</div></div>
+</div><!-- fragment --></li>
+</ul>
+<h1><a class="anchor" id="inquiredelay-询问等待类事件回调机制"></a>
+InquireDelay 询问等待类，事件回调机制</h1>
+<ul>
+<li><p class="startli"><a class="el" href="../../d0/dae/class_inquire_delay.html" title="查询等待类型(接口)">InquireDelay</a> 说明</p>
+<p class="startli">由于系统目前采用单线程模式，体统在功能之间切换时需要退出当前功能，功能在执行过程中需要询问当前系统，如果系统切换的功能块，用于在不同的功能中进行切换。</p>
+<div class="fragment"><div class="line"><span class="comment">// 查询等待类型(接口),在执行过程中询问是否需继续执行当前功能,用于响应退出操作</span></div>
+<div class="line"><span class="comment">// 传入的参数是等待的毫秒数,在功能块中应当使用IDelay替代delay()并对返回结果作出响应</span></div>
+<div class="line"><span class="comment">// 询问等待的时间当不需要继续执行时可能不传入的时间短</span></div>
+<div class="line"><span class="comment">// 返回为false是需要退出</span></div>
+<div class="line"><span class="keyword">class </span><a class="code hl_class" href="../../d0/dae/class_inquire_delay.html">InquireDelay</a> {</div>
+<div class="line"><span class="keyword">public</span>:</div>
+<div class="line">    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="../../d0/dae/class_inquire_delay.html#a9afa3e4942c9fed2e0abe1541453cae2">Inquire</a>()</div>
+<div class="line">    {</div>
+<div class="line">        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line">    };</div>
+<div class="line">    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="../../d0/dae/class_inquire_delay.html#a0868fc0af527ea2983130038e0aa6461">IDelay</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> ms)</div>
+<div class="line">    {</div>
+<div class="line">        delay(ms);</div>
+<div class="line">        <span class="keywordflow">return</span> <a class="code hl_function" href="../../d0/dae/class_inquire_delay.html#a9afa3e4942c9fed2e0abe1541453cae2">Inquire</a>();</div>
+<div class="line">    };</div>
+<div class="line">};</div>
+<div class="ttc" id="aclass_inquire_delay_html"><div class="ttname"><a href="../../d0/dae/class_inquire_delay.html">InquireDelay</a></div><div class="ttdoc">查询等待类型(接口)</div><div class="ttdef"><b>Definition</b> MMFunc.hpp:39</div></div>
+<div class="ttc" id="aclass_inquire_delay_html_a0868fc0af527ea2983130038e0aa6461"><div class="ttname"><a href="../../d0/dae/class_inquire_delay.html#a0868fc0af527ea2983130038e0aa6461">InquireDelay::IDelay</a></div><div class="ttdeci">virtual bool IDelay(unsigned long ms)</div><div class="ttdoc">询问并等待</div><div class="ttdef"><b>Definition</b> MMFunc.hpp:54</div></div>
+<div class="ttc" id="aclass_inquire_delay_html_a9afa3e4942c9fed2e0abe1541453cae2"><div class="ttname"><a href="../../d0/dae/class_inquire_delay.html#a9afa3e4942c9fed2e0abe1541453cae2">InquireDelay::Inquire</a></div><div class="ttdeci">virtual bool Inquire()=0</div><div class="ttdoc">询问是否继续执行</div></div>
+</div><!-- fragment --></li>
+<li><p class="startli">main类实现InquireDelay</p>
+<div class="fragment"><div class="line">  <span class="comment">// 实现InquireDelay方法</span></div>
+<div class="line"><span class="keyword">virtual</span> <span class="keywordtype">bool</span> Inquire()</div>
+<div class="line">{</div>
+<div class="line">    <span class="comment">// 读取蓝牙</span></div>
+<div class="line">    <span class="keywordflow">while</span> (<a class="code hl_define" href="../../d6/d16/_m_m_hardware_8hpp.html#a383e55d88ada36a7f12422d4e4891f5d">UART_BLE</a>.available()) {</div>
+<div class="line">        <span class="comment">// String s = UART_USB1.readString();</span></div>
+<div class="line">        <a class="code hl_define" href="../../d6/d16/_m_m_hardware_8hpp.html#a9757131cd175465e6220de58b57f6b78">UART_USB</a>.print(<span class="keywordtype">char</span>(<a class="code hl_define" href="../../d6/d16/_m_m_hardware_8hpp.html#a383e55d88ada36a7f12422d4e4891f5d">UART_BLE</a>.read()));</div>
+<div class="line">    }</div>
+<div class="line">    this-&gt;CheckPIRR(); <span class="comment">// 由于功能块内部需要调用红外线数据，取消此部分多线程处理</span></div>
+<div class="line">    this-&gt;CheckMenu();</div>
+<div class="line">    <span class="keywordflow">return</span> (<a class="code hl_variable" href="../../d1/db6/_m_m_menu_8hpp.html#a5baf036a379ded03e3a3dc687623b1f8">NextMenuItem</a> == <a class="code hl_variable" href="../../d1/db6/_m_m_menu_8hpp.html#aaf0b1cb480e498befc54fcc589aaa5f1">CurrMenuItem</a> &amp;&amp; <a class="code hl_variable" href="../../d1/db6/_m_m_menu_8hpp.html#a6cea0f36eeaff9eb3781b8030f82b1cc">NextMenuCate</a> == <a class="code hl_variable" href="../../d1/db6/_m_m_menu_8hpp.html#a9bc3e20c4df7f1ffce4c7a43efbf3637">CurrMenuCate</a>);</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// 实现IDelay方法</span></div>
+<div class="line"><span class="keyword">virtual</span> <span class="keywordtype">bool</span> IDelay(<span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> ms)</div>
+<div class="line">{</div>
+<div class="line">    <span class="keywordtype">bool</span> r = <span class="keyword">true</span>; <span class="comment">// 默认结果为true</span></div>
+<div class="line">    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> startm = millis(); <span class="comment">// 记录函数开始时的运行毫秒数</span></div>
+<div class="line">    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> pass = 0; <span class="comment">// 逝去的毫秒数</span></div>
+<div class="line">    <span class="keywordflow">do</span> {</div>
+<div class="line">        delay(10);</div>
+<div class="line">        <span class="keywordflow">if</span> (!Inquire()) {</div>
+<div class="line">            r = <span class="keyword">false</span>;</div>
+<div class="line">            <span class="keywordflow">break</span>;</div>
+<div class="line">        }</div>
+<div class="line">        <span class="comment">// 过去的时间</span></div>
+<div class="line">        pass = <a class="code hl_variable" href="../../d6/d16/_m_m_hardware_8hpp.html#a13e9b093d353efd2754d5b9cc4c90280">mmhardware</a>.<a class="code hl_function" href="../../dd/d90/class_m_m_hardware.html#ad11fc8f893ac06589a1bfe2f16b5bf8f">TickPassed</a>(startm, millis());</div>
+<div class="line">    } <span class="keywordflow">while</span> (pass &lt; ms);</div>
+<div class="line">    <span class="keywordflow">return</span> r;</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// 返回初始位置，实现InquireDelay的方法</span></div>
+<div class="line"><span class="comment">// 注意这里只是将下一个菜单项设置为返回，需要功能自行退出</span></div>
+<div class="line"><span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="../../d1/db6/_m_m_menu_8hpp.html#a6ebf3c13a042c7b5a550004c25cc7cb6">GoHome</a>()</div>
+<div class="line">{</div>
+<div class="line">    this-&gt;<a class="code hl_variable" href="../../d1/db6/_m_m_menu_8hpp.html#a6cea0f36eeaff9eb3781b8030f82b1cc">NextMenuCate</a> = 0; <span class="comment">// 返回0分类的0项</span></div>
+<div class="line">    this-&gt;<a class="code hl_variable" href="../../d1/db6/_m_m_menu_8hpp.html#a5baf036a379ded03e3a3dc687623b1f8">NextMenuItem</a> = 0;</div>
+<div class="line">}</div>
+<div class="ttc" id="a_m_m_hardware_8hpp_html_a383e55d88ada36a7f12422d4e4891f5d"><div class="ttname"><a href="../../d6/d16/_m_m_hardware_8hpp.html#a383e55d88ada36a7f12422d4e4891f5d">UART_BLE</a></div><div class="ttdeci">#define UART_BLE</div><div class="ttdoc">定义蓝牙串口</div><div class="ttdef"><b>Definition</b> MMHardware.hpp:38</div></div>
+<div class="ttc" id="a_m_m_hardware_8hpp_html_a9757131cd175465e6220de58b57f6b78"><div class="ttname"><a href="../../d6/d16/_m_m_hardware_8hpp.html#a9757131cd175465e6220de58b57f6b78">UART_USB</a></div><div class="ttdeci">#define UART_USB</div><div class="ttdoc">定义USB串口</div><div class="ttdef"><b>Definition</b> MMHardware.hpp:36</div></div>
+<div class="ttc" id="a_m_m_menu_8hpp_html_a5baf036a379ded03e3a3dc687623b1f8"><div class="ttname"><a href="../../d1/db6/_m_m_menu_8hpp.html#a5baf036a379ded03e3a3dc687623b1f8">NextMenuItem</a></div><div class="ttdeci">uint8_t NextMenuItem</div><div class="ttdoc">下一个菜单位置</div><div class="ttdef"><b>Definition</b> MMMenu.hpp:156</div></div>
+<div class="ttc" id="a_m_m_menu_8hpp_html_a6cea0f36eeaff9eb3781b8030f82b1cc"><div class="ttname"><a href="../../d1/db6/_m_m_menu_8hpp.html#a6cea0f36eeaff9eb3781b8030f82b1cc">NextMenuCate</a></div><div class="ttdeci">uint8_t NextMenuCate</div><div class="ttdoc">下一个菜单类</div><div class="ttdef"><b>Definition</b> MMMenu.hpp:155</div></div>
+<div class="ttc" id="a_m_m_menu_8hpp_html_a6ebf3c13a042c7b5a550004c25cc7cb6"><div class="ttname"><a href="../../d1/db6/_m_m_menu_8hpp.html#a6ebf3c13a042c7b5a550004c25cc7cb6">GoHome</a></div><div class="ttdeci">void GoHome()</div><div class="ttdoc">返回最初位置</div><div class="ttdef"><b>Definition</b> MMMenu.hpp:171</div></div>
+<div class="ttc" id="a_m_m_menu_8hpp_html_a9bc3e20c4df7f1ffce4c7a43efbf3637"><div class="ttname"><a href="../../d1/db6/_m_m_menu_8hpp.html#a9bc3e20c4df7f1ffce4c7a43efbf3637">CurrMenuCate</a></div><div class="ttdeci">uint8_t CurrMenuCate</div><div class="ttdoc">当前所在的菜单类</div><div class="ttdef"><b>Definition</b> MMMenu.hpp:153</div></div>
+<div class="ttc" id="a_m_m_menu_8hpp_html_aaf0b1cb480e498befc54fcc589aaa5f1"><div class="ttname"><a href="../../d1/db6/_m_m_menu_8hpp.html#aaf0b1cb480e498befc54fcc589aaa5f1">CurrMenuItem</a></div><div class="ttdeci">uint8_t CurrMenuItem</div><div class="ttdoc">当前所在的菜单项目</div><div class="ttdef"><b>Definition</b> MMMenu.hpp:154</div></div>
+<div class="ttc" id="aclass_m_m_hardware_html_ad11fc8f893ac06589a1bfe2f16b5bf8f"><div class="ttname"><a href="../../dd/d90/class_m_m_hardware.html#ad11fc8f893ac06589a1bfe2f16b5bf8f">MMHardware::TickPassed</a></div><div class="ttdeci">unsigned long TickPassed(unsigned long From, unsigned long To)</div><div class="ttdoc">计算经过的时间</div><div class="ttdef"><b>Definition</b> MMHardware.hpp:76</div></div>
+</div><!-- fragment --> </li>
+</ul>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">制作者 <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+  </ul>
+</div>
+</body>
+</html>
